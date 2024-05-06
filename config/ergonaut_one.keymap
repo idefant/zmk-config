@@ -35,10 +35,10 @@
 
         lower_layer {
             bindings = <
-&mt LGUI F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &none   &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &none
-&mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
-&mt LALT EQUAL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &none   &none     &none     &none      &none          &none
-                                  &trans    &trans    &trans     &trans  &trans    &trans
+&none           &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp DELETE     &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &none
+&mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp BACKSPACE  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
+&mt LALT EQUAL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &none          &none     &none     &none      &none          &none
+                                  &trans    &trans    &trans     &trans         &trans    &trans
             >;
         };
 
