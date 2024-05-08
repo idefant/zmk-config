@@ -49,6 +49,20 @@
 
             label = "DOUBLE_QUOTES";
         };
+
+        grave: grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N9 &kp KP_N6>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "GRAVE";
+        };
     };
 
     keymap {
@@ -56,19 +70,19 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE   &kp Q  &kp W  &kp E  &kp R            &kp T  &kp Y  &kp U            &kp I      &kp O    &kp P     &kp LBKT
-&kp TAB      &kp A  &kp S  &kp D  &kp F            &kp G  &kp H  &kp J            &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-&kp LG(TAB)  &kp Z  &kp X  &kp C  &kp V            &kp B  &kp N  &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                           &dqt   &mt LCTRL SPACE  &mo 1  &mo 3  &mt LSHFT ENTER  &sqt
+&kp ESCAPE   &kp Q  &kp W  &kp E  &kp R            &kp T  &kp Y  &kp U       &kp I      &kp O    &kp P     &kp LBKT
+&kp TAB      &kp A  &kp S  &kp D  &kp F            &kp G  &kp H  &kp J       &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+&kp LG(TAB)  &kp Z  &kp X  &kp C  &kp V            &kp B  &kp N  &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+                           &dqt   &mt LCTRL SPACE  &mo 1  &mo 2  &kp LSHIFT  &sqt
             >;
         };
 
         lower_layer {
             bindings = <
-&none  &none     &none     &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LA(LEFT_SHIFT)  &kp DELETE     &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &none
-&none  &kp LWIN  &kp LALT  &kp LCTRL         &kp LSHIFT         &none               &kp BACKSPACE  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
-&none  &none     &none     &none             &none              &none               &none          &none     &none     &none      &none          &none
-                           &trans            &trans             &trans              &trans         &trans    &trans
+&none  &none     &none     &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LA(LEFT_SHIFT)  &none      &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &none
+&none  &kp LWIN  &kp LALT  &kp LCTRL         &kp LSHIFT         &none               &kp ENTER  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
+&none  &none     &none     &none             &none              &none               &none      &kp BSPC  &kp DEL   &none      &none          &none
+                           &trans            &trans             &trans              &trans     &trans    &trans
             >;
         };
 
@@ -92,10 +106,10 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &dqt             &none          &none             &none      &none
-&none  &none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE   &sqt             &none          &none             &none      &none
-&none  &none  &none  &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE          &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &none
-                     &none  &none                 &none                  &none              &none            &none
+&none  &none  &none  &none  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &dqt    &dqt             &none          &none             &none      &none
+&none  &none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sqt    &sqt             &none          &none             &none      &none
+&none  &none  &none  &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &grave  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &none
+                     &none  &none                 &none                  &none   &none            &none
             >;
         };
 
