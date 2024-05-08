@@ -63,6 +63,34 @@
 
             label = "GRAVE";
         };
+
+        lbkt: left_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N9 &kp KP_N1>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "LEFT_BRACKET";
+        };
+
+        rbkt: right_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N9 &kp KP_N3>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "RIGHT_BRACKET";
+        };
     };
 
     keymap {
@@ -106,7 +134,7 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &dqt    &dqt             &none          &none             &none      &none
+&none  &none  &none  &none  &lbkt                 &rbkt                  &dqt    &dqt             &none          &none             &none      &none
 &none  &none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sqt    &sqt             &none          &none             &none      &none
 &none  &none  &none  &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &grave  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &none
                      &none  &none                 &none                  &none   &none            &none
