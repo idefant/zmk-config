@@ -1,6 +1,6 @@
 layers:
   default:
-  - {t: ']', h: Gui}
+  - ESCAPE
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - '['
-  - {t: '`', h: Ctrl}
+  - ↹
   - A
   - S
   - D
@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - {t: '''', h: Ctrl}
-  - {t: '-', h: Alt}
+  - Gui+ ↹
   - Z
   - X
   - C
@@ -35,50 +35,50 @@ layers:
   - ','
   - .
   - /
-  - {t: \, h: Alt}
-  - {t: ↹, h: raise}
-  - {t: ␣, h: Shift}
-  - {t: ⏎, h: lower}
-  - {t: Esc, h: lower}
-  - {t: ⌫, h: Shift}
-  - {t: ⌦, h: raise}
+  - ']'
+  - '&dqt'
+  - {t: ␣, h: Ctrl}
+  - lower
+  - raise
+  - LSHIFT
+  - '&sqt'
   lower:
-  - {t: F1, h: Gui}
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: +, h: Ctrl}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '-', h: Ctrl}
-  - {t: '=', h: Alt}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - ''
+  - ''
+  - ''
+  - Desk Left
+  - Desk Right
+  - Alt+ LEFT SHIFT
+  - ''
+  - Home
+  - ↑
+  - End
+  - PAGE UP
+  - ''
+  - ''
+  - LWIN
   - Alt
+  - Ctrl
+  - LSHIFT
+  - ''
+  - ENTER
+  - ←
+  - ↓
+  - →
+  - PAGE DOWN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ⌫
+  - ⌦
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -86,46 +86,46 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
-  - {t: KP NUM, h: Gui}
+  - ''
   - KP SLASH
   - KP 7
   - KP 8
   - KP 9
   - KP MINUS
-  - Vol Up
-  - Home
-  - Print Scrn
-  - Page Up
-  - SLCK
-  - CLCK
-  - {t: '=', h: Ctrl}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - KP MULTIPLY
   - KP 4
   - KP 5
   - KP 6
   - KP PLUS
-  - MUTE
-  - ←
-  - ↑
-  - →
-  - Insert
-  - {t: APP, h: Ctrl}
+  - ''
+  - LSHIFT
+  - Ctrl
   - Alt
+  - LWIN
+  - ''
+  - ''
   - KP 0
   - KP 1
   - KP 2
   - KP 3
   - KP DOT
-  - Vol Down
-  - End
-  - ↓
-  - Page Down
-  - Pause Break
-  - Alt
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
@@ -165,9 +165,54 @@ layers:
   - ''
   - ''
   - Reset
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '4': ['', '', '', '', '&lbkt', '&rbkt', '&dqt', '&dqt', '', '', '', '', '', '', '', '', (, ), '&sqt', '&sqt', '&comma', '&dot', '', '', '', '', '', '', '&lbrc',
+    '&rbrc', '&grave', '!', '&less_than', '&greater_than', '=', '', '', '', '', '', '', '']
+  '5':
+  - ''
+  - KP SLASH
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - ''
+  - LSHIFT
+  - Ctrl
+  - Alt
+  - LWIN
+  - ''
+  - ''
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - KP DOT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

@@ -387,7 +387,7 @@
         layer_4 {
             bindings = <
 &none  &none  &none  &none  &lbkt                 &rbkt                  &dqt    &dqt             &none       &none          &none      &none
-&none  &none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sqt    &sqt             &none       &none          &none      &none
+&none  &none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sqt    &sqt             &comma      &dot           &none      &none
 &none  &none  &none  &none  &lbrc                 &rbrc                  &grave  &kp EXCLAMATION  &less_than  &greater_than  &kp EQUAL  &none
                      &none  &none                 &none                  &none   &none            &none
             >;
