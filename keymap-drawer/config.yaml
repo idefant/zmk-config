@@ -42,6 +42,10 @@ parse_config:
     '&mkp MB4': Back Click
     '&mkp MB5': Forward Click
 
+    # Alt codes
+    '&comma': ','
+    '&dot': '.'
+
   zmk_combos:
     combo_tab:    {align: top, o: 0.15}
     combo_del:    {align: top, o: 0.15}
@@ -168,10 +172,6 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
-
-    # Alt codes
-    '&comma': ','
-    '&dot': '.'
 draw_config:
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
   dark_mode: auto

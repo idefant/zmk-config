@@ -171,8 +171,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '4': ['', '', '', '', '&lbkt', '&rbkt', '&dqt', '&dqt', '', '', '', '', '', '', '', '', (, ), '&sqt', '&sqt', '&comma', '&dot', '', '', '', '', '', '', '&lbrc',
-    '&rbrc', '&grave', '!', '&less_than', '&greater_than', '=', '', '', '', '', '', '', '']
+  '4': ['', '', '', '', '&lbkt', '&rbkt', '&dqt', '&dqt', '', '', '', '', '', '', '', '', (, ), '&sqt', '&sqt', ',', ., '', '', '', '', '', '', '&lbrc', '&rbrc',
+    '&grave', '!', '&less_than', '&greater_than', '=', '', '', '', '', '', '', '']
   '5':
   - ''
   - KP SLASH
