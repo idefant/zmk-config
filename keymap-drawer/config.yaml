@@ -43,8 +43,8 @@ parse_config:
     '&mkp MB5': Forward Click
 
     # Alt codes
-    '&comma': ','
-    '&dot': '.'
+    '&comma': 'ALT ,'
+    '&dot': 'ALT .'
 
   zmk_combos:
     combo_tab:    {align: top, o: 0.15}
