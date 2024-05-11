@@ -43,8 +43,29 @@ parse_config:
     '&mkp MB5': Forward Click
 
     # Alt codes
-    '&comma': 'ALT ,'
-    '&dot': 'ALT .'
+    '&alt_sqt': "ALT '"
+    '&alt_dqt': 'ALT "'
+    '&alt_grave': 'ALT `'
+    '&alt_lbkt': 'ALT ['
+    '&alt_rbkt': 'ALT ]'
+    '&alt_lbrc': 'ALT {'
+    '&alt_rbrc': 'ALT }'
+    '&alt_lt': 'ALT <'
+    '&alt_gt': 'ALT >'
+    '&alt_comma': 'ALT ,'
+    '&alt_dot': 'ALT .'
+    '&alt_colon': ':'
+    '&alt_semicolon': ';'
+    '&alt_amps': '&'
+    '&alt_pipe': '|'
+    '&alt_dollar': '$'
+    '&alt_hash': '#'
+    '&alt_num': '№'
+    '&alt_at': '@'
+    '&alt_tilde': '~'
+    '&alt_caret': ''
+    '&alt_question': '?'
+    '&alt_backslash': '\'
 
   zmk_combos:
     combo_tab:    {align: top, o: 0.15}
