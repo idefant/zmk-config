@@ -22,7 +22,7 @@
     };
 
     macros {
-        sqt: single_qoutes {
+        alt_sqt: alt_single_quote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -33,10 +33,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "SINGLE_QOUTES";
+            label = "ALT_SINGLE_QUOTE";
         };
 
-        dqt: double_quotes {
+        alt_dqt: alt_double_quotes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -47,10 +47,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "DOUBLE_QUOTES";
+            label = "ALT_DOUBLE_QUOTES";
         };
 
-        grave: grave {
+        alt_grave: alt_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -61,10 +61,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "GRAVE";
+            label = "ALT_GRAVE";
         };
 
-        lbkt: left_bracket {
+        alt_lbkt: alt_left_bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -75,10 +75,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "LEFT_BRACKET";
+            label = "ALT_LEFT_BRACKET";
         };
 
-        rbkt: right_bracket {
+        alt_rbkt: alt_right_bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -89,10 +89,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "RIGHT_BRACKET";
+            label = "ALT_RIGHT_BRACKET";
         };
 
-        lbrc: left_brace {
+        alt_lbrc: alt_left_brace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -103,10 +103,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "LEFT_BRACE";
+            label = "ALT_LEFT_BRACE";
         };
 
-        rbrc: right_brace {
+        alt_rbrc: alt_right_brace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -117,10 +117,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "RIGHT_BRACE";
+            label = "ALT_RIGHT_BRACE";
         };
 
-        less_than: less_than {
+        alt_lt: alt_less_than {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -131,10 +131,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "LESS_THAN";
+            label = "ALT_LESS_THAN";
         };
 
-        greater_than: greater_than {
+        alt_gt: alt_greater_than {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -145,10 +145,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "GREATER_THAN";
+            label = "ALT_GREATER_THAN";
         };
 
-        comma: comma {
+        alt_comma: alt_comma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -159,10 +159,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "COMMA";
+            label = "ALT_COMMA";
         };
 
-        dot: dot {
+        alt_dot: alt_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -173,10 +173,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "DOT";
+            label = "ALT_DOT";
         };
 
-        colon: colon {
+        alt_colon: alt_colon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -187,10 +187,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "COLON";
+            label = "ALT_COLON";
         };
 
-        semicolon: semicolon {
+        alt_semicolon: alt_semicolon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -201,10 +201,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "SEMICOLON";
+            label = "ALT_SEMICOLON";
         };
 
-        ampersand: ampersand {
+        alt_amps: alt_ampersand {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -215,10 +215,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "AMPERSAND";
+            label = "ALT_AMPERSAND";
         };
 
-        pipe: pipe {
+        alt_pipe: alt_pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -229,10 +229,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "PIPE";
+            label = "ALT_PIPE";
         };
 
-        dollar: dollar {
+        alt_dollar: alt_dollar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -243,10 +243,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "DOLLAR";
+            label = "ALT_DOLLAR";
         };
 
-        hash: hash {
+        alt_hash: alt_hash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -257,10 +257,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "HASH";
+            label = "ALT_HASH";
         };
 
-        number: number {
+        alt_num: alt_num {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -271,10 +271,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "NUMBER";
+            label = "ALT_NUM";
         };
 
-        at: at {
+        alt_at: alt_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -285,10 +285,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "AT";
+            label = "ALT_AT";
         };
 
-        tilde: tilde {
+        alt_tilde: alt_tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -299,10 +299,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "TILDE";
+            label = "ALT_TILDE";
         };
 
-        caret: caret {
+        alt_caret: alt_caret {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -313,10 +313,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "CARET";
+            label = "ALT_CARET";
         };
 
-        question: question {
+        alt_question: alt_question {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -327,10 +327,10 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "QUESTION";
+            label = "ALT_QUESTION";
         };
 
-        backslash: backslash {
+        alt_backslash: alt_backslash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -341,7 +341,7 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            label = "BACKSLASH";
+            label = "ALT_BACKSLASH";
         };
     };
 
@@ -350,10 +350,10 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE   &kp Q  &kp W  &kp E  &kp R            &kp T  &kp Y  &kp U       &kp I      &kp O    &kp P     &kp LBKT
-&kp TAB      &kp A  &kp S  &kp D  &kp F            &kp G  &kp H  &kp J       &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
-&kp LG(TAB)  &kp Z  &kp X  &kp C  &kp V            &kp B  &kp N  &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                           &dqt   &mt LCTRL SPACE  &mo 1  &mo 2  &kp LSHIFT  &sqt
+&kp ESCAPE   &kp Q  &kp W  &kp E     &kp R            &kp T  &kp Y  &kp U       &kp I      &kp O    &kp P     &kp LBKT
+&kp TAB      &kp A  &kp S  &kp D     &kp F            &kp G  &kp H  &kp J       &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+&kp LG(TAB)  &kp Z  &kp X  &kp C     &kp V            &kp B  &kp N  &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+                           &alt_dqt  &mt LCTRL SPACE  &mo 1  &mo 2  &kp LSHIFT  &alt_sqt
             >;
         };
 
@@ -386,10 +386,10 @@
 
         layer_4 {
             bindings = <
-&none  &none  &none  &none  &lbkt                 &rbkt                  &dqt    &dqt             &none       &none          &none      &none
-&none  &none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &sqt    &sqt             &comma      &dot           &none      &none
-&none  &none  &none  &none  &lbrc                 &rbrc                  &grave  &kp EXCLAMATION  &less_than  &greater_than  &kp EQUAL  &none
-                     &none  &none                 &none                  &none   &none            &none
+&none  &none  &none  &none  &alt_lbkt             &alt_rbkt              &alt_dqt    &alt_dqt         &none       &none     &none      &none
+&none  &none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &alt_sqt    &alt_sqt         &alt_comma  &alt_dot  &none      &none
+&none  &none  &none  &none  &alt_lbrc             &alt_rbrc              &alt_grave  &kp EXCLAMATION  &alt_lt     &alt_gt   &kp EQUAL  &none
+                     &none  &none                 &none                  &none       &none            &none
             >;
         };
 

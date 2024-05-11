@@ -36,12 +36,12 @@ layers:
   - .
   - /
   - ']'
-  - '&dqt'
+  - '&alt_dqt'
   - {t: ␣, h: Ctrl}
   - lower
   - raise
   - LSHIFT
-  - '&sqt'
+  - '&alt_sqt'
   lower:
   - ''
   - ''
@@ -171,8 +171,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '4': ['', '', '', '', '&lbkt', '&rbkt', '&dqt', '&dqt', '', '', '', '', '', '', '', '', (, ), '&sqt', '&sqt', 'ALT ,', ALT ., '', '', '', '', '', '', '&lbrc', '&rbrc',
-    '&grave', '!', '&less_than', '&greater_than', '=', '', '', '', '', '', '', '']
+  '4': ['', '', '', '', '&alt_lbkt', '&alt_rbkt', '&alt_dqt', '&alt_dqt', '', '', '', '', '', '', '', '', (, ), '&alt_sqt', '&alt_sqt', '&alt_comma', '&alt_dot',
+    '', '', '', '', '', '', '&alt_lbrc', '&alt_rbrc', '&alt_grave', '!', '&alt_lt', '&alt_gt', '=', '', '', '', '', '', '', '']
   '5':
   - ''
   - KP SLASH
