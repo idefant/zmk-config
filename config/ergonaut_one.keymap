@@ -414,7 +414,7 @@
         default {
             bindings = <
 &kp ESCAPE   &kp Q  &kp W  &kp E  &kp R            &kp T  &kp Y  &kp U       &kp I      &kp O    &kp P     &kp LBKT
-&kp TAB      &kp A  &kp S  &kp D  &kp F            &kp G  &kp H  &kp J       &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
+&kp TAB      &kp A  &kp S  &kp D  &kp F            &kp G  &kp H  &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LG(TAB)  &kp Z  &kp X  &kp C  &kp V            &kp B  &kp N  &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
                            &mo 3  &mt LCTRL SPACE  &mo 1  &mo 2  &kp LSHIFT  &mo 4
             >;
@@ -440,19 +440,19 @@
 
         symbols {
             bindings = <
-&none  &none  &none  &none  &alt_lbkt             &alt_rbkt              &alt_dqt    &alt_dqt         &none       &none     &none      &none
-&none  &none  &none  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &alt_sqt    &alt_sqt         &alt_comma  &alt_dot  &none      &none
-&none  &none  &none  &none  &alt_lbrc             &alt_rbrc              &alt_grave  &kp EXCLAMATION  &alt_lt     &alt_gt   &kp EQUAL  &none
-                     &none  &none                 &none                  &none       &none            &none
+&none  &none  &none  &none   &alt_lbkt             &alt_rbkt              &alt_dqt    &alt_dqt         &none       &none     &none      &none
+&none  &none  &none  &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &alt_sqt    &alt_sqt         &alt_comma  &alt_dot  &none      &none
+&none  &none  &none  &none   &alt_lbrc             &alt_rbrc              &alt_grave  &kp EXCLAMATION  &alt_lt     &alt_gt   &kp EQUAL  &none
+                     &trans  &trans                &trans                 &trans      &trans           &trans
             >;
         };
 
         functions {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &kp C_VOL_UP  &kp C_BRI_UP  &trans     &trans    &trans    &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &kp C_MUTE    &kp LSHIFT    &kp LCTRL  &kp LALT  &kp LWIN  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &kp C_VOL_DN  &kp C_BRI_DN  &trans     &trans    &trans    &trans
-                         &trans   &trans   &trans  &trans        &trans        &trans
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none   &kp C_VOL_UP  &kp C_BRI_UP  &none      &none     &none     &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp C_MUTE    &kp LSHIFT    &kp LCTRL  &kp LALT  &kp LWIN  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp C_VOL_DN  &kp C_BRI_DN  &none      &none     &none     &none
+                        &trans   &trans   &trans  &trans        &trans        &trans
             >;
         };
 
@@ -461,7 +461,7 @@
 &bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
-                                         &trans        &none         &trans        &none         &trans        &trans
+                                         &trans        &trans        &trans        &trans        &trans        &trans
             >;
         };
 
