@@ -300,3 +300,32 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [31, 19]
+  k: ALT .
+  l: [default]
+- p: [19, 7]
+  k: ':'
+  l: [default]
+- p: [20, 32]
+  k: ALT ,
+  l: [default]
+- p: [20, 8]
+  k: ;
+  l: [default]
+- p: [22, 34]
+  k: '!'
+  l: [default]
+- p: [22, 10]
+  k: '?'
+  l: [default]
+- p: [18, 19]
+  k: ALT '
+  l: [default]
+- p: [6, 7]
+  k: ALT "
+  l: [default]
+- p: [30, 31]
+  k: ALT `
+  l: [default]
+  draw_separate: true
