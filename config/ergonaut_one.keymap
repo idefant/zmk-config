@@ -406,6 +406,23 @@
             key-positions = <30 31>;
             layers = <0>;
         };
+
+        combo_left_bracket {
+            bindings = <&alt_lbkt>;
+            key-positions = <4 5>;
+            layers = <0>;
+        };
+
+        combo_left_brace {
+            bindings = <&alt_lbrc>;
+            key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        combo_left_parenthesis {
+            bindings = <&kp LPAR>;
+            key-positions = <16 17>;
+        };
     };
 
     keymap {

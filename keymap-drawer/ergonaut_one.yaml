@@ -329,3 +329,11 @@ combos:
   k: ALT `
   l: [default]
   draw_separate: true
+- p: [4, 5]
+  k: ALT [
+  l: [default]
+- p: [28, 29]
+  k: ALT {
+  l: [default]
+- p: [16, 17]
+  k: (
