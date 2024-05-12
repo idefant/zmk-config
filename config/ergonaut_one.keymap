@@ -379,13 +379,13 @@
 
         combo_exclamation {
             bindings = <&kp EXCL>;
-            key-positions = <22 34>;
+            key-positions = <21 33>;
             layers = <0>;
         };
 
         combo_question {
             bindings = <&alt_question>;
-            key-positions = <22 10>;
+            key-positions = <21 9>;
             layers = <0>;
         };
 
@@ -422,6 +422,7 @@
         combo_left_parenthesis {
             bindings = <&kp LPAR>;
             key-positions = <16 17>;
+            layers = <0>;
         };
     };
 
