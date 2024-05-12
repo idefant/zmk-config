@@ -36,13 +36,13 @@ layers:
   - .
   - /
   - ']'
-  - ALT "
+  - symbols
   - {t: ␣, h: Ctrl}
-  - lower
-  - raise
+  - navigation
+  - numpad
   - LSHIFT
-  - ALT '
-  lower:
+  - functions
+  navigation:
   - ''
   - ''
   - ''
@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  numpad:
   - ''
   - KP SLASH
   - KP 7
@@ -128,7 +128,93 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
+  symbols:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ALT [
+  - ALT ]
+  - ALT "
+  - ALT "
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - (
+  - )
+  - ALT '
+  - ALT '
+  - ALT ,
+  - ALT .
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ALT {
+  - ALT }
+  - ALT `
+  - '!'
+  - ALT <
+  - ALT >
+  - '='
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  functions:
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: ▽, type: trans}
+  - Vol Up
+  - BRI UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: ▽, type: trans}
+  - MUTE
+  - LSHIFT
+  - Ctrl
+  - Alt
+  - LWIN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - Vol Down
+  - BRI DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  bluetooth:
   - Boot
   - ''
   - ''
@@ -168,12 +254,10 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
-  - ''
+  - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '4': ['', '', '', '', 'ALT [', 'ALT ]', ALT ", ALT ", '', '', '', '', '', '', '', '', (, ), ALT ', ALT ', 'ALT ,', ALT ., '', '', '', '', '', '', 'ALT {', 'ALT
-      }', ALT `, '!', ALT <, ALT >, '=', '', '', '', '', '', '', '']
-  '5':
+  - {type: held}
+  numpad_trash:
   - ''
   - KP SLASH
   - '7'
