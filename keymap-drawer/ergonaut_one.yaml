@@ -1,5 +1,5 @@
 layers:
-  default:
+  BASE:
   - ESCAPE
   - Q
   - W
@@ -36,13 +36,13 @@ layers:
   - .
   - /
   - ']'
-  - symbols
+  - SYM
   - {t: ␣, h: Ctrl}
-  - navigation
-  - numpad
+  - NAV
+  - NUM
   - LSHIFT
-  - functions
-  navigation:
+  - FUNC
+  NAV:
   - ''
   - ''
   - ''
@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  numpad:
+  NUM:
   - ''
   - KP SLASH
   - KP 7
@@ -128,7 +128,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  symbols:
+  SYM:
   - ''
   - ''
   - ''
@@ -171,7 +171,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  functions:
+  FUNC:
   - ''
   - F1
   - F2
@@ -214,7 +214,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  bluetooth:
+  BT:
   - Boot
   - ''
   - ''
@@ -257,83 +257,40 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {type: held}
-  numpad_trash:
-  - ''
-  - KP SLASH
-  - '7'
-  - '8'
-  - '9'
-  - '-'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '*'
-  - '4'
-  - '5'
-  - '6'
-  - +
-  - ''
-  - LSHIFT
-  - Ctrl
-  - Alt
-  - LWIN
-  - ''
-  - ''
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - KP DOT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
 combos:
 - p: [31, 19]
   k: ALT .
-  l: [default]
+  l: [BASE]
 - p: [19, 7]
   k: ':'
-  l: [default]
+  l: [BASE]
 - p: [20, 32]
   k: ALT ,
-  l: [default]
+  l: [BASE]
 - p: [20, 8]
   k: ;
-  l: [default]
+  l: [BASE]
 - p: [22, 34]
   k: '!'
-  l: [default]
+  l: [BASE]
 - p: [22, 10]
   k: '?'
-  l: [default]
+  l: [BASE]
 - p: [18, 19]
   k: ALT '
-  l: [default]
+  l: [BASE]
 - p: [6, 7]
   k: ALT "
-  l: [default]
+  l: [BASE]
 - p: [30, 31]
   k: ALT `
-  l: [default]
+  l: [BASE]
   draw_separate: true
 - p: [4, 5]
   k: ALT [
-  l: [default]
+  l: [BASE]
 - p: [28, 29]
   k: ALT {
-  l: [default]
+  l: [BASE]
 - p: [16, 17]
   k: (
