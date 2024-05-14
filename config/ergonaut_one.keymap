@@ -24,6 +24,11 @@
             if-layers = <2 4>;
             then-layer = <5>;
         };
+
+        symbols {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
     };
 
     macros {
