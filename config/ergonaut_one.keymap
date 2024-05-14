@@ -473,7 +473,7 @@
         BASE {
             bindings = <
 &kp ESCAPE   &kp Q  &kp W  &kp E  &kp R            &kp T  &kp Y  &kp U       &kp I      &kp O    &kp P     &kp LBKT
-&lt 6 TAB    &kp A  &kp S  &kp D  &kp F            &kp G  &kp H  &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
+&kp TAB      &kp A  &kp S  &kp D  &kp F            &kp G  &kp H  &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LG(TAB)  &kp Z  &kp X  &kp C  &kp V            &kp B  &kp N  &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
                            &mo 3  &mt LCTRL SPACE  &mo 1  &mo 2  &kp LSHIFT  &mo 4
             >;
@@ -521,15 +521,6 @@
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
                                          &trans        &trans        &trans        &trans        &trans        &trans
-            >;
-        };
-
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans          &trans
             >;
         };
     };
