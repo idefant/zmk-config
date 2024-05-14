@@ -424,6 +424,42 @@
             key-positions = <16 17>;
             layers = <0>;
         };
+
+        combo_plus {
+            bindings = <&kp KP_PLUS>;
+            key-positions = <16 28>;
+            layers = <0>;
+        };
+
+        combo_minus {
+            bindings = <&kp KP_MINUS>;
+            key-positions = <16 4>;
+            layers = <0>;
+        };
+
+        combo_multiply {
+            bindings = <&kp KP_MULTIPLY>;
+            key-positions = <15 27>;
+            layers = <0>;
+        };
+
+        combo_divide {
+            bindings = <&kp KP_DIVIDE>;
+            key-positions = <15 3>;
+            layers = <0>;
+        };
+
+        combo_ampersand {
+            bindings = <&alt_amps>;
+            key-positions = <17 29>;
+            layers = <0>;
+        };
+
+        combo_pipe {
+            bindings = <&alt_pipe>;
+            key-positions = <5 17>;
+            layers = <0>;
+        };
     };
 
     keymap {

@@ -295,3 +295,21 @@ combos:
 - p: [16, 17]
   k: (
   l: [BASE]
+- p: [16, 28]
+  k: KP PLUS
+  l: [BASE]
+- p: [16, 4]
+  k: KP MINUS
+  l: [BASE]
+- p: [15, 27]
+  k: KP MULTIPLY
+  l: [BASE]
+- p: [15, 3]
+  k: KP DIVIDE
+  l: [BASE]
+- p: [17, 29]
+  k: '&'
+  l: [BASE]
+- p: [5, 17]
+  k: '|'
+  l: [BASE]
