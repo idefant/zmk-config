@@ -183,6 +183,7 @@ parse_config:
 
     KP_MULTIPLY: 'KP *'
     KP_SLASH: 'KP /'
+    KP_DIVIDE: 'KP /'
     KP_PLUS: 'KP +'
     KP_MINUS: 'KP -'
     KP_DOT: 'KP .'

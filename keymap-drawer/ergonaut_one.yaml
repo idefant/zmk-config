@@ -304,7 +304,7 @@ combos:
   k: KP *
   l: [BASE]
 - p: [15, 3]
-  k: KP DIVIDE
+  k: KP /
   l: [BASE]
 - p: [17, 29]
   k: ALT &
