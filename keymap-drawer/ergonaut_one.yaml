@@ -92,36 +92,36 @@ layers:
   - KP 8
   - KP 9
   - KP MINUS
+  - A
+  - №
+  - '%'
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - D
   - ''
   - KP MULTIPLY
   - KP 4
   - KP 5
   - KP 6
   - KP PLUS
-  - ''
+  - B
   - LSHIFT
   - Ctrl
   - Alt
   - LWIN
-  - ''
+  - E
   - ''
   - KP 0
   - KP 1
   - KP 2
   - KP 3
   - KP DOT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - C
+  - '!'
+  - ALT <
+  - ALT >
+  - '='
+  - F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
