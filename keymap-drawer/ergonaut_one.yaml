@@ -87,11 +87,11 @@ layers:
   - {t: ▽, type: trans}
   NUM:
   - ''
-  - KP SLASH
+  - KP /
   - KP 7
   - KP 8
   - KP 9
-  - KP MINUS
+  - KP -
   - A
   - ALT №
   - 'ALT :'
@@ -99,11 +99,11 @@ layers:
   - ALT ^
   - D
   - ''
-  - KP MULTIPLY
+  - KP *
   - KP 4
   - KP 5
   - KP 6
-  - KP PLUS
+  - KP +
   - B
   - LSHIFT
   - Ctrl
@@ -115,7 +115,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - KP DOT
+  - KP .
   - C
   - '!'
   - ALT <
@@ -296,13 +296,13 @@ combos:
   k: (
   l: [BASE]
 - p: [16, 28]
-  k: KP PLUS
+  k: KP +
   l: [BASE]
 - p: [16, 4]
-  k: KP MINUS
+  k: KP -
   l: [BASE]
 - p: [15, 27]
-  k: KP MULTIPLY
+  k: KP *
   l: [BASE]
 - p: [15, 3]
   k: KP DIVIDE

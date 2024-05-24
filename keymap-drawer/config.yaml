@@ -193,6 +193,12 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
+
+    KP_MULTIPLY: 'KP *'
+    KP_SLASH: 'KP /'
+    KP_PLUS: 'KP +'
+    KP_MINUS: 'KP -'
+    KP_DOT: 'KP .'
 draw_config:
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
   dark_mode: auto
