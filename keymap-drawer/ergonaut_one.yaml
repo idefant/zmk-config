@@ -285,7 +285,6 @@ combos:
 - p: [30, 31]
   k: ALT `
   l: [BASE]
-  draw_separate: true
 - p: [4, 5]
   k: ALT [
   l: [BASE]
