@@ -490,9 +490,9 @@
 
         NUM {
             bindings = <
-&none  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp A   &alt_num    &kp PRCNT  &alt_caret  &none      &kp D
-&none  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp B   &kp LSHIFT  &kp LCTRL  &kp LALT    &kp LWIN   &kp E
-&none  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C   &kp EXCL    &alt_lt    &alt_gt     &kp EQUAL  &kp F
+&none  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp A   &alt_num    &alt_colon  &kp PRCNT  &alt_caret  &kp D
+&none  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp B   &kp LSHIFT  &kp LCTRL   &kp LALT   &kp LWIN    &kp E
+&none  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C   &kp EXCL    &alt_lt     &alt_gt    &kp EQUAL   &kp F
                                    &trans     &trans     &trans        &trans  &trans      &trans
             >;
         };
