@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - ''''
-  - Gui+ ↹
+  - {t: Ctrl, h: sticky}
   - Z
   - X
   - C
@@ -37,15 +37,15 @@ layers:
   - /
   - ']'
   - SYM
-  - {t: ␣, h: Ctrl}
   - NAV
-  - NUM
+  - ␣
   - LSHIFT
+  - NUM
   - FUNC
   NAV:
   - ''
   - ''
-  - ''
+  - Gui+ ↹
   - Desk Left
   - Desk Right
   - Alt+ LEFT SHIFT
@@ -80,8 +80,8 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -125,8 +125,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   SYM:
   - ''
@@ -254,8 +254,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
 combos:
 - p: [31, 19]
