@@ -163,7 +163,7 @@ layers:
   - ALT "
   - ALT '
   - ALT `
-  - KP DIVIDE
+  - KP /
   - ALT \
   - {type: held}
   - {t: ▽, type: trans}
