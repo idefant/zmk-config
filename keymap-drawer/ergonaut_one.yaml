@@ -130,41 +130,41 @@ layers:
   - {t: ▽, type: trans}
   SYM:
   - ''
+  - '~'
+  - '@'
+  - '#'
+  - $
+  - ''
+  - '|'
+  - ':'
+  - ;
+  - '?'
+  - _
   - ''
   - ''
-  - ''
-  - ALT [
-  - ALT ]
-  - ALT "
-  - ALT "
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - (
-  - )
-  - ALT '
-  - ALT '
-  - ALT ,
-  - ALT .
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ALT {
-  - ALT }
-  - ALT `
-  - '!'
   - ALT <
-  - ALT >
-  - '='
+  - ALT {
+  - ALT [
+  - (
   - ''
+  - '&'
+  - ALT .
+  - ALT ,
+  - '!'
+  - '-'
+  - ''
+  - ''
+  - ALT >
+  - ALT }
+  - ALT ]
+  - )
+  - ''
+  - ''
+  - ALT "
+  - ALT '
+  - ALT `
+  - KP DIVIDE
+  - \
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

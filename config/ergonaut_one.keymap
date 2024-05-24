@@ -499,10 +499,10 @@
 
         SYM {
             bindings = <
-&none  &none  &none  &none   &alt_lbkt             &alt_rbkt              &alt_dqt    &alt_dqt         &none       &none     &none      &none
-&none  &none  &none  &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &alt_sqt    &alt_sqt         &alt_comma  &alt_dot  &none      &none
-&none  &none  &none  &none   &alt_lbrc             &alt_rbrc              &alt_grave  &kp EXCLAMATION  &alt_lt     &alt_gt   &kp EQUAL  &none
-                     &trans  &trans                &trans                 &trans      &trans           &trans
+&none  &alt_tilde  &alt_at    &alt_hash  &alt_dollar  &none   &alt_pipe  &alt_colon  &alt_semicolon  &alt_question  &kp UNDER      &none
+&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_amps  &alt_dot    &alt_comma      &kp EXCL       &kp MINUS      &none
+&none  &alt_gt     &alt_rbrc  &alt_rbkt  &kp RPAR     &none   &none      &alt_dqt    &alt_sqt        &alt_grave     &kp KP_DIVIDE  &alt_backslash
+                              &trans     &trans       &trans  &trans     &trans      &trans
             >;
         };
 
