@@ -1,5 +1,5 @@
 layers:
-  default:
+  BASE:
   - ESCAPE
   - Q
   - W
@@ -23,7 +23,7 @@ layers:
   - K
   - L
   - ;
-  - {t: '''', h: Ctrl}
+  - ''''
   - Gui+ ↹
   - Z
   - X
@@ -36,13 +36,13 @@ layers:
   - .
   - /
   - ']'
-  - '&alt_dqt'
+  - SYM
   - {t: ␣, h: Ctrl}
-  - lower
-  - raise
+  - NAV
+  - NUM
   - LSHIFT
-  - '&alt_sqt'
-  lower:
+  - FUNC
+  NAV:
   - ''
   - ''
   - ''
@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  NUM:
   - ''
   - KP SLASH
   - KP 7
@@ -128,8 +128,15 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
-  - Boot
+  SYM:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ALT [
+  - ALT ]
+  - ALT "
+  - ALT "
   - ''
   - ''
   - ''
@@ -138,74 +145,65 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - Boot
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - BT 5
-  - BT 4
-  - BT 3
-  - BT 2
-  - BT 1
-  - BT CLR
-  - Reset
+  - (
+  - )
+  - ALT '
+  - ALT '
+  - ALT ,
+  - ALT .
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
+  - ALT {
+  - ALT }
+  - ALT `
+  - '!'
+  - ALT <
+  - ALT >
+  - '='
   - ''
-  - ''
-  - ''
-  - ''
-  - Reset
-  - {t: ▽, type: trans}
-  - ''
-  - {t: ▽, type: trans}
-  - ''
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '4': ['', '', '', '', '&alt_lbkt', '&alt_rbkt', '&alt_dqt', '&alt_dqt', '', '', '', '', '', '', '', '', (, ), '&alt_sqt', '&alt_sqt', '&alt_comma', '&alt_dot',
-    '', '', '', '', '', '', '&alt_lbrc', '&alt_rbrc', '&alt_grave', '!', '&alt_lt', '&alt_gt', '=', '', '', '', '', '', '', '']
-  '5':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  FUNC:
   - ''
-  - KP SLASH
-  - '7'
-  - '8'
-  - '9'
-  - '-'
+  - F1
+  - F2
+  - F3
+  - F4
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Vol Up
+  - BRI UP
   - ''
   - ''
-  - '*'
-  - '4'
-  - '5'
-  - '6'
-  - +
   - ''
+  - ''
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - MUTE
   - LSHIFT
   - Ctrl
   - Alt
   - LWIN
   - ''
   - ''
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - KP DOT
+  - F9
+  - F10
+  - F11
+  - F12
   - ''
-  - ''
+  - Vol Down
+  - BRI DN
   - ''
   - ''
   - ''
@@ -215,4 +213,103 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
+  BT:
+  - Boot
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Boot
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - BT 5
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT CLR
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Reset
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {type: held}
+combos:
+- p: [31, 19]
+  k: ALT .
+  l: [BASE]
+- p: [19, 7]
+  k: ':'
+  l: [BASE]
+- p: [20, 32]
+  k: ALT ,
+  l: [BASE]
+- p: [20, 8]
+  k: ;
+  l: [BASE]
+- p: [21, 33]
+  k: '!'
+  l: [BASE]
+- p: [21, 9]
+  k: '?'
+  l: [BASE]
+- p: [18, 19]
+  k: ALT '
+  l: [BASE]
+- p: [6, 7]
+  k: ALT "
+  l: [BASE]
+- p: [30, 31]
+  k: ALT `
+  l: [BASE]
+  draw_separate: true
+- p: [4, 5]
+  k: ALT [
+  l: [BASE]
+- p: [28, 29]
+  k: ALT {
+  l: [BASE]
+- p: [16, 17]
+  k: (
+  l: [BASE]
+- p: [16, 28]
+  k: KP PLUS
+  l: [BASE]
+- p: [16, 4]
+  k: KP MINUS
+  l: [BASE]
+- p: [15, 27]
+  k: KP MULTIPLY
+  l: [BASE]
+- p: [15, 3]
+  k: KP DIVIDE
+  l: [BASE]
+- p: [17, 29]
+  k: '&'
+  l: [BASE]
+- p: [5, 17]
+  k: '|'
+  l: [BASE]
