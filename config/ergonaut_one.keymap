@@ -24,11 +24,6 @@
             if-layers = <2 4>;
             then-layer = <5>;
         };
-
-        symbols {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
     };
 
     macros {
@@ -472,6 +467,7 @@
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+
             ignored-key-positions = <1 2 3>;
         };
     };
