@@ -465,10 +465,10 @@
     behaviors {
         swapper: swapper {
             compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-
-            ignored-key-positions = <1 2 3>;
+            ignored-key-positions = <8 19 20 21>;
         };
     };
 
