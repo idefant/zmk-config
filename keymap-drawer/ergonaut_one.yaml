@@ -86,23 +86,23 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
-  - ''
+  - ALT №
   - KP /
-  - KP 7
-  - KP 8
-  - KP 9
+  - '7'
+  - '8'
+  - '9'
   - KP -
   - A
-  - ALT №
+  - 'ALT #'
   - 'ALT :'
-  - '%'
-  - ALT ^
-  - D
+  - _
   - ''
+  - D
+  - '%'
   - KP *
-  - KP 4
-  - KP 5
-  - KP 6
+  - '4'
+  - '5'
+  - '6'
   - KP +
   - B
   - LSHIFT
@@ -110,11 +110,11 @@ layers:
   - Alt
   - LWIN
   - E
-  - ''
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
+  - ALT ^
+  - '0'
+  - '1'
+  - '2'
+  - '3'
   - KP .
   - C
   - '!'
