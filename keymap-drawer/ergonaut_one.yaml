@@ -45,10 +45,10 @@ layers:
   NAV:
   - ''
   - ''
-  - Gui+ ↹
+  - Task View
   - Desk Left
   - Desk Right
-  - Alt+ LEFT SHIFT
+  - Lang Next
   - ''
   - Home
   - ↑
@@ -109,7 +109,7 @@ layers:
   - '5'
   - '6'
   - KP *
-  - {t: 'ALT #', s: ALT №}
+  - '# / №'
   - C
   - '!'
   - ALT <
@@ -179,8 +179,8 @@ layers:
   - F4
   - ''
   - ''
-  - BRI DN
-  - BRI UP
+  - Bright Down
+  - Bright Up
   - ''
   - ''
   - ''
@@ -227,7 +227,7 @@ layers:
   - ''
   - ''
   - Boot
-  - BT CLR
+  - BT Clear
   - BT 1
   - BT 2
   - BT 3
@@ -238,7 +238,7 @@ layers:
   - BT 3
   - BT 2
   - BT 1
-  - BT CLR
+  - BT Clear
   - Reset
   - ''
   - ''
