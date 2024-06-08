@@ -36,11 +36,11 @@ layers:
   - .
   - /
   - ']'
-  - SYM
+  - NUM
   - NAV
   - ␣
   - LSHIFT
-  - NUM
+  - SYM
   - FUNC
   NAV:
   - ''
@@ -86,47 +86,47 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
-  - ALT №
-  - KP /
+  - A
+  - ''
+  - ''
+  - ''
+  - ALT ^
+  - D
+  - KP -
   - '7'
   - '8'
   - '9'
-  - KP -
-  - A
-  - 'ALT #'
-  - 'ALT :'
+  - KP /
   - _
-  - ''
-  - D
-  - '%'
-  - KP *
+  - B
+  - LWIN
+  - Alt
+  - Ctrl
+  - Shift
+  - E
+  - KP +
   - '4'
   - '5'
   - '6'
-  - KP +
-  - B
-  - LSHIFT
-  - Ctrl
-  - Alt
-  - LWIN
-  - E
-  - ALT ^
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - KP .
+  - KP *
+  - 'ALT #'
   - C
   - '!'
   - ALT <
   - ALT >
   - '='
   - F
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP .
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - '%'
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
   - ''
@@ -135,24 +135,24 @@ layers:
   - 'ALT #'
   - ALT $
   - ''
-  - ALT |
+  - '-'
   - 'ALT :'
   - ALT ;
   - ALT ?
-  - _
-  - ''
+  - KP /
+  - ALT |
   - ''
   - ALT <
   - ALT {
   - ALT [
   - (
   - ''
-  - ALT &
+  - _
   - ALT .
   - ALT ,
   - '!'
-  - '-'
-  - ''
+  - ALT \
+  - ALT &
   - ''
   - ALT >
   - ALT }
@@ -163,13 +163,13 @@ layers:
   - ALT "
   - ALT '
   - ALT `
-  - KP /
-  - ALT \
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FUNC:
   - ''
@@ -178,9 +178,9 @@ layers:
   - F3
   - F4
   - ''
-  - Vol Up
-  - BRI UP
   - ''
+  - BRI DN
+  - BRI UP
   - ''
   - ''
   - ''
@@ -190,7 +190,7 @@ layers:
   - F7
   - F8
   - ''
-  - MUTE
+  - ''
   - LSHIFT
   - Ctrl
   - Alt
@@ -202,9 +202,9 @@ layers:
   - F11
   - F12
   - ''
+  - MUTE
   - Vol Down
-  - BRI DN
-  - ''
+  - Vol Up
   - ''
   - ''
   - ''

@@ -16,12 +16,12 @@
         compatible = "zmk,conditional-layers";
 
         bluetooth_left {
-            if-layers = <1 3>;
+            if-layers = <1 2>;
             then-layer = <5>;
         };
 
         bluetooth_right {
-            if-layers = <2 4>;
+            if-layers = <4 3>;
             then-layer = <5>;
         };
     };
@@ -481,7 +481,7 @@
 &kp ESCAPE  &kp Q  &kp W  &kp E  &kp R  &kp T      &kp Y       &kp U  &kp I      &kp O    &kp P     &kp LBKT
 &kp TAB     &kp A  &kp S  &kp D  &kp F  &kp G      &kp H       &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &sk LCTRL   &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                          &mo 3  &mo 1  &kp SPACE  &kp LSHIFT  &mo 2  &mo 4
+                          &mo 2  &mo 1  &kp SPACE  &kp LSHIFT  &mo 3  &mo 4
             >;
         };
 
@@ -496,28 +496,28 @@
 
         NUM {
             bindings = <
-&kp A   &alt_hash   &alt_colon  &kp UNDER  &none      &kp D   &kp KP_MINUS  &kp N7  &kp N8  &kp N9  &kp KP_SLASH     &alt_num  
-&kp B   &kp LSHIFT  &kp LCTRL   &kp LALT   &kp LWIN   &kp E   &kp KP_PLUS   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &kp PRCNT 
-&kp C   &kp EXCL    &alt_lt     &alt_gt    &kp EQUAL  &kp F   &kp KP_DOT    &kp N1  &kp N2  &kp N3  &kp N0           &alt_caret
-                                &trans     &trans     &trans  &trans        &trans  &trans
+&kp A  &none     &none     &none      &alt_caret  &kp D   &kp KP_MINUS  &kp N7  &kp N8  &kp N9  &kp KP_SLASH     &kp UNDER
+&kp B  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT   &kp E   &kp KP_PLUS   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &alt_hash
+&kp C  &kp EXCL  &alt_lt   &alt_gt    &kp EQUAL   &kp F   &kp KP_DOT    &kp N1  &kp N2  &kp N3  &kp N0           &kp PRCNT
+                           &trans     &trans      &trans  &trans        &trans  &trans
             >;
         };
 
         SYM {
             bindings = <
-&none  &alt_tilde  &alt_at    &alt_hash  &alt_dollar  &none   &alt_pipe  &alt_colon  &alt_semicolon  &alt_question  &kp UNDER     &none
-&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_amps  &alt_dot    &alt_comma      &kp EXCL       &kp MINUS     &none
-&none  &alt_gt     &alt_rbrc  &alt_rbkt  &kp RPAR     &none   &none      &alt_dqt    &alt_sqt        &alt_grave     &kp KP_SLASH  &alt_backslash
+&none  &alt_tilde  &alt_at    &alt_hash  &alt_dollar  &none   &kp MINUS  &alt_colon  &alt_semicolon  &alt_question  &kp KP_SLASH    &alt_pipe
+&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &kp UNDER  &alt_dot    &alt_comma      &kp EXCL       &alt_backslash  &alt_amps
+&none  &alt_gt     &alt_rbrc  &alt_rbkt  &kp RPAR     &none   &none      &alt_dqt    &alt_sqt        &alt_grave     &none           &none
                               &trans     &trans       &trans  &trans     &trans      &trans
             >;
         };
 
         FUNC {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none   &kp C_VOL_UP  &kp C_BRI_UP  &none      &none     &none     &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &none   &kp C_MUTE    &kp LSHIFT    &kp LCTRL  &kp LALT  &kp LWIN  &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp C_VOL_DN  &kp C_BRI_DN  &none      &none     &none     &none
-                        &trans   &trans   &trans  &trans        &trans        &trans
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none       &kp C_BRI_DN  &kp C_BRI_UP  &none     &none     &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &none   &none       &kp LSHIFT    &kp LCTRL     &kp LALT  &kp LWIN  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &none     &none     &none
+                        &trans   &trans   &trans  &trans      &trans        &trans
             >;
         };
 
