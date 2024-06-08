@@ -6,6 +6,9 @@ parse_config:
     '&swapper': Win Next
     '&caps_word': Caps Word
     '&inv_qm': ¿
+    '&hash_num': '# / №'
+    '&kp LA(LEFT_SHIFT)': Lang Next
+    '&kp LG(TAB)': Task View
 
     '&kp LC(LG(LEFT))': Desk Left
     '&kp LC(LG(RIGHT))': Desk Right
@@ -25,6 +28,7 @@ parse_config:
     '&bt BT_SEL 2': BT 3
     '&bt BT_SEL 3': BT 4
     '&bt BT_SEL 4': BT 5
+    '&bt BT_CLR': BT Clear
 
     '&mmv MOVE_UP': Mouse ↑
     '&mmv MOVE_DOWN': Mouse ↓
@@ -79,6 +83,8 @@ parse_config:
     # custom mappings
     C_VOL_UP: Vol Up
     C_VOL_DN: Vol Down
+    C_BRI_UP: Bright Up
+    C_BRI_DN: Bright Down
     C_AL_CALC: Calc
     C_PP: Play Pause
 
