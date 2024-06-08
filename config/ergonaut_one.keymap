@@ -471,6 +471,13 @@
 
             ignored-key-positions = <8 19 20 21>;
         };
+
+        hash_num: hash_num {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_hash>, <&alt_num>;
+            mods = <MOD_LSFT>;
+        };
     };
 
     keymap {
@@ -497,7 +504,7 @@
         NUM {
             bindings = <
 &kp A  &none     &none     &none      &alt_caret  &kp D   &kp KP_MINUS  &kp N7  &kp N8  &kp N9  &kp KP_SLASH     &kp UNDER
-&kp B  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT   &kp E   &kp KP_PLUS   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &alt_hash
+&kp B  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT   &kp E   &kp KP_PLUS   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &hash_num
 &kp C  &kp EXCL  &alt_lt   &alt_gt    &kp EQUAL   &kp F   &kp KP_DOT    &kp N1  &kp N2  &kp N3  &kp N0           &kp PRCNT
                            &trans     &trans      &trans  &trans        &trans  &trans
             >;

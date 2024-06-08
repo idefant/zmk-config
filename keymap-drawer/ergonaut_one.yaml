@@ -109,7 +109,7 @@ layers:
   - '5'
   - '6'
   - KP *
-  - 'ALT #'
+  - {t: 'ALT #', s: ALT №}
   - C
   - '!'
   - ALT <
