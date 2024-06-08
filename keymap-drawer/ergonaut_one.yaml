@@ -86,42 +86,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
-  - ALT №
-  - KP /
-  - '7'
-  - '8'
-  - '9'
-  - KP -
   - A
   - 'ALT #'
   - 'ALT :'
   - _
   - ''
   - D
-  - '%'
-  - KP *
-  - '4'
-  - '5'
-  - '6'
-  - KP +
+  - KP -
+  - '7'
+  - '8'
+  - '9'
+  - KP /
+  - ALT №
   - B
   - LSHIFT
   - Ctrl
   - Alt
   - LWIN
   - E
-  - ALT ^
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - KP .
+  - KP +
+  - '4'
+  - '5'
+  - '6'
+  - KP *
+  - '%'
   - C
   - '!'
   - ALT <
   - ALT >
   - '='
   - F
+  - KP .
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - ALT ^
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
