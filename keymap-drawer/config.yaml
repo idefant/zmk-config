@@ -54,18 +54,18 @@ parse_config:
     '&alt_gt': 'ALT >'
     '&alt_comma': 'ALT ,'
     '&alt_dot': 'ALT .'
-    '&alt_colon': ':'
-    '&alt_semicolon': ';'
-    '&alt_amps': '&'
-    '&alt_pipe': '|'
-    '&alt_dollar': '$'
-    '&alt_hash': '#'
-    '&alt_num': '№'
-    '&alt_at': '@'
-    '&alt_tilde': '~'
-    '&alt_caret': ''
-    '&alt_question': '?'
-    '&alt_backslash': '\'
+    '&alt_colon': 'ALT :'
+    '&alt_semicolon': 'ALT ;'
+    '&alt_amps': 'ALT &'
+    '&alt_pipe': 'ALT |'
+    '&alt_dollar': 'ALT $'
+    '&alt_hash': 'ALT #'
+    '&alt_num': 'ALT №'
+    '&alt_at': 'ALT @'
+    '&alt_tilde': 'ALT ~'
+    '&alt_caret': 'ALT ^'
+    '&alt_question': 'ALT ?'
+    '&alt_backslash': 'ALT \'
 
   zmk_combos:
     combo_tab:    {align: top, o: 0.15}
@@ -74,19 +74,6 @@ parse_config:
     combo_btclr:  {align: bottom}
     combo_play:   {align: right}
     combo_capswd: {draw_separate: true}
-    combo_semi:   {draw_separate: true}
-    combo_grave:  {draw_separate: true}
-    combo_lpar:   {draw_separate: true}
-    combo_rpar:   {draw_separate: true}
-    combo_lbkt:   {draw_separate: true}
-    combo_rbkt:   {draw_separate: true}
-    combo_tab:    {draw_separate: true}
-    combo_del:    {draw_separate: true}
-    combo_esc:    {draw_separate: true}
-    combo_ret:    {draw_separate: true}
-    combo_lock:   {draw_separate: true}
-    combo_bslh:   {draw_separate: true}
-    combo_slsh:   {draw_separate: true}
 
   zmk_keycode_map:
     # custom mappings
@@ -193,6 +180,13 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
+
+    KP_MULTIPLY: 'KP *'
+    KP_SLASH: 'KP /'
+    KP_DIVIDE: 'KP /'
+    KP_PLUS: 'KP +'
+    KP_MINUS: 'KP -'
+    KP_DOT: 'KP .'
 draw_config:
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
   dark_mode: auto

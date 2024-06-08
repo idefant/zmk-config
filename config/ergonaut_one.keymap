@@ -24,11 +24,6 @@
             if-layers = <2 4>;
             then-layer = <5>;
         };
-
-        symbols {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
     };
 
     macros {
@@ -467,42 +462,53 @@
         };
     };
 
+    behaviors {
+        swapper: swapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+
+            ignored-key-positions = <8 19 20 21>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         BASE {
             bindings = <
-&kp ESCAPE   &kp Q  &kp W  &kp E  &kp R            &kp T  &kp Y  &kp U       &kp I      &kp O    &kp P     &kp LBKT
-&kp TAB      &kp A  &kp S  &kp D  &kp F            &kp G  &kp H  &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LG(TAB)  &kp Z  &kp X  &kp C  &kp V            &kp B  &kp N  &kp M       &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                           &mo 3  &mt LCTRL SPACE  &mo 1  &mo 2  &kp LSHIFT  &mo 4
+&kp ESCAPE  &kp Q  &kp W  &kp E  &kp R  &kp T      &kp Y       &kp U  &kp I      &kp O    &kp P     &kp LBKT
+&kp TAB     &kp A  &kp S  &kp D  &kp F  &kp G      &kp H       &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&sk LCTRL   &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+                          &mo 3  &mo 1  &kp SPACE  &kp LSHIFT  &mo 2  &mo 4
             >;
         };
 
         NAV {
             bindings = <
-&none  &none     &none     &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LA(LEFT_SHIFT)  &none      &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &none
-&none  &kp LWIN  &kp LALT  &kp LCTRL         &kp LSHIFT         &none               &kp ENTER  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
-&none  &none     &none     &none             &none              &none               &none      &kp BSPC  &kp DEL   &none      &none          &none
-                           &trans            &trans             &trans              &trans     &trans    &trans
+&none  &none     &kp LG(TAB)  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LA(LEFT_SHIFT)  &none      &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &none
+&none  &kp LWIN  &kp LALT     &kp LCTRL         &kp LSHIFT         &swapper            &kp ENTER  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
+&none  &none     &none        &none             &none              &none               &none      &kp BSPC  &kp DEL   &none      &none          &none
+                              &trans            &trans             &trans              &trans     &trans    &trans
             >;
         };
 
         NUM {
             bindings = <
-&none  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none   &none       &none      &none     &none     &none
-&none  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &none   &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
-&none  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &none   &none       &none      &none     &none     &none
-                                   &trans     &trans     &trans        &trans  &trans      &trans
+&alt_num    &kp KP_SLASH     &kp N7  &kp N8  &kp N9  &kp KP_MINUS  &kp A   &alt_hash   &alt_colon  &kp UNDER  &none      &kp D
+&kp PRCNT   &kp KP_MULTIPLY  &kp N4  &kp N5  &kp N6  &kp KP_PLUS   &kp B   &kp LSHIFT  &kp LCTRL   &kp LALT   &kp LWIN   &kp E
+&alt_caret  &kp N0           &kp N1  &kp N2  &kp N3  &kp KP_DOT    &kp C   &kp EXCL    &alt_lt     &alt_gt    &kp EQUAL  &kp F
+                                     &trans  &trans  &trans        &trans  &trans      &trans
             >;
         };
 
         SYM {
             bindings = <
-&none  &none  &none  &none   &alt_lbkt             &alt_rbkt              &alt_dqt    &alt_dqt         &none       &none     &none      &none
-&none  &none  &none  &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &alt_sqt    &alt_sqt         &alt_comma  &alt_dot  &none      &none
-&none  &none  &none  &none   &alt_lbrc             &alt_rbrc              &alt_grave  &kp EXCLAMATION  &alt_lt     &alt_gt   &kp EQUAL  &none
-                     &trans  &trans                &trans                 &trans      &trans           &trans
+&none  &alt_tilde  &alt_at    &alt_hash  &alt_dollar  &none   &alt_pipe  &alt_colon  &alt_semicolon  &alt_question  &kp UNDER     &none
+&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_amps  &alt_dot    &alt_comma      &kp EXCL       &kp MINUS     &none
+&none  &alt_gt     &alt_rbrc  &alt_rbkt  &kp RPAR     &none   &none      &alt_dqt    &alt_sqt        &alt_grave     &kp KP_SLASH  &alt_backslash
+                              &trans     &trans       &trans  &trans     &trans      &trans
             >;
         };
 
