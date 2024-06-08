@@ -36,11 +36,11 @@ layers:
   - .
   - /
   - ']'
-  - SYM
+  - NUM
   - NAV
   - ␣
   - LSHIFT
-  - NUM
+  - SYM
   - FUNC
   NAV:
   - ''
@@ -87,29 +87,29 @@ layers:
   - {t: ▽, type: trans}
   NUM:
   - A
-  - 'ALT #'
-  - 'ALT :'
-  - _
   - ''
+  - ''
+  - ''
+  - ALT ^
   - D
   - KP -
   - '7'
   - '8'
   - '9'
   - KP /
-  - ALT №
+  - _
   - B
-  - LSHIFT
-  - Ctrl
-  - Alt
   - LWIN
+  - Alt
+  - Ctrl
+  - Shift
   - E
   - KP +
   - '4'
   - '5'
   - '6'
   - KP *
-  - '%'
+  - 'ALT #'
   - C
   - '!'
   - ALT <
@@ -121,12 +121,12 @@ layers:
   - '2'
   - '3'
   - '0'
-  - ALT ^
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '%'
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
   - ''
@@ -135,24 +135,24 @@ layers:
   - 'ALT #'
   - ALT $
   - ''
-  - ALT |
+  - '-'
   - 'ALT :'
   - ALT ;
   - ALT ?
-  - _
-  - ''
+  - KP /
+  - ALT |
   - ''
   - ALT <
   - ALT {
   - ALT [
   - (
   - ''
-  - ALT &
+  - _
   - ALT .
   - ALT ,
   - '!'
-  - '-'
-  - ''
+  - ALT \
+  - ALT &
   - ''
   - ALT >
   - ALT }
@@ -163,13 +163,13 @@ layers:
   - ALT "
   - ALT '
   - ALT `
-  - KP /
-  - ALT \
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FUNC:
   - ''
@@ -178,9 +178,9 @@ layers:
   - F3
   - F4
   - ''
-  - Vol Up
-  - BRI UP
   - ''
+  - BRI DN
+  - BRI UP
   - ''
   - ''
   - ''
@@ -190,7 +190,7 @@ layers:
   - F7
   - F8
   - ''
-  - MUTE
+  - ''
   - LSHIFT
   - Ctrl
   - Alt
@@ -202,9 +202,9 @@ layers:
   - F11
   - F12
   - ''
+  - MUTE
   - Vol Down
-  - BRI DN
-  - ''
+  - Vol Up
   - ''
   - ''
   - ''
