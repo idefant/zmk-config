@@ -43,36 +43,36 @@ layers:
   - SYM
   - FUNC
   NAV:
-  - ''
-  - ''
+  - Caps Lock
   - Task View
+  - Win Next
   - Desk Left
   - Desk Right
-  - Lang Next
+  - Gui+ D
   - ''
   - Home
   - ↑
   - End
   - PAGE UP
   - ''
-  - ''
+  - Alt+ LSHIFT
   - LWIN
   - Alt
   - Ctrl
   - LSHIFT
-  - Win Next
+  - ENTER
   - ENTER
   - ←
   - ↓
   - →
   - PAGE DOWN
   - ''
+  - Caps Word
+  - Win Close
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Gui+ V
+  - CMENU
   - ''
   - ⌫
   - ⌦
@@ -205,8 +205,8 @@ layers:
   - MUTE
   - Vol Down
   - Vol Up
-  - ''
-  - ''
+  - Gui+Sft+ S
+  - PRINTSCREEN
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
