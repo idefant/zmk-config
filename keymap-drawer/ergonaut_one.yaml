@@ -54,12 +54,12 @@ layers:
   - ↑
   - End
   - PAGE UP
-  - ''
+  - Win Close
   - Alt+ LSHIFT
   - LWIN
   - Alt
   - Ctrl
-  - LSHIFT
+  - Shift
   - ENTER
   - ENTER
   - ←
@@ -68,7 +68,7 @@ layers:
   - PAGE DOWN
   - ''
   - Caps Word
-  - Win Close
+  - ''
   - ''
   - ''
   - Gui+ V
@@ -135,11 +135,11 @@ layers:
   - 'ALT #'
   - ALT $
   - ''
-  - '-'
+  - ALT "
   - 'ALT :'
   - ALT ;
+  - _
   - ALT ?
-  - KP /
   - ALT |
   - ''
   - ALT <
@@ -147,24 +147,24 @@ layers:
   - ALT [
   - (
   - ''
-  - _
-  - ALT .
-  - ALT ,
-  - '!'
-  - ALT \
-  - ALT &
+  - ALT '
+  - Shift
+  - Ctrl
+  - Alt
+  - LWIN
+  - {t: KP /, s: ALT \}
   - ''
   - ALT >
   - ALT }
   - ALT ]
   - )
   - ''
-  - ''
-  - ALT "
-  - ALT '
   - ALT `
-  - ''
-  - ''
+  - ALT .
+  - ALT ,
+  - '-'
+  - '!'
+  - ALT &
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

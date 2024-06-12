@@ -480,6 +480,15 @@
 
             mods = <MOD_LSFT>;
         };
+
+        slash_backslash: slash_backslash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp KP_SLASH>, <&alt_backslash>;
+
+            mods = <(MOD_LSFT)>;
+            label = "SLASH_BACKSLASH";
+        };
     };
 
     keymap {
@@ -496,9 +505,9 @@
 
         NAV {
             bindings = <
-&kp CAPS        &kp LG(TAB)  &swapper  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)    &none      &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &none
-&kp LA(LSHIFT)  &kp LWIN     &kp LALT  &kp LCTRL         &kp LSHIFT         &kp ENTER    &kp ENTER  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
-&caps_word      &kp LA(F4)   &none     &none             &kp LG(V)          &kp K_CMENU  &none      &kp BSPC  &kp DEL   &none      &none          &none
+&kp CAPS        &kp LG(TAB)  &swapper  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)    &none      &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &kp LA(F4)
+&kp LA(LSHIFT)  &kp LWIN     &kp LALT  &kp LCTRL         &kp LSHFT          &kp ENTER    &kp ENTER  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
+&caps_word      &none        &none     &none             &kp LG(V)          &kp K_CMENU  &none      &kp BSPC  &kp DEL   &none      &none          &none
                                        &trans            &trans             &trans       &trans     &trans    &trans
             >;
         };
@@ -514,10 +523,10 @@
 
         SYM {
             bindings = <
-&none  &alt_tilde  &alt_at    &alt_hash  &alt_dollar  &none   &kp MINUS  &alt_colon  &alt_semicolon  &alt_question  &kp KP_SLASH    &alt_pipe
-&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &kp UNDER  &alt_dot    &alt_comma      &kp EXCL       &alt_backslash  &alt_amps
-&none  &alt_gt     &alt_rbrc  &alt_rbkt  &kp RPAR     &none   &none      &alt_dqt    &alt_sqt        &alt_grave     &none           &none
-                              &trans     &trans       &trans  &trans     &trans      &trans
+&none  &alt_tilde  &alt_at    &alt_hash  &alt_dollar  &none   &alt_dqt    &alt_colon  &alt_semicolon  &kp UNDERSCORE  &alt_question  &alt_pipe
+&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_sqt    &kp LSHFT   &kp LCTRL       &kp LALT        &kp LWIN       &slash_backslash
+&none  &alt_gt     &alt_rbrc  &alt_rbkt  &kp RPAR     &none   &alt_grave  &alt_dot    &alt_comma      &kp MINUS       &kp EXCL       &alt_amps
+                              &trans     &trans       &trans  &trans      &trans      &trans
             >;
         };
 
