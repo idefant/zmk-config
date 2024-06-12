@@ -7,7 +7,7 @@ parse_config:
     '&caps_word': Caps Word
     '&inv_qm': ¿
     '&hash_num': '# №'
-    'slash_backslash': '/ \'
+    '&slash_backslash': '/ \'
     '&kp LA(LEFT_SHIFT)': Lang Next
     '&kp LG(TAB)': Task View
 

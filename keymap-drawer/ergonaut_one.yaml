@@ -152,7 +152,7 @@ layers:
   - Ctrl
   - Alt
   - LWIN
-  - {t: KP /, s: ALT \}
+  - / \
   - ''
   - ALT >
   - ALT }
