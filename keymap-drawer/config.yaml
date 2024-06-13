@@ -8,7 +8,7 @@ parse_config:
     '&inv_qm': ¿
     '&hash_num': '# №'
     '&slash_backslash': '/ \'
-    '&kp LA(LEFT_SHIFT)': Lang Next
+    '&kp LA(LSHFT)': Lang Next
     '&kp LG(TAB)': Task View
 
     '&kp LC(LG(LEFT))': Desk Left

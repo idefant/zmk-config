@@ -39,7 +39,7 @@ layers:
   - NUM
   - NAV
   - ␣
-  - LSHIFT
+  - Shift
   - SYM
   - FUNC
   NAV:
@@ -55,7 +55,7 @@ layers:
   - End
   - Page Up
   - Win Close
-  - Alt+ Shift
+  - Lang Next
   - Gui
   - Alt
   - Ctrl
