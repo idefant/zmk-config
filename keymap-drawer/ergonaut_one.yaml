@@ -1,6 +1,6 @@
 layers:
   BASE:
-  - ESCAPE
+  - Esc
   - Q
   - W
   - E
@@ -53,19 +53,19 @@ layers:
   - Home
   - ↑
   - End
-  - PAGE UP
+  - Page Up
   - Win Close
-  - Alt+ LSHIFT
-  - LWIN
+  - Alt+ Shift
+  - Gui
   - Alt
   - Ctrl
   - Shift
   - ENTER
-  - ENTER
+  - ⏎
   - ←
   - ↓
   - →
-  - PAGE DOWN
+  - Page Down
   - ''
   - Caps Word
   - ''
@@ -99,7 +99,7 @@ layers:
   - KP /
   - _
   - B
-  - LWIN
+  - Gui
   - Alt
   - Ctrl
   - Shift
@@ -132,7 +132,7 @@ layers:
   - ''
   - ALT ~
   - ALT @
-  - 'ALT #'
+  - '# №'
   - ALT $
   - ''
   - ALT "
@@ -151,7 +151,7 @@ layers:
   - Shift
   - Ctrl
   - Alt
-  - LWIN
+  - Gui
   - / \
   - ''
   - ALT >
@@ -191,10 +191,10 @@ layers:
   - F8
   - ''
   - ''
-  - LSHIFT
+  - Shift
   - Ctrl
   - Alt
-  - LWIN
+  - Gui
   - ''
   - ''
   - F9

@@ -496,26 +496,26 @@
 
         BASE {
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E  &kp R  &kp T      &kp Y       &kp U  &kp I      &kp O    &kp P     &kp LBKT
-&kp TAB     &kp A  &kp S  &kp D  &kp F  &kp G      &kp H       &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&sk LCTRL   &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                          &mo 2  &mo 1  &kp SPACE  &kp LSHIFT  &mo 3  &mo 4
+&kp ESC    &kp Q  &kp W  &kp E  &kp R  &kp T      &kp Y       &kp U  &kp I      &kp O    &kp P     &kp LBKT
+&kp TAB    &kp A  &kp S  &kp D  &kp F  &kp G      &kp H       &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&sk LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+                         &mo 2  &mo 1  &kp SPACE  &kp LSHIFT  &mo 3  &mo 4
             >;
         };
 
         NAV {
             bindings = <
-&kp CAPS        &kp LG(TAB)  &swapper  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)    &none      &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &kp LA(F4)
-&kp LA(LSHIFT)  &kp LWIN     &kp LALT  &kp LCTRL         &kp LSHFT          &kp ENTER    &kp ENTER  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &none
-&caps_word      &none        &none     &none             &kp LG(V)          &kp K_CMENU  &none      &kp BSPC  &kp DEL   &none      &none          &none
-                                       &trans            &trans             &trans       &trans     &trans    &trans
+&kp CAPS       &kp LG(TAB)  &swapper  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)    &none    &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp LA(F4)
+&kp LA(LSHFT)  &kp LGUI     &kp LALT  &kp LCTRL         &kp LSHFT          &kp ENTER    &kp RET  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
+&caps_word     &none        &none     &none             &kp LG(V)          &kp K_CMENU  &none    &kp BSPC  &kp DEL   &none      &none      &none
+                                      &trans            &trans             &trans       &trans   &trans    &trans
             >;
         };
 
         NUM {
             bindings = <
 &kp A  &none     &none     &none      &alt_caret  &kp D   &kp KP_MINUS  &kp N7  &kp N8  &kp N9  &kp KP_SLASH     &kp UNDER
-&kp B  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT   &kp E   &kp KP_PLUS   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &hash_num
+&kp B  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT   &kp E   &kp KP_PLUS   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &hash_num
 &kp C  &kp EXCL  &alt_lt   &alt_gt    &kp EQUAL   &kp F   &kp KP_DOT    &kp N1  &kp N2  &kp N3  &kp N0           &kp PRCNT
                            &trans     &trans      &trans  &trans        &trans  &trans
             >;
@@ -523,8 +523,8 @@
 
         SYM {
             bindings = <
-&none  &alt_tilde  &alt_at    &alt_hash  &alt_dollar  &none   &alt_dqt    &alt_colon  &alt_semicolon  &kp UNDERSCORE  &alt_question  &alt_pipe
-&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_sqt    &kp LSHFT   &kp LCTRL       &kp LALT        &kp LWIN       &slash_backslash
+&none  &alt_tilde  &alt_at    &hash_num  &alt_dollar  &none   &alt_dqt    &alt_colon  &alt_semicolon  &kp UNDERSCORE  &alt_question  &alt_pipe
+&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_sqt    &kp LSHFT   &kp LCTRL       &kp LALT        &kp LGUI       &slash_backslash
 &none  &alt_gt     &alt_rbrc  &alt_rbkt  &kp RPAR     &none   &alt_grave  &alt_dot    &alt_comma      &kp MINUS       &kp EXCL       &alt_amps
                               &trans     &trans       &trans  &trans      &trans      &trans
             >;
@@ -533,7 +533,7 @@
         FUNC {
             bindings = <
 &none  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none       &kp C_BRI_DN  &kp C_BRI_UP  &none          &none      &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &none   &none       &kp LSHIFT    &kp LCTRL     &kp LALT       &kp LWIN   &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &none   &none       &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI   &none
 &none  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN  &none
                         &trans   &trans   &trans  &trans      &trans        &trans
             >;
