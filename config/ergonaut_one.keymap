@@ -506,7 +506,7 @@
         NAV {
             bindings = <
 &kp CAPS       &kp LG(TAB)  &swapper  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)    &none    &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp LA(F4)
-&kp LA(LSHFT)  &kp LGUI     &kp LALT  &kp LCTRL         &kp LSHFT          &kp ENTER    &kp RET  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
+&kp LA(LSHFT)  &sk LGUI     &sk LALT  &sk LCTRL         &sk LSHFT          &kp ENTER    &kp RET  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
 &caps_word     &none        &none     &none             &kp LG(V)          &kp K_CMENU  &none    &kp BSPC  &kp DEL   &none      &none      &none
                                       &trans            &trans             &trans       &trans   &trans    &trans
             >;
@@ -524,7 +524,7 @@
         SYM {
             bindings = <
 &none  &alt_tilde  &alt_at    &hash_num  &alt_dollar  &none   &alt_dqt    &alt_colon  &alt_semicolon  &kp UNDERSCORE  &alt_question  &alt_pipe
-&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_sqt    &kp LSHFT   &kp LCTRL       &kp LALT        &kp LGUI       &slash_backslash
+&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_sqt    &sk LSHFT   &sk LCTRL       &sk LALT        &sk LGUI       &slash_backslash
 &none  &alt_gt     &alt_rbrc  &alt_rbkt  &kp RPAR     &none   &alt_grave  &alt_dot    &alt_comma      &kp MINUS       &kp EXCL       &alt_amps
                               &trans     &trans       &trans  &trans      &trans      &trans
             >;

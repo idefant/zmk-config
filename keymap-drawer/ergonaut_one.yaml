@@ -56,10 +56,10 @@ layers:
   - Page Up
   - Win Close
   - Lang Next
-  - Gui
-  - Alt
-  - Ctrl
-  - Shift
+  - {t: Gui, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {t: Shift, h: sticky}
   - ENTER
   - ⏎
   - ←
@@ -148,10 +148,10 @@ layers:
   - (
   - ''
   - ALT '
-  - Shift
-  - Ctrl
-  - Alt
-  - Gui
+  - {t: Shift, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: Gui, h: sticky}
   - / \
   - ''
   - ALT >
