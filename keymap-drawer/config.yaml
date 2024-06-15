@@ -6,8 +6,9 @@ parse_config:
     '&swapper': Win Next
     '&caps_word': Caps Word
     '&inv_qm': ¿
-    '&hash_num': '# / №'
-    '&kp LA(LEFT_SHIFT)': Lang Next
+    '&hash_num': '# №'
+    '&slash_backslash': '/ \'
+    '&kp LA(LSHFT)': Lang Next
     '&kp LG(TAB)': Task View
 
     '&kp LC(LG(LEFT))': Desk Left
@@ -19,6 +20,8 @@ parse_config:
     '&kp LS(TAB)': Win Prev
     '&kp LS(INS)': Paste
     '&kp LG(L)': Lock
+    '&kp LG(LS(S))': Snipping Tool
+    '&kp LG(V)': Clipboard
 
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
@@ -109,7 +112,7 @@ parse_config:
     HOME: Home
     END: End
     CAPS: Caps Lock
-    PSCRN: Print Scrn
+    PSCRN: Print Screen
     PAUSE_BREAK: Pause Break
 
     UP: ↑

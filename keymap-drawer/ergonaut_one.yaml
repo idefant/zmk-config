@@ -1,6 +1,6 @@
 layers:
   BASE:
-  - ESCAPE
+  - Esc
   - Q
   - W
   - E
@@ -39,40 +39,40 @@ layers:
   - NUM
   - NAV
   - ␣
-  - LSHIFT
+  - Shift
   - SYM
   - FUNC
   NAV:
-  - ''
-  - ''
+  - Caps Lock
   - Task View
+  - Win Next
   - Desk Left
   - Desk Right
-  - Lang Next
+  - Gui+ D
   - ''
   - Home
   - ↑
   - End
-  - PAGE UP
-  - ''
-  - ''
-  - LWIN
-  - Alt
-  - Ctrl
-  - LSHIFT
-  - Win Next
+  - Page Up
+  - Win Close
+  - Lang Next
+  - {t: Gui, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {t: Shift, h: sticky}
   - ENTER
+  - ⏎
   - ←
   - ↓
   - →
-  - PAGE DOWN
+  - Page Down
+  - ''
+  - Caps Word
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Clipboard
+  - CMENU
   - ''
   - ⌫
   - ⌦
@@ -99,7 +99,7 @@ layers:
   - KP /
   - _
   - B
-  - LWIN
+  - Gui
   - Alt
   - Ctrl
   - Shift
@@ -109,7 +109,7 @@ layers:
   - '5'
   - '6'
   - KP *
-  - '# / №'
+  - '# №'
   - C
   - '!'
   - ALT <
@@ -132,14 +132,14 @@ layers:
   - ''
   - ALT ~
   - ALT @
-  - 'ALT #'
+  - '# №'
   - ALT $
   - ''
-  - '-'
+  - ALT "
   - 'ALT :'
   - ALT ;
+  - _
   - ALT ?
-  - KP /
   - ALT |
   - ''
   - ALT <
@@ -147,24 +147,24 @@ layers:
   - ALT [
   - (
   - ''
-  - _
-  - ALT .
-  - ALT ,
-  - '!'
-  - ALT \
-  - ALT &
+  - ALT '
+  - {t: Shift, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: Gui, h: sticky}
+  - / \
   - ''
   - ALT >
   - ALT }
   - ALT ]
   - )
   - ''
-  - ''
-  - ALT "
-  - ALT '
   - ALT `
-  - ''
-  - ''
+  - ALT .
+  - ALT ,
+  - '-'
+  - '!'
+  - ALT &
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -191,10 +191,10 @@ layers:
   - F8
   - ''
   - ''
-  - LSHIFT
+  - Shift
   - Ctrl
   - Alt
-  - LWIN
+  - Gui
   - ''
   - ''
   - F9
@@ -205,8 +205,8 @@ layers:
   - MUTE
   - Vol Down
   - Vol Up
-  - ''
-  - ''
+  - Snipping Tool
+  - Print Screen
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -218,12 +218,12 @@ layers:
   - Boot
   - ''
   - ''
+  - Out USB
+  - Out BLE
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Out BLE
+  - Out USB
   - ''
   - ''
   - Boot
