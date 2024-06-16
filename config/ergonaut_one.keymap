@@ -508,6 +508,13 @@
             mods = <(MOD_LSFT)>;
             label = "SLASH_BACKSLASH";
         };
+
+        tabber: tabber {
+            compatible = "zmk,behavior-tri-state";
+            label = "TABBER";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
+        };
     };
 
     keymap {
@@ -524,8 +531,8 @@
 
         NAV {
             bindings = <
-&kp CAPS       &kp LG(TAB)  &swapper   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)  &none      &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp LA(F4)
-&kp LA(LSHFT)  &kp LGUI     &kp LALT   &kp LCTRL         &kp LSHFT          &kp ENTER  &kp RET    &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &caps_word
+&tabber        &kp LG(TAB)  &swapper   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)  &none      &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp LA(F4)
+&kp LA(LSHFT)  &kp LGUI     &kp LALT   &kp LCTRL         &kp LSHFT          &kp ENTER  &kp RET    &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
 &kp LC(Y)      &kp LC(Z)    &kp LC(X)  &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp K_APP  &kp BSPC  &kp DEL   &none      &none      &kp CAPS
                                        &trans            &trans             &trans     &trans     &trans    &trans
             >;
