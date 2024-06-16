@@ -257,6 +257,49 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
+  MOUSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Mouse ↑
+  - Scroll →
+  - Scroll ↑
+  - ''
+  - ''
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - ''
+  - ''
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [31, 19]
   k: ALT .
