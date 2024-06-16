@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - '['
-  - ↹
+  - {t: ↹, h: MOUSE}
   - A
   - S
   - D
@@ -257,6 +257,49 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
+  MOUSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Mouse ↑
+  - Scroll →
+  - Scroll ↑
+  - ''
+  - {type: held}
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - ''
+  - ''
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Left Click
+  - Right Click
+  - Middle Click
 combos:
 - p: [31, 19]
   k: ALT .
