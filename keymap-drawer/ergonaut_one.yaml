@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: Ctrl, h: sticky}
+  - Caps Word
   - Z
   - X
   - C
@@ -56,29 +56,29 @@ layers:
   - Page Up
   - Win Close
   - Lang Next
-  - {t: Gui, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Ctrl, h: sticky}
-  - {t: Shift, h: sticky}
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
   - ENTER
   - ⏎
   - ←
   - ↓
   - →
   - Page Down
-  - ''
   - Caps Word
-  - ''
-  - ''
-  - ''
+  - Ctl+ Y
+  - Ctl+ Z
+  - Ctl+ X
+  - Ctl+ C
+  - Ctl+ V
   - Clipboard
-  - CMENU
-  - ''
+  - APP
   - ⌫
   - ⌦
   - ''
   - ''
-  - ''
+  - Caps Lock
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -148,10 +148,10 @@ layers:
   - (
   - ''
   - ALT '
-  - {t: Shift, h: sticky}
-  - {t: Ctrl, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Gui, h: sticky}
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
   - / \
   - ''
   - ALT >
@@ -214,49 +214,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  BT:
-  - Boot
-  - ''
-  - ''
-  - Out USB
-  - Out BLE
-  - ''
-  - ''
-  - Out BLE
-  - Out USB
-  - ''
-  - ''
-  - Boot
-  - BT Clear
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - BT 5
-  - BT 4
-  - BT 3
-  - BT 2
-  - BT 1
-  - BT Clear
-  - Reset
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Reset
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   MOUSE:
   - ''
   - ''
@@ -300,6 +257,49 @@ layers:
   - Left Click
   - Right Click
   - Middle Click
+  BT:
+  - Boot
+  - ''
+  - ''
+  - Out USB
+  - Out BLE
+  - ''
+  - ''
+  - Out BLE
+  - Out USB
+  - ''
+  - ''
+  - Boot
+  - BT Clear
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - BT 5
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT Clear
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Reset
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
 combos:
 - p: [31, 19]
   k: ALT .
