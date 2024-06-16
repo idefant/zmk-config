@@ -3,6 +3,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 800  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20   // 10
+
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
+
 #define DEF 0
 #define LWR 1
 #define RSE 2
@@ -11,6 +17,19 @@
 &lt { quick-tap-ms = <200>; };
 
 &mt { quick-tap-ms = <200>; };
+
+&mmv {
+    acceleration-exponent = <1>;  // 1
+    time-to-max-speed-ms = <300>; // 300
+    delay-ms = <0>;
+    trigger-period-ms = <8>;      // 16
+};
+&msc {
+    acceleration-exponent = <1>;  // 0
+    time-to-max-speed-ms = <40>;  // 300
+    delay-ms = <0>;
+    trigger-period-ms = <8>;      // 16
+};
 
 / {
     conditional_layers {
@@ -545,6 +564,15 @@
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
                                          &trans        &trans        &trans        &trans        &trans        &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&none  &none     &none     &none      &none      &none   &none   &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none   &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
+&none  &none     &none     &none      &none      &none   &none   &none           &none           &none            &none           &none
+                           &trans     &trans     &trans  &trans  &trans          &trans
             >;
         };
     };
