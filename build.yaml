@@ -1,4 +1,5 @@
 include:
+  # Ergonaut
   - board: seeeduino_xiao_ble
     shield: ergonaut_one_left
   - board: seeeduino_xiao_ble
@@ -6,7 +7,10 @@ include:
   - board: seeeduino_xiao_ble
     shield: settings_reset
 
+  # Corne
   - board: nice_nano_v2
     shield: corne_left
   - board: nice_nano_v2
     shield: corne_right
+  - board: nice_nano_v2
+    shield: settings_reset
