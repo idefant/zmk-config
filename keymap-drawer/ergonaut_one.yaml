@@ -12,7 +12,7 @@ layers:
   - O
   - P
   - '['
-  - ↹
+  - {t: ↹, h: MOUSE}
   - A
   - S
   - D
@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: Ctrl, h: sticky}
+  - Caps Word
   - Z
   - X
   - C
@@ -43,7 +43,7 @@ layers:
   - SYM
   - FUNC
   NAV:
-  - Caps Lock
+  - '&tabber'
   - Task View
   - Win Next
   - Desk Left
@@ -56,10 +56,10 @@ layers:
   - Page Up
   - Win Close
   - Lang Next
-  - {t: Gui, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Ctrl, h: sticky}
-  - {t: Shift, h: sticky}
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
   - ENTER
   - ⏎
   - ←
@@ -67,18 +67,18 @@ layers:
   - →
   - Page Down
   - ''
-  - Caps Word
-  - ''
-  - ''
-  - ''
+  - Ctl+ Y
+  - Ctl+ Z
+  - Ctl+ X
+  - Ctl+ C
+  - Ctl+ V
   - Clipboard
-  - CMENU
-  - ''
+  - APP
   - ⌫
   - ⌦
   - ''
   - ''
-  - ''
+  - Caps Lock
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -148,10 +148,10 @@ layers:
   - (
   - ''
   - ALT '
-  - {t: Shift, h: sticky}
-  - {t: Ctrl, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Gui, h: sticky}
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
   - / \
   - ''
   - ALT >
@@ -214,6 +214,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  MOUSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Mouse ↑
+  - Scroll →
+  - Scroll ↑
+  - ''
+  - {type: held}
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - ''
+  - ''
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Left Click
+  - Right Click
+  - Middle Click
   BT:
   - Boot
   - ''

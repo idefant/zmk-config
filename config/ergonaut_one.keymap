@@ -1,6 +1,11 @@
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 800  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20   // 10
+
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEF 0
@@ -12,18 +17,32 @@
 
 &mt { quick-tap-ms = <200>; };
 
+&mmv {
+    acceleration-exponent = <1>;  // 1
+    time-to-max-speed-ms = <300>; // 300
+    delay-ms = <0>;
+    trigger-period-ms = <8>;      // 16
+};
+
+&msc {
+    acceleration-exponent = <1>;  // 0
+    time-to-max-speed-ms = <40>;  // 300
+    delay-ms = <0>;
+    trigger-period-ms = <8>;      // 16
+};
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         bluetooth_left {
             if-layers = <1 2>;
-            then-layer = <5>;
+            then-layer = <6>;
         };
 
         bluetooth_right {
             if-layers = <4 3>;
-            then-layer = <5>;
+            then-layer = <6>;
         };
     };
 
@@ -478,7 +497,7 @@
             #binding-cells = <0>;
             bindings = <&alt_hash>, <&alt_num>;
 
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT)>;
         };
 
         slash_backslash: slash_backslash {
@@ -489,6 +508,13 @@
             mods = <(MOD_LSFT)>;
             label = "SLASH_BACKSLASH";
         };
+
+        tabber: tabber {
+            compatible = "zmk,behavior-tri-state";
+            label = "TABBER";
+            #binding-cells = <0>;
+            bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
+        };
     };
 
     keymap {
@@ -496,19 +522,19 @@
 
         BASE {
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P     &kp LBKT
-&kp TAB    &kp A  &kp S  &kp D  &kp F  &kp G      &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&sk LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                         &mo 2  &mo 1  &kp SPACE  &kp LSHFT  &mo 3  &mo 4
+&kp ESC     &kp Q  &kp W  &kp E  &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P     &kp LBKT
+&lt 5 TAB   &kp A  &kp S  &kp D  &kp F  &kp G      &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&caps_word  &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+                          &mo 2  &mo 1  &kp SPACE  &kp LSHFT  &mo 3  &mo 4
             >;
         };
 
         NAV {
             bindings = <
-&kp CAPS       &kp LG(TAB)  &swapper  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)    &none    &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp LA(F4)
-&kp LA(LSHFT)  &sk LGUI     &sk LALT  &sk LCTRL         &sk LSHFT          &kp ENTER    &kp RET  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
-&caps_word     &none        &none     &none             &kp LG(V)          &kp K_CMENU  &none    &kp BSPC  &kp DEL   &none      &none      &none
-                                      &trans            &trans             &trans       &trans   &trans    &trans
+&tabber        &kp LG(TAB)  &swapper   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)  &none      &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp LA(F4)
+&kp LA(LSHFT)  &kp LGUI     &kp LALT   &kp LCTRL         &kp LSHFT          &kp ENTER  &kp RET    &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
+&kp LC(Y)      &kp LC(Z)    &kp LC(X)  &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp K_APP  &kp BSPC  &kp DEL   &none      &none      &kp CAPS
+                                       &trans            &trans             &trans     &trans     &trans    &trans
             >;
         };
 
@@ -524,7 +550,7 @@
         SYM {
             bindings = <
 &none  &alt_tilde  &alt_at    &hash_num  &alt_dollar  &none   &alt_dqt    &alt_colon  &alt_semicolon  &kp UNDERSCORE  &alt_question  &alt_pipe
-&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_sqt    &sk LSHFT   &sk LCTRL       &sk LALT        &sk LGUI       &slash_backslash
+&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_sqt    &kp LSHFT   &kp LCTRL       &kp LALT        &kp LGUI       &slash_backslash
 &none  &alt_gt     &alt_rbrc  &alt_rbkt  &kp RPAR     &none   &alt_grave  &alt_dot    &alt_comma      &kp MINUS       &kp EXCL       &alt_amps
                               &trans     &trans       &trans  &trans      &trans      &trans
             >;
@@ -536,6 +562,15 @@
 &none  &kp F5  &kp F6   &kp F7   &kp F8   &none   &none       &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI   &none
 &none  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN  &none
                         &trans   &trans   &trans  &trans      &trans        &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&none  &none     &none     &none      &none      &none   &none      &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none   &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
+&none  &none     &none     &none      &none      &none   &none      &none           &none           &none            &none           &none
+                           &trans     &trans     &trans  &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
         };
 
