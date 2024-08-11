@@ -1,0 +1,357 @@
+layers:
+  BASE:
+  - Esc
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - {t: ↹, h: MOUSE}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - Caps Word
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
+  - NUM
+  - NAV
+  - ␣
+  - Shift
+  - SYM
+  - FUNC
+  NAV:
+  - Tab Next
+  - Task View
+  - Win Next
+  - Desk Left
+  - Desk Right
+  - Win's Min
+  - ''
+  - Home
+  - ↑
+  - End
+  - Page Up
+  - Win Close
+  - Lang Next
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - ENTER
+  - ⏎
+  - ←
+  - ↓
+  - →
+  - Page Down
+  - ''
+  - Ctl+ Y
+  - Ctl+ Z
+  - Ctl+ X
+  - Ctl+ C
+  - Ctl+ V
+  - Clipboard
+  - APP
+  - ⌫
+  - ⌦
+  - ''
+  - ''
+  - Caps Lock
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NUM:
+  - A
+  - ''
+  - ''
+  - ''
+  - ALT ^
+  - D
+  - KP -
+  - '7'
+  - '8'
+  - '9'
+  - KP /
+  - _
+  - B
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - E
+  - KP +
+  - '4'
+  - '5'
+  - '6'
+  - KP *
+  - '# №'
+  - C
+  - '!'
+  - ALT <
+  - ALT >
+  - '='
+  - F
+  - KP .
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - '%'
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYM:
+  - ''
+  - ALT ~
+  - ALT @
+  - '# №'
+  - ALT $
+  - ''
+  - ALT "
+  - 'ALT :'
+  - ALT ;
+  - _
+  - ALT ?
+  - ALT |
+  - ''
+  - ALT <
+  - ALT {
+  - ALT [
+  - (
+  - ''
+  - ALT '
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - / \
+  - ''
+  - ALT >
+  - ALT }
+  - ALT ]
+  - )
+  - ''
+  - ALT `
+  - ALT .
+  - ALT ,
+  - '-'
+  - '!'
+  - ALT &
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  FUNC:
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - ''
+  - ''
+  - Bright Down
+  - Bright Up
+  - ''
+  - ''
+  - ''
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - ''
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - ''
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - ''
+  - MUTE
+  - Vol Down
+  - Vol Up
+  - Snipping Tool
+  - Print Screen
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  MOUSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Mouse ↑
+  - Scroll →
+  - Scroll ↑
+  - ''
+  - {type: held}
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - ''
+  - ''
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Left Click
+  - Right Click
+  - Middle Click
+  BT:
+  - Boot
+  - ''
+  - ''
+  - Out USB
+  - Out BLE
+  - ''
+  - ''
+  - Out BLE
+  - Out USB
+  - ''
+  - ''
+  - Boot
+  - BT Clear
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - BT 5
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT Clear
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Reset
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+combos:
+- p: [31, 19]
+  k: ALT .
+  l: [BASE]
+- p: [19, 7]
+  k: 'ALT :'
+  l: [BASE]
+- p: [20, 32]
+  k: ALT ,
+  l: [BASE]
+- p: [20, 8]
+  k: ALT ;
+  l: [BASE]
+- p: [21, 33]
+  k: '!'
+  l: [BASE]
+- p: [21, 9]
+  k: ALT ?
+  l: [BASE]
+- p: [18, 19]
+  k: ALT '
+  l: [BASE]
+- p: [6, 7]
+  k: ALT "
+  l: [BASE]
+- p: [30, 31]
+  k: ALT `
+  l: [BASE]
+- p: [4, 5]
+  k: ALT [
+  l: [BASE]
+- p: [28, 29]
+  k: ALT {
+  l: [BASE]
+- p: [16, 17]
+  k: (
+  l: [BASE]
+- p: [16, 28]
+  k: KP +
+  l: [BASE]
+- p: [16, 4]
+  k: KP -
+  l: [BASE]
+- p: [15, 27]
+  k: KP *
+  l: [BASE]
+- p: [15, 3]
+  k: KP /
+  l: [BASE]
+- p: [17, 29]
+  k: ALT &
+  l: [BASE]
+- p: [5, 17]
+  k: ALT |
+  l: [BASE]
