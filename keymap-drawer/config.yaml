@@ -4,6 +4,7 @@ parse_config:
     '&sys_reset': Reset
     '&bootloader': Boot
     '&swapper': Win Next
+    '&tabber': Tab Next
     '&caps_word': Caps Word
     '&inv_qm': ¿
     '&hash_num': '# №'
@@ -22,6 +23,7 @@ parse_config:
     '&kp LG(L)': Lock
     '&kp LG(LS(S))': Snipping Tool
     '&kp LG(V)': Clipboard
+    '&kp LG(D)': Win's Min
 
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
@@ -89,7 +91,6 @@ parse_config:
     C_BRI_UP: Bright Up
     C_BRI_DN: Bright Down
     C_AL_CALC: Calc
-    C_PP: Play Pause
 
     LCTRL: Ctrl
     RCTRL: Ctrl
