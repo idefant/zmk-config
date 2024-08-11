@@ -43,12 +43,12 @@ layers:
   - SYM
   - FUNC
   NAV:
-  - '&tabber'
+  - Tab Next
   - Task View
   - Win Next
   - Desk Left
   - Desk Right
-  - Gui+ D
+  - Win's Min
   - ''
   - Home
   - ↑
