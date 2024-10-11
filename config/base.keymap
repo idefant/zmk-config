@@ -80,7 +80,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
                 <&kp E>,
                 <&macro_release>,
@@ -94,11 +94,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N9 &kp KP_N1>,
+                <&kp R>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_LEFT_BRACKET";
         };
@@ -108,11 +108,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N9 &kp KP_N3>,
+                <&kp T>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_RIGHT_BRACKET";
         };
@@ -122,11 +122,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N1 &kp KP_N2 &kp KP_N3>,
+                <&kp Y>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_LEFT_BRACE";
         };
@@ -136,11 +136,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N1 &kp KP_N2 &kp KP_N5>,
+                <&kp U>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_RIGHT_BRACE";
         };
@@ -150,11 +150,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N6 &kp KP_N0>,
+                <&kp I>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_LESS_THAN";
         };
@@ -164,11 +164,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N6 &kp KP_N2>,
+                <&kp O>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_GREATER_THAN";
         };
@@ -178,11 +178,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N4 &kp KP_N4>,
+                <&kp O>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_COMMA";
         };
