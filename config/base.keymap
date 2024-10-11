@@ -192,11 +192,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N4 &kp KP_N6>,
+                <&kp A>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_DOT";
         };
@@ -206,11 +206,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N5 &kp KP_N8>,
+                <&kp S>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_COLON";
         };
@@ -220,11 +220,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N5 &kp KP_N9>,
+                <&kp D>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_SEMICOLON";
         };
@@ -234,11 +234,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N3 &kp KP_N8>,
+                <&kp F>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_AMPERSAND";
         };
@@ -248,11 +248,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N1 &kp KP_N2 &kp KP_N4>,
+                <&kp G>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_PIPE";
         };
@@ -262,11 +262,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N3 &kp KP_N6>,
+                <&kp H>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_DOLLAR";
         };
@@ -276,11 +276,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N3 &kp KP_N5>,
+                <&kp J>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_HASH";
         };
@@ -290,11 +290,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N2 &kp KP_N5 &kp KP_N2>,
+                <&kp K>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_NUM";
         };
@@ -304,11 +304,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N6 &kp KP_N4>,
+                <&kp L>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_AT";
         };
@@ -318,11 +318,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N1 &kp KP_N2 &kp KP_N6>,
+                <&kp Z>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_TILDE";
         };
@@ -332,11 +332,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N9 &kp KP_N4>,
+                <&kp X>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_CARET";
         };
@@ -346,11 +346,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N6 &kp KP_N3>,
+                <&kp C>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_QUESTION";
         };
@@ -360,13 +360,27 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N9 &kp KP_N2>,
+                <&kp V>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_BACKSLASH";
+        };
+
+        alt_ruble: alt_ruble {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F13>,
+                <&macro_tap>,
+                <&kp B>,
+                <&macro_release>,
+                <&kp F13>;
+
+            label = "ALT_RUBLE";
         };
     };
 
