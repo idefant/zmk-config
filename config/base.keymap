@@ -180,7 +180,7 @@
                 <&macro_press>,
                 <&kp F13>,
                 <&macro_tap>,
-                <&kp O>,
+                <&kp P>,
                 <&macro_release>,
                 <&kp F13>;
 
