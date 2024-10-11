@@ -52,11 +52,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N3 &kp KP_N9>,
+                <&kp Q>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_SINGLE_QUOTE";
         };
@@ -66,11 +66,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp F13>,
                 <&macro_tap>,
-                <&kp KP_N3 &kp KP_N4>,
+                <&kp W>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_DOUBLE_QUOTES";
         };
@@ -82,9 +82,9 @@
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp KP_N9 &kp KP_N6>,
+                <&kp E>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp F13>;
 
             label = "ALT_GRAVE";
         };
