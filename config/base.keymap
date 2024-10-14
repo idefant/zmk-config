@@ -50,42 +50,21 @@
         alt_sqt: alt_single_quote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F13>,
-                <&macro_tap>,
-                <&kp Q>,
-                <&macro_release>,
-                <&kp F13>;
-
+            bindings = <&kp RA(Q)>;
             label = "ALT_SINGLE_QUOTE";
         };
 
         alt_dqt: alt_double_quotes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F13>,
-                <&macro_tap>,
-                <&kp W>,
-                <&macro_release>,
-                <&kp F13>;
-
+            bindings = <&kp RA(W)>;
             label = "ALT_DOUBLE_QUOTES";
         };
 
         alt_grave: alt_grave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp F13>,
-                <&macro_tap>,
-                <&kp E>,
-                <&macro_release>,
-                <&kp F13>;
-
+            bindings = <&kp RA(E)>;
             label = "ALT_GRAVE";
         };
 
