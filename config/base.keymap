@@ -488,7 +488,7 @@
         hash_num: hash_num {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&alt_hash>, <&alt_num>;
+            bindings = <&kp RA(N3)>, <&kp RA(LS(N3))>;
 
             mods = <(MOD_LSFT)>;
         };
@@ -496,7 +496,7 @@
         slash_backslash: slash_backslash {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp KP_SLASH>, <&alt_backslash>;
+            bindings = <&kp RA(SLASH)>, <&kp RA(BACKSLASH)>;
 
             mods = <(MOD_LSFT)>;
             label = "SLASH_BACKSLASH";
@@ -542,10 +542,10 @@
 
         SYM {
             bindings = <
-&none  &alt_tilde  &alt_at    &hash_num  &alt_dollar  &none   &alt_dqt    &alt_colon  &alt_semicolon  &kp UNDERSCORE  &alt_question  &alt_pipe
-&none  &alt_lt     &alt_lbrc  &alt_lbkt  &kp LPAR     &none   &alt_sqt    &kp LSHFT   &kp LCTRL       &kp LALT        &kp LGUI       &slash_backslash
-&none  &alt_gt     &alt_rbrc  &alt_rbkt  &kp RPAR     &none   &alt_grave  &alt_dot    &alt_comma      &kp MINUS       &kp EXCL       &alt_amps
-                              &trans     &trans       &trans  &trans      &trans      &trans
+&none  &kp RA(TILDE)         &kp RA(N2)           &hash_num              &kp RA(N4)  &none   &kp RA(DOUBLE_QUOTES)  &kp RA(COLON)  &kp RA(SEMICOLON)  &kp UNDERSCORE  &kp RA(QUESTION)  &kp RA(PIPE)
+&none  &kp RA(LESS_THAN)     &kp RA(LEFT_BRACE)   &kp RA(LEFT_BRACKET)   &kp LPAR    &none   &kp RA(SINGLE_QUOTE)   &kp LSHFT      &kp LCTRL          &kp LALT        &kp LGUI          &slash_backslash
+&none  &kp RA(GREATER_THAN)  &kp RA(RIGHT_BRACE)  &kp RA(RIGHT_BRACKET)  &kp RPAR    &none   &kp RA(GRAVE)          &kp RA(DOT)    &kp RA(COMMA)      &kp MINUS       &kp EXCL          &kp RA(N7)
+                                                  &trans                 &trans      &trans  &trans                 &trans         &trans
             >;
         };
 
