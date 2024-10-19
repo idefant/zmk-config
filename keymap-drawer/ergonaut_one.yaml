@@ -130,41 +130,41 @@ layers:
   - {t: ▽, type: trans}
   SYM:
   - ''
-  - ALT ~
-  - ALT @
+  - AGr+ ~
+  - AGr+ 2
   - '# №'
-  - ALT $
+  - AGr+ 4
   - ''
-  - ALT "
-  - 'ALT :'
-  - ALT ;
+  - AGr+ "
+  - 'AGr+ :'
+  - AGr+ ;
   - _
-  - ALT ?
-  - ALT |
+  - AGr+ ?
+  - AGr+ |
   - ''
-  - ALT <
-  - ALT {
-  - ALT [
+  - AGr+ <
+  - AGr+ {
+  - AGr+ [
   - (
   - ''
-  - ALT '
+  - AGr+ '
   - Shift
   - Ctrl
   - Alt
   - Gui
   - / \
   - ''
-  - ALT >
-  - ALT }
-  - ALT ]
+  - AGr+ >
+  - AGr+ }
+  - AGr+ ]
   - )
   - ''
-  - ALT `
-  - ALT .
-  - ALT ,
+  - AGr+ `
+  - AGr+ .
+  - AGr+ ,
   - '-'
   - '!'
-  - ALT &
+  - AGr+ 7
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
