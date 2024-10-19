@@ -120,8 +120,8 @@ layers:
   - APP
   - ⌫
   - ⌦
-  - ''
-  - ''
+  - '&to_english'
+  - '&to_russian'
   - Caps Lock
   - {t: ▽, type: trans}
   - {type: held}

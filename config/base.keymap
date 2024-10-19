@@ -361,6 +361,20 @@
 
             label = "ALT_RUBLE";
         };
+
+        to_russian: to_russian {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(N2)) &to 1>;
+            label = "TO_RUSSIAN";
+        };
+
+        to_english: to_english {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(N1)) &to 0>;
+            label = "TO_ENGLISH";
+        };
     };
 
     combos {
@@ -733,9 +747,9 @@
 
         NAV {
             bindings = <
-&tabber        &kp LG(TAB)  &swapper   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)  &none      &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp LA(F4)
-&kp LA(LSHFT)  &kp LGUI     &kp LALT   &kp LCTRL         &kp LSHFT          &kp ENTER  &kp RET    &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
-&kp LC(Y)      &kp LC(Z)    &kp LC(X)  &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp K_APP  &kp BSPC  &kp DEL   &none      &none      &kp CAPS
+&tabber        &kp LG(TAB)  &swapper   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)  &none      &kp HOME  &kp UP    &kp END      &kp PG_UP    &kp LA(F4)
+&kp LA(LSHFT)  &kp LGUI     &kp LALT   &kp LCTRL         &kp LSHFT          &kp ENTER  &kp RET    &kp LEFT  &kp DOWN  &kp RIGHT    &kp PG_DN    &none
+&kp LC(Y)      &kp LC(Z)    &kp LC(X)  &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp K_APP  &kp BSPC  &kp DEL   &to_english  &to_russian  &kp CAPS
                                        &trans            &trans             &trans     &trans     &trans    &trans
             >;
         };
