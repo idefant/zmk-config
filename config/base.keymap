@@ -380,112 +380,16 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_dot {
-            bindings = <&alt_dot>;
-            key-positions = <31 19>;
-            layers = <0>;
-        };
-
-        combo_colon {
-            bindings = <&alt_colon>;
-            key-positions = <19 7>;
-            layers = <0>;
-        };
-
-        combo_comma {
-            bindings = <&alt_comma>;
-            key-positions = <20 32>;
-            layers = <0>;
-        };
-
-        combo_semicolon {
-            bindings = <&alt_semicolon>;
-            key-positions = <20 8>;
-            layers = <0>;
-        };
-
-        combo_exclamation {
-            bindings = <&kp EXCL>;
-            key-positions = <21 33>;
-            layers = <0>;
-        };
-
-        combo_question {
-            bindings = <&alt_question>;
-            key-positions = <21 9>;
-            layers = <0>;
-        };
-
-        combo_single_quote {
-            bindings = <&alt_sqt>;
-            key-positions = <18 19>;
-            layers = <0>;
-        };
-
-        combo_double_quotes {
-            bindings = <&alt_dqt>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        combo_grave {
-            bindings = <&alt_grave>;
-            key-positions = <30 31>;
-            layers = <0>;
-        };
-
-        combo_left_bracket {
-            bindings = <&alt_lbkt>;
-            key-positions = <4 5>;
-            layers = <0>;
-        };
-
-        combo_left_brace {
-            bindings = <&alt_lbrc>;
-            key-positions = <28 29>;
-            layers = <0>;
-        };
-
-        combo_left_parenthesis {
-            bindings = <&kp LPAR>;
+        combo_to_english {
+            bindings = <&to_english>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
-        combo_plus {
-            bindings = <&kp KP_PLUS>;
-            key-positions = <16 28>;
-            layers = <0>;
-        };
-
-        combo_minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <16 4>;
-            layers = <0>;
-        };
-
-        combo_multiply {
-            bindings = <&kp KP_MULTIPLY>;
-            key-positions = <15 27>;
-            layers = <0>;
-        };
-
-        combo_divide {
-            bindings = <&kp KP_DIVIDE>;
-            key-positions = <15 3>;
-            layers = <0>;
-        };
-
-        combo_ampersand {
-            bindings = <&alt_amps>;
-            key-positions = <17 29>;
-            layers = <0>;
-        };
-
-        combo_pipe {
-            bindings = <&alt_pipe>;
-            key-positions = <5 17>;
-            layers = <0>;
+        combo_to_russian {
+            bindings = <&to_russian>;
+            key-positions = <18 19>;
+            layers = <0 1>;
         };
     };
 
@@ -747,9 +651,9 @@
 
         NAV {
             bindings = <
-&tabber        &kp LG(TAB)  &swapper   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)  &none      &kp HOME  &kp UP    &kp END      &kp PG_UP    &kp LA(F4)
-&kp LA(LSHFT)  &kp LGUI     &kp LALT   &kp LCTRL         &kp LSHFT          &kp ENTER  &kp RET    &kp LEFT  &kp DOWN  &kp RIGHT    &kp PG_DN    &none
-&kp LC(Y)      &kp LC(Z)    &kp LC(X)  &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp K_APP  &kp BSPC  &kp DEL   &to_english  &to_russian  &kp CAPS
+&tabber        &kp LG(TAB)  &swapper   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)  &none      &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp LA(F4)
+&kp LA(LSHFT)  &kp LGUI     &kp LALT   &kp LCTRL         &kp LSHFT          &kp ENTER  &kp RET    &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
+&kp LC(Y)      &kp LC(Z)    &kp LC(X)  &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp K_APP  &kp BSPC  &kp DEL   &none      &none      &kp CAPS
                                        &trans            &trans             &trans     &trans     &trans    &trans
             >;
         };

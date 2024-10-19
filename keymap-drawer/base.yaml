@@ -119,8 +119,8 @@ layers:
   - APP
   - ⌫
   - ⌦
-  - '&to_english'
-  - '&to_russian'
+  - ''
+  - ''
   - Caps Lock
   - {t: ▽, type: trans}
   - {type: held}
@@ -344,57 +344,9 @@ layers:
   - {type: held}
   - {type: held}
 combos:
-- p: [31, 19]
-  k: ALT .
-  l: [COLEMAK]
-- p: [19, 7]
-  k: 'ALT :'
-  l: [COLEMAK]
-- p: [20, 32]
-  k: ALT ,
-  l: [COLEMAK]
-- p: [20, 8]
-  k: ALT ;
-  l: [COLEMAK]
-- p: [21, 33]
-  k: '!'
-  l: [COLEMAK]
-- p: [21, 9]
-  k: ALT ?
-  l: [COLEMAK]
-- p: [18, 19]
-  k: ALT '
-  l: [COLEMAK]
-- p: [6, 7]
-  k: ALT "
-  l: [COLEMAK]
-- p: [30, 31]
-  k: ALT `
-  l: [COLEMAK]
-- p: [4, 5]
-  k: ALT [
-  l: [COLEMAK]
-- p: [28, 29]
-  k: ALT {
-  l: [COLEMAK]
 - p: [16, 17]
-  k: (
-  l: [COLEMAK]
-- p: [16, 28]
-  k: KP +
-  l: [COLEMAK]
-- p: [16, 4]
-  k: KP -
-  l: [COLEMAK]
-- p: [15, 27]
-  k: KP *
-  l: [COLEMAK]
-- p: [15, 3]
-  k: KP /
-  l: [COLEMAK]
-- p: [17, 29]
-  k: ALT &
-  l: [COLEMAK]
-- p: [5, 17]
-  k: ALT |
-  l: [COLEMAK]
+  k: '&to_english'
+  l: [COLEMAK, JCUKEN]
+- p: [18, 19]
+  k: '&to_russian'
+  l: [COLEMAK, JCUKEN]
