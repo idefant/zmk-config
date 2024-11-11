@@ -1,6 +1,49 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  BASE:
+  COLEMAK:
+  - Esc
+  - Q
+  - W
+  - {t: F, s: E}
+  - {t: P, s: R}
+  - {t: B, s: T}
+  - {t: J, s: Y}
+  - {t: L, s: U}
+  - {t: U, s: I}
+  - {t: Y, s: O}
+  - {t: '''', s: P}
+  - '['
+  - {t: ↹, h: MOUSE}
+  - A
+  - {t: R, s: S}
+  - {t: S, s: D}
+  - {t: T, s: F}
+  - G
+  - {t: M, s: H}
+  - {t: N, s: J}
+  - {t: E, s: K}
+  - {t: I, s: L}
+  - {t: O, s: ;}
+  - ''
+  - Caps Word
+  - Z
+  - X
+  - C
+  - {t: D, s: V}
+  - {t: V, s: B}
+  - {t: K, s: N}
+  - {t: H, s: M}
+  - ','
+  - .
+  - /
+  - ']'
+  - NUM
+  - NAV
+  - ␣
+  - Shift
+  - SYM
+  - FUNC
+  JCUKEN:
   - Esc
   - Q
   - W
@@ -302,57 +345,9 @@ layers:
   - {type: held}
   - {type: held}
 combos:
-- p: [31, 19]
-  k: ALT .
-  l: [BASE]
-- p: [19, 7]
-  k: 'ALT :'
-  l: [BASE]
-- p: [20, 32]
-  k: ALT ,
-  l: [BASE]
-- p: [20, 8]
-  k: ALT ;
-  l: [BASE]
-- p: [21, 33]
-  k: '!'
-  l: [BASE]
-- p: [21, 9]
-  k: ALT ?
-  l: [BASE]
-- p: [18, 19]
-  k: ALT '
-  l: [BASE]
-- p: [6, 7]
-  k: ALT "
-  l: [BASE]
-- p: [30, 31]
-  k: ALT `
-  l: [BASE]
-- p: [4, 5]
-  k: ALT [
-  l: [BASE]
-- p: [28, 29]
-  k: ALT {
-  l: [BASE]
 - p: [16, 17]
-  k: (
-  l: [BASE]
-- p: [16, 28]
-  k: KP +
-  l: [BASE]
-- p: [16, 4]
-  k: KP -
-  l: [BASE]
-- p: [15, 27]
-  k: KP *
-  l: [BASE]
-- p: [15, 3]
-  k: KP /
-  l: [BASE]
-- p: [17, 29]
-  k: ALT &
-  l: [BASE]
-- p: [5, 17]
-  k: ALT |
-  l: [BASE]
+  k: '&to_english'
+  l: [COLEMAK, JCUKEN]
+- p: [18, 19]
+  k: '&to_russian'
+  l: [COLEMAK, JCUKEN]

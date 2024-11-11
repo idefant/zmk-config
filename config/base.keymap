@@ -36,13 +36,13 @@
         compatible = "zmk,conditional-layers";
 
         bluetooth_left {
-            if-layers = <1 2>;
-            then-layer = <6>;
+            if-layers = <2 3>;
+            then-layer = <7>;
         };
 
         bluetooth_right {
-            if-layers = <4 3>;
-            then-layer = <6>;
+            if-layers = <5 4>;
+            then-layer = <7>;
         };
     };
 
@@ -361,117 +361,35 @@
 
             label = "ALT_RUBLE";
         };
+
+        to_russian: to_russian {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(N2)) &to 1>;
+            label = "TO_RUSSIAN";
+        };
+
+        to_english: to_english {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(N1)) &to 0>;
+            label = "TO_ENGLISH";
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        combo_dot {
-            bindings = <&alt_dot>;
-            key-positions = <31 19>;
-            layers = <0>;
-        };
-
-        combo_colon {
-            bindings = <&alt_colon>;
-            key-positions = <19 7>;
-            layers = <0>;
-        };
-
-        combo_comma {
-            bindings = <&alt_comma>;
-            key-positions = <20 32>;
-            layers = <0>;
-        };
-
-        combo_semicolon {
-            bindings = <&alt_semicolon>;
-            key-positions = <20 8>;
-            layers = <0>;
-        };
-
-        combo_exclamation {
-            bindings = <&kp EXCL>;
-            key-positions = <21 33>;
-            layers = <0>;
-        };
-
-        combo_question {
-            bindings = <&alt_question>;
-            key-positions = <21 9>;
-            layers = <0>;
-        };
-
-        combo_single_quote {
-            bindings = <&alt_sqt>;
-            key-positions = <18 19>;
-            layers = <0>;
-        };
-
-        combo_double_quotes {
-            bindings = <&alt_dqt>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        combo_grave {
-            bindings = <&alt_grave>;
-            key-positions = <30 31>;
-            layers = <0>;
-        };
-
-        combo_left_bracket {
-            bindings = <&alt_lbkt>;
-            key-positions = <4 5>;
-            layers = <0>;
-        };
-
-        combo_left_brace {
-            bindings = <&alt_lbrc>;
-            key-positions = <28 29>;
-            layers = <0>;
-        };
-
-        combo_left_parenthesis {
-            bindings = <&kp LPAR>;
+        combo_to_english {
+            bindings = <&to_english>;
             key-positions = <16 17>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
-        combo_plus {
-            bindings = <&kp KP_PLUS>;
-            key-positions = <16 28>;
-            layers = <0>;
-        };
-
-        combo_minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <16 4>;
-            layers = <0>;
-        };
-
-        combo_multiply {
-            bindings = <&kp KP_MULTIPLY>;
-            key-positions = <15 27>;
-            layers = <0>;
-        };
-
-        combo_divide {
-            bindings = <&kp KP_DIVIDE>;
-            key-positions = <15 3>;
-            layers = <0>;
-        };
-
-        combo_ampersand {
-            bindings = <&alt_amps>;
-            key-positions = <17 29>;
-            layers = <0>;
-        };
-
-        combo_pipe {
-            bindings = <&alt_pipe>;
-            key-positions = <5 17>;
-            layers = <0>;
+        combo_to_russian {
+            bindings = <&to_russian>;
+            key-positions = <18 19>;
+            layers = <0 1>;
         };
     };
 
@@ -508,17 +426,226 @@
             #binding-cells = <0>;
             bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
         };
+
+        colemak_e: colemak_e {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_E";
+            bindings = <&kp F>, <&kp E>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_r: colemak_r {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_R";
+            bindings = <&kp P>, <&kp R>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_t: colemak_t {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_T";
+            bindings = <&kp B>, <&kp T>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_s: colemak_s {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_S";
+            bindings = <&kp R>, <&kp S>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_d: colemak_d {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_D";
+            bindings = <&kp S>, <&kp D>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_f: colemak_f {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_F";
+            bindings = <&kp T>, <&kp F>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_v: colemak_v {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_V";
+            bindings = <&kp D>, <&kp V>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_b: colemak_b {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_B";
+            bindings = <&kp V>, <&kp B>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_y: colemak_y {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_Y";
+            bindings = <&kp J>, <&kp Y>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_u: colemak_u {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_U";
+            bindings = <&kp L>, <&kp U>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_i: colemak_i {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_I";
+            bindings = <&kp U>, <&kp I>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_o: colemak_o {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_O";
+            bindings = <&kp Y>, <&kp O>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_p: colemak_p {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_P";
+            bindings = <&kp SQT>, <&kp P>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_h: colemak_h {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_H";
+            bindings = <&kp M>, <&kp H>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_j: colemak_j {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_J";
+            bindings = <&kp N>, <&kp J>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_k: colemak_k {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_K";
+            bindings = <&kp E>, <&kp K>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_l: colemak_l {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_L";
+            bindings = <&kp I>, <&kp L>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_semi: colemak_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_SEMI";
+            bindings = <&kp O>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_n: colemak_n {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_N";
+            bindings = <&kp K>, <&kp N>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
+
+        colemak_m: colemak_m {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLEMAK_M";
+            bindings = <&kp H>, <&kp M>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        BASE {
+        COLEMAK {
+            bindings = <
+&kp ESC     &kp Q  &kp W       &colemak_e  &colemak_r  &colemak_t  &colemak_y  &colemak_u  &colemak_i  &colemak_o  &colemak_p     &kp LBKT
+&lt 6 TAB   &kp A  &colemak_s  &colemak_d  &colemak_f  &kp G       &colemak_h  &colemak_j  &colemak_k  &colemak_l  &colemak_semi  &none
+&caps_word  &kp Z  &kp X       &kp C       &colemak_v  &colemak_b  &colemak_n  &colemak_m  &kp COMMA   &kp DOT     &kp FSLH       &kp RBKT
+                               &mo 3       &mo 2       &kp SPACE   &kp LSHFT   &mo 4       &mo 5
+            >;
+        };
+
+        JCUKEN {
             bindings = <
 &kp ESC     &kp Q  &kp W  &kp E  &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P     &kp LBKT
-&lt 5 TAB   &kp A  &kp S  &kp D  &kp F  &kp G      &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&lt 6 TAB   &kp A  &kp S  &kp D  &kp F  &kp G      &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &caps_word  &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                          &mo 2  &mo 1  &kp SPACE  &kp LSHFT  &mo 3  &mo 4
+                          &mo 3  &mo 2  &kp SPACE  &kp LSHFT  &mo 4  &mo 5
             >;
         };
 
