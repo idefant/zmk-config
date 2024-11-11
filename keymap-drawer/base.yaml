@@ -1,48 +1,5 @@
 layers:
-  COLEMAK:
-  - Esc
-  - Q
-  - W
-  - {t: F, s: E}
-  - {t: P, s: R}
-  - {t: B, s: T}
-  - {t: J, s: Y}
-  - {t: L, s: U}
-  - {t: U, s: I}
-  - {t: Y, s: O}
-  - {t: '''', s: P}
-  - '['
-  - {t: ↹, h: MOUSE}
-  - A
-  - {t: R, s: S}
-  - {t: S, s: D}
-  - {t: T, s: F}
-  - G
-  - {t: M, s: H}
-  - {t: N, s: J}
-  - {t: E, s: K}
-  - {t: I, s: L}
-  - {t: O, s: ;}
-  - ''
-  - Caps Word
-  - Z
-  - X
-  - C
-  - {t: D, s: V}
-  - {t: V, s: B}
-  - {t: K, s: N}
-  - {t: H, s: M}
-  - ','
-  - .
-  - /
-  - ']'
-  - NUM
-  - NAV
-  - ␣
-  - Shift
-  - SYM
-  - FUNC
-  JCUKEN:
+  BASE:
   - Esc
   - Q
   - W
@@ -133,7 +90,7 @@ layers:
   - ''
   - ''
   - ''
-  - ALT ^
+  - AGr+ 6
   - D
   - KP -
   - '7'
@@ -155,8 +112,8 @@ layers:
   - '# №'
   - C
   - '!'
-  - ALT <
-  - ALT >
+  - AGr+ <
+  - AGr+ >
   - '='
   - F
   - KP .
@@ -337,16 +294,57 @@ layers:
   - ''
   - ''
   - Reset
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  COLEMAK:
+  - Esc
+  - Q
+  - W
+  - {t: F, s: E}
+  - {t: P, s: R}
+  - {t: B, s: T}
+  - {t: J, s: Y}
+  - {t: L, s: U}
+  - {t: U, s: I}
+  - {t: Y, s: O}
+  - {t: '''', s: P}
+  - '['
+  - {t: ↹, h: MOUSE}
+  - A
+  - {t: R, s: S}
+  - {t: S, s: D}
+  - {t: T, s: F}
+  - G
+  - {t: M, s: H}
+  - {t: N, s: J}
+  - {t: E, s: K}
+  - {t: I, s: L}
+  - {t: O, s: ;}
+  - ''
+  - Caps Word
+  - Z
+  - X
+  - C
+  - {t: D, s: V}
+  - {t: V, s: B}
+  - {t: K, s: N}
+  - {t: H, s: M}
+  - ','
+  - .
+  - /
+  - ']'
+  - NUM
+  - NAV
+  - ␣
+  - Shift
+  - SYM
+  - FUNC
 combos:
-- p: [16, 17]
-  k: '&to_english'
-  l: [COLEMAK, JCUKEN]
-- p: [18, 19]
-  k: '&to_russian'
-  l: [COLEMAK, JCUKEN]
+- p: [36, 37, 38]
+  k: BT
+- p: [39, 40, 41]
+  k: BT
