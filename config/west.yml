@@ -1,16 +1,16 @@
 manifest:
   remotes:
-    # - name: urob
-    #   url-base: https://github.com/urob
-    # - name: petejohanson
-    #   url-base: https://github.com/petejohanson
+    - name: urob
+      url-base: https://github.com/urob
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
   projects:
-    # - name: zmk
-    #   remote: petejohanson
-    #   revision: feat/pointers-move-scroll
-    #   import: app/west.yml
+    - name: zmk
+      remote: petejohanson
+      revision: feat/pointers-move-scroll
+      import: app/west.yml
     - name: zmk-tri-state
       remote: dhruvinsh
       revision: main
