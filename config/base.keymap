@@ -2,11 +2,14 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20   // 10
 
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define LWR 1
@@ -322,10 +325,10 @@
 
         NUM {
             bindings = <
-&kp A  &none     &none       &none       &kp RA(N6)  &kp D   &kp KP_MINUS  &kp N7  &kp N8  &kp N9  &kp KP_SLASH     &kp UNDER
-&kp B  &kp LGUI  &kp LALT    &kp LCTRL   &kp LSHFT   &kp E   &kp KP_PLUS   &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &hash_num
-&kp C  &kp EXCL  &kp RA(LT)  &kp RA(GT)  &kp EQUAL   &kp F   &kp KP_DOT    &kp N1  &kp N2  &kp N3  &kp N0           &kp PRCNT
-                             &trans      &trans      &trans  &trans        &trans  &trans
+&kp A  &none     &none       &none       &kp RA(N6)  &kp D   &kp MINUS   &kp N7  &kp N8  &kp N9  &kp RA(SLASH)  &kp UNDER
+&kp B  &kp LGUI  &kp LALT    &kp LCTRL   &kp LSHFT   &kp E   &kp PLUS    &kp N4  &kp N5  &kp N6  &kp ASTRK      &hash_num
+&kp C  &kp EXCL  &kp RA(LT)  &kp RA(GT)  &kp EQUAL   &kp F   &kp KP_DOT  &kp N1  &kp N2  &kp N3  &kp N0         &kp PRCNT
+                             &trans      &trans      &trans  &trans      &trans  &trans
             >;
         };
 
