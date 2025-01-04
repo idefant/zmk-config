@@ -2,10 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # - name: urob
-    #   url-base: https://github.com/urob
-    # - name: petejohanson
-    #   url-base: https://github.com/petejohanson
+    - name: ergonautkb
+      url-base: https://github.com/ergonautkb
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
   projects:
@@ -13,10 +11,9 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    # - name: zmk
-    #   remote: petejohanson
-    #   revision: feat/pointers-move-scroll
-    #   import: app/west.yml
+    - name: erdgonautkb-zmk-module
+      remote: ergonautkb
+      revision: main
     - name: zmk-tri-state
       remote: dhruvinsh
       revision: main
