@@ -32,6 +32,11 @@
     trigger-period-ms = <8>;      // 16
 };
 
+&caps_word {
+    /delete-property/ ignore-modifiers;
+    continue-list = <UNDERSCORE BACKSPACE DELETE LSHFT RSHFT>;
+};
+
 / {
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
