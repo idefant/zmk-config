@@ -34,6 +34,7 @@
 
 &caps_word {
     /delete-property/ ignore-modifiers;
+
     continue-list = <UNDERSCORE BACKSPACE DELETE LSHFT RSHFT>;
 };
 
@@ -303,6 +304,15 @@
             mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
             keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
         };
+
+        caps: caps {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CAPS";
+            bindings = <&caps_word>, <&kp CAPS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -310,19 +320,19 @@
 
         BASE {
             bindings = <
-&kp ESC     &kp Q  &kp W  &kp E  &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P     &kp LBKT
-&lt 5 TAB   &kp A  &kp S  &kp D  &kp F  &kp G      &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&caps_word  &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                          &mo 2  &mo 1  &kp SPACE  &kp LSHFT  &mo 3  &mo 4
+&kp ESC    &kp Q  &kp W  &kp E  &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P     &kp LBKT
+&lt 5 TAB  &kp A  &kp S  &kp D  &kp F  &kp G      &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&caps      &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+                         &mo 2  &mo 1  &kp SPACE  &kp LSHFT  &mo 3  &mo 4
             >;
         };
 
         NAV {
             bindings = <
-&none      &kp LC(LS(N2))  &kp LC(LS(N1))  &kp LC(LG(LEFT))      &kp LC(LG(RIGHT))      &swapper   &kp LG(TAB)  &kp HOME  &kp UP    &kp END        &kp PG_UP      &kp LC(HOME)
-&tabber    &kp LGUI        &kp LALT        &kp LCTRL             &kp LSHFT              &kp RET    &kp RET      &kp LEFT  &kp DOWN  &kp RIGHT      &kp PG_DN      &kp LC(END)
-&kp LC(Y)  &kp LC(Z)       &kp LC(X)       &kp LC(C)             &kp LC(V)              &kp LG(V)  &kp LG(D)    &kp BSPC  &kp DEL   &kp LC(PG_UP)  &kp LC(PG_DN)  &kp K_APP 
-                                           &trans                &trans                 &trans     &trans       &trans    &trans
+&none      &kp LC(LS(N2))  &kp LC(LS(N1))  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &swapper   &kp LG(TAB)  &kp HOME  &kp UP    &kp END        &kp PG_UP      &kp LC(HOME)
+&tabber    &kp LGUI        &kp LALT        &kp LCTRL         &kp LSHFT          &kp RET    &kp RET      &kp LEFT  &kp DOWN  &kp RIGHT      &kp PG_DN      &kp LC(END)
+&kp LC(Y)  &kp LC(Z)       &kp LC(X)       &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp LG(D)    &kp BSPC  &kp DEL   &kp LC(PG_UP)  &kp LC(PG_DN)  &kp K_APP
+                                           &trans            &trans             &trans     &trans       &trans    &trans
             >;
         };
 
@@ -337,10 +347,10 @@
 
         SYM {
             bindings = <
-&kp RA(BACKSLASH)  &kp RA(SLASH)         &kp ASTRK            &kp MINUS              &kp PLUS   &hash_num   &kp RA(DOUBLE_QUOTES)  &kp RA(COLON)  &kp RA(SEMICOLON)  &kp UNDERSCORE  &kp RA(QUESTION)  &kp RA(TILDE)
-&kp PERCENT        &kp RA(LESS_THAN)     &kp RA(LEFT_BRACE)   &kp RA(LEFT_BRACKET)   &kp LPAR   &kp RA(N4)  &kp RA(SINGLE_QUOTE)   &kp LSHFT      &kp LCTRL          &kp LALT        &kp LGUI          &kp RA(N7)
-&kp RA(N6)         &kp RA(GREATER_THAN)  &kp RA(RIGHT_BRACE)  &kp RA(RIGHT_BRACKET)  &kp RPAR   &kp RA(N2)  &kp RA(GRAVE)          &kp RA(DOT)    &kp RA(COMMA)      &kp EQUAL       &kp EXCL          &kp RA(PIPE)
-                                                              &trans                 &trans     &trans      &trans                 &trans         &trans
+&kp RA(BACKSLASH)  &kp RA(SLASH)         &kp ASTRK            &kp MINUS              &kp PLUS  &hash_num   &kp RA(DOUBLE_QUOTES)  &kp RA(COLON)  &kp RA(SEMICOLON)  &kp UNDERSCORE  &kp RA(QUESTION)  &kp RA(TILDE)
+&kp PERCENT        &kp RA(LESS_THAN)     &kp RA(LEFT_BRACE)   &kp RA(LEFT_BRACKET)   &kp LPAR  &kp RA(N4)  &kp RA(SINGLE_QUOTE)   &kp LSHFT      &kp LCTRL          &kp LALT        &kp LGUI          &kp RA(N7)
+&kp RA(N6)         &kp RA(GREATER_THAN)  &kp RA(RIGHT_BRACE)  &kp RA(RIGHT_BRACKET)  &kp RPAR  &kp RA(N2)  &kp RA(GRAVE)          &kp RA(DOT)    &kp RA(COMMA)      &kp EQUAL       &kp EXCL          &kp RA(PIPE)
+                                                              &trans                 &trans    &trans      &trans                 &trans         &trans
             >;
         };
 
