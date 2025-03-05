@@ -314,37 +314,37 @@
 
         NAV {
             bindings = <
-&tabber        &kp LG(TAB)  &swapper   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LG(D)  &none      &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp LA(F4)
-&kp LA(LSHFT)  &kp LGUI     &kp LALT   &kp LCTRL         &kp LSHFT          &kp ENTER  &kp RET    &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
-&kp LC(Y)      &kp LC(Z)    &kp LC(X)  &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp K_APP  &kp BSPC  &kp DEL   &none      &none      &kp CAPS
-                                       &trans            &trans             &trans     &trans     &trans    &trans
+&kp LG(TAB)  &kp LC(LS(N2))  &kp LC(LS(N1))  &kp LC(LG(LEFT))      &kp LC(LG(RIGHT))      &swapper  &none      &kp HOME  &kp UP    &kp END        &kp PG_UP      &kp LC(HOME)
+&kp LG(D)    &kp LGUI        &kp LALT        &kp LCTRL             &kp LSHFT              &kp RET   &kp RET    &kp LEFT  &kp DOWN  &kp RIGHT      &kp PG_DN      &kp LC(END)
+&kp CAPS     &none           &none           &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &tabber   &kp K_APP  &kp BSPC  &kp DEL   &kp LC(PG_UP)  &kp LC(PG_DN)  &none 
+                                             &trans                &trans                 &trans    &trans     &trans    &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp A  &none     &none       &none       &kp RA(N6)  &kp D   &kp MINUS   &kp N7  &kp N8  &kp N9  &kp RA(SLASH)  &kp UNDER
-&kp B  &kp LGUI  &kp LALT    &kp LCTRL   &kp LSHFT   &kp E   &kp PLUS    &kp N4  &kp N5  &kp N6  &kp ASTRK      &hash_num
-&kp C  &kp EXCL  &kp RA(LT)  &kp RA(GT)  &kp EQUAL   &kp F   &kp KP_DOT  &kp N1  &kp N2  &kp N3  &kp N0         &kp PRCNT
-                             &trans      &trans      &trans  &trans      &trans  &trans
+&none      &kp A      &kp B      &kp C      &kp D      &kp E      &none   &kp N7  &kp N8  &kp N9  &none       &none
+&none      &kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &kp F      &none   &kp N4  &kp N5  &kp N6  &kp KP_DOT  &none
+&kp LC(Y)  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LG(V)  &none   &kp N1  &kp N2  &kp N3  &kp N0      &none
+                                 &trans     &trans     &trans     &trans  &trans  &trans
             >;
         };
 
         SYM {
             bindings = <
-&none  &kp RA(TILDE)         &kp RA(N2)           &hash_num              &kp RA(N4)  &none   &kp RA(DOUBLE_QUOTES)  &kp RA(COLON)  &kp RA(SEMICOLON)  &kp UNDERSCORE  &kp RA(QUESTION)  &kp RA(PIPE)
-&none  &kp RA(LESS_THAN)     &kp RA(LEFT_BRACE)   &kp RA(LEFT_BRACKET)   &kp LPAR    &none   &kp RA(SINGLE_QUOTE)   &kp LSHFT      &kp LCTRL          &kp LALT        &kp LGUI          &slash_backslash
-&none  &kp RA(GREATER_THAN)  &kp RA(RIGHT_BRACE)  &kp RA(RIGHT_BRACKET)  &kp RPAR    &none   &kp RA(GRAVE)          &kp RA(DOT)    &kp RA(COMMA)      &kp MINUS       &kp EXCL          &kp RA(N7)
-                                                  &trans                 &trans      &trans  &trans                 &trans         &trans
+&kp RA(BACKSLASH)  &kp RA(SLASH)         &kp ASTRK            &kp MINUS              &kp PLUS   &hash_num   &kp RA(DOUBLE_QUOTES)  &kp RA(COLON)  &kp RA(SEMICOLON)  &kp UNDERSCORE  &kp RA(QUESTION)  &kp RA(TILDE)
+&kp PERCENT        &kp RA(LESS_THAN)     &kp RA(LEFT_BRACE)   &kp RA(LEFT_BRACKET)   &kp LPAR   &kp RA(N4)  &kp RA(SINGLE_QUOTE)   &kp LSHFT      &kp LCTRL          &kp LALT        &kp LGUI          &kp RA(N7)
+&kp RA(N6)         &kp RA(GREATER_THAN)  &kp RA(RIGHT_BRACE)  &kp RA(RIGHT_BRACKET)  &kp RPAR   &kp RA(N2)  &kp RA(GRAVE)          &kp RA(DOT)    &kp RA(COMMA)      &kp EQUAL       &kp EXCL          &kp RA(PIPE)
+                                                              &trans                 &trans     &trans      &trans                 &trans         &trans
             >;
         };
 
         FUNC {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none   &none       &kp C_BRI_DN  &kp C_BRI_UP  &none          &none      &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &none   &none       &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI   &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &none   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN  &none
-                        &trans   &trans   &trans  &trans      &trans        &trans
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(EQUAL)  &none       &kp C_BRI_DN  &kp C_BRI_UP  &none          &none      &kp LA(F4)
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(MINUS)  &none       &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI   &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN  &none
+                        &trans   &trans   &trans         &trans      &trans        &trans
             >;
         };
 

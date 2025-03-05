@@ -1,0 +1,351 @@
+layout: {zmk_keyboard: ergonaut_one}
+layers:
+  BASE:
+  - Esc
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - {t: ↹, h: MOUSE}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - Caps Word
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
+  - NUM
+  - NAV
+  - ␣
+  - Shift
+  - SYM
+  - FUNC
+  NAV:
+  - Task View
+  - Ctl+Sft+2
+  - Ctl+Sft+1
+  - Desk Left
+  - Desk Right
+  - Win Next
+  - ''
+  - Home
+  - ↑
+  - End
+  - Page Up
+  - Ctl+Home
+  - Win's Min
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - ⏎
+  - ⏎
+  - ←
+  - ↓
+  - →
+  - Page Down
+  - Ctl+End
+  - Caps Lock
+  - ''
+  - ''
+  - Ctl+[
+  - Ctl+]
+  - Tab Next
+  - APP
+  - ⌫
+  - ⌦
+  - Ctl+Page Up
+  - Ctl+Page Down
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NUM:
+  - ''
+  - A
+  - B
+  - C
+  - D
+  - E
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - ''
+  - ''
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - F
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - KP .
+  - ''
+  - Ctl+Y
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Clipboard
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYM:
+  - AltGr+\
+  - AltGr+/
+  - '*'
+  - '-'
+  - +
+  - '# №'
+  - AltGr+"
+  - 'AltGr+:'
+  - AltGr+;
+  - _
+  - AltGr+?
+  - AltGr+~
+  - '%'
+  - AltGr+<
+  - AltGr+{
+  - AltGr+[
+  - (
+  - AltGr+4
+  - AltGr+'
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - AltGr+7
+  - AltGr+6
+  - AltGr+>
+  - AltGr+}
+  - AltGr+]
+  - )
+  - AltGr+2
+  - AltGr+`
+  - AltGr+.
+  - AltGr+,
+  - '='
+  - '!'
+  - AltGr+|
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  FUNC:
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - Ctl+=
+  - ''
+  - Bright Down
+  - Bright Up
+  - ''
+  - ''
+  - Win Close
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - Ctl+-
+  - ''
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
+  - ''
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - Ctl+0
+  - MUTE
+  - Vol Down
+  - Vol Up
+  - Snipping Tool
+  - Print Screen
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  MOUSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Mouse ↑
+  - Scroll →
+  - Scroll ↑
+  - ''
+  - {type: held}
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - ''
+  - ''
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Left Click
+  - Right Click
+  - Middle Click
+  BT:
+  - Boot
+  - ''
+  - ''
+  - Out USB
+  - Out BLE
+  - ''
+  - ''
+  - Out BLE
+  - Out USB
+  - ''
+  - ''
+  - Boot
+  - BT Clear
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - BT 5
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT Clear
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Reset
+  - {type: held}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  COLEMAK:
+  - Esc
+  - Q
+  - W
+  - {t: F, s: E}
+  - {t: P, s: R}
+  - {t: B, s: T}
+  - {t: J, s: Y}
+  - {t: L, s: U}
+  - {t: U, s: I}
+  - {t: Y, s: O}
+  - {t: '''', s: P}
+  - '['
+  - {t: ↹, h: MOUSE}
+  - A
+  - {t: R, s: S}
+  - {t: S, s: D}
+  - {t: T, s: F}
+  - G
+  - {t: M, s: H}
+  - {t: N, s: J}
+  - {t: E, s: K}
+  - {t: I, s: L}
+  - {t: O, s: ;}
+  - ''
+  - Caps Word
+  - Z
+  - X
+  - C
+  - {t: D, s: V}
+  - {t: V, s: B}
+  - {t: K, s: N}
+  - {t: H, s: M}
+  - ','
+  - .
+  - /
+  - ']'
+  - NUM
+  - NAV
+  - ␣
+  - Shift
+  - SYM
+  - FUNC
+combos:
+- p: [36, 37, 38]
+  k: BT
+- p: [39, 40, 41]
+  k: BT
