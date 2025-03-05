@@ -44,19 +44,19 @@ layers:
   - SYM
   - FUNC
   NAV:
-  - Task View
+  - ''
   - Ctl+Sft+2
   - Ctl+Sft+1
   - Desk Left
   - Desk Right
   - Win Next
-  - ''
+  - Task View
   - Home
   - ↑
   - End
   - Page Up
   - Ctl+Home
-  - Win's Min
+  - Tab Next
   - Gui
   - Alt
   - Ctrl
@@ -68,18 +68,18 @@ layers:
   - →
   - Page Down
   - Ctl+End
-  - Caps Lock
-  - ''
-  - ''
-  - Ctl+[
-  - Ctl+]
-  - Tab Next
-  - APP
+  - Ctl+Y
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Clipboard
+  - Win's Min
   - ⌫
   - ⌦
   - Ctl+Page Up
   - Ctl+Page Down
-  - ''
+  - APP
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -87,19 +87,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
-  - ''
-  - A
-  - B
-  - C
-  - D
-  - E
+  - AltGr+\
+  - AltGr+/
+  - '*'
+  - '-'
+  - +
+  - '# №'
   - ''
   - '7'
   - '8'
   - '9'
   - ''
   - ''
-  - ''
+  - '%'
   - Gui
   - Alt
   - Ctrl
@@ -111,12 +111,12 @@ layers:
   - '6'
   - KP .
   - ''
-  - Ctl+Y
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Clipboard
+  - AltGr+6
+  - A
+  - B
+  - C
+  - D
+  - E
   - ''
   - '1'
   - '2'
