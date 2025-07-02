@@ -313,33 +313,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-
-        volup_zoomin: volup_zoomin {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp LC(EQUAL)>;
-
-            mods = <(MOD_LSFT)>;
-            label = "VOLUP_ZOOMIN";
-        };
-
-        voldn_zoomout: voldn_zoomout {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp C_VOL_DN>, <&kp LC(MINUS)>;
-
-            mods = <(MOD_LSFT)>;
-            label = "VOLDN_ZOOMOUT";
-        };
-
-        mute_zoomdef: mute_zoomdef {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp C_MUTE>, <&kp LC(N0)>;
-
-            mods = <(MOD_LSFT)>;
-            label = "MUTE_ZOOMDEF";
-        };
     };
 
     keymap {
@@ -383,10 +356,10 @@
 
         FUNC {
             bindings = <
-&kp C_BRI_UP  &kp F1  &kp F2   &kp F3   &kp F4   &volup_zoomin   &kp C_AL_WWW   &none      &none      &none          &none      &kp LA(F4)
-&kp C_BRI_DN  &kp F5  &kp F6   &kp F7   &kp F8   &voldn_zoomout  &kp C_AL_CALC  &kp LSHFT  &kp LCTRL  &kp LALT       &kp LGUI   &none
-&none         &kp F9  &kp F10  &kp F11  &kp F12  &mute_zoomdef   &none          &none      &none      &kp LG(LS(S))  &kp PSCRN  &none
-                               &trans   &trans   &trans          &trans         &trans     &trans
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(EQUAL)  &none       &kp C_BRI_DN  &kp C_BRI_UP  &none          &none      &kp LA(F4)
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(MINUS)  &none       &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI   &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN  &none
+                        &trans   &trans   &trans         &trans      &trans        &trans
             >;
         };
 
