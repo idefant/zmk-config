@@ -96,7 +96,7 @@
             bindings = <&kp SPACE>, <&kp RA(SPACE)>;
 
             mods = <(MOD_LSFT)>;
-            label = "ALT_SPACE"
+            label = "ALT_SPACE";
         };
 
         alt_dash: alt_dash {
