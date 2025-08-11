@@ -95,7 +95,7 @@
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp RA(SPACE)>;
 
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LALT|MOD_LCTL)>;
             label = "ALT_SPACE";
         };
 
