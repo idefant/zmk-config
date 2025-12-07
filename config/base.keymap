@@ -87,7 +87,7 @@
             #binding-cells = <0>;
             bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
 
-            ignored-key-positions = <8 19 20 21 39>;
+            ignored-key-positions = <8 16 19 20 21 39>;
         };
 
         alt_space: alt_space {
