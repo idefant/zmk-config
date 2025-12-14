@@ -19,7 +19,7 @@ include:
   # Corne halves built as peripherals for the dongle
   - board: nice_nano
     shield: corne_left
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_SPLIT_BLE_ROLE_PERIPHERAL=y
     artifact-name: dongle-corne-left
   - board: nice_nano
     shield: corne_right
