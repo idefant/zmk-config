@@ -1,0 +1,25 @@
+name: Draw ZMK keymaps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "config/**/*.dtsi"
+      - "keymap_drawer.config.yaml"
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@v0.22.1
+    permissions:
+      contents: write  # allow workflow to commit generated files back to the repo
+    with:
+      # Only draw the main keymap (avoid duplicating the same diagram for dongle keymaps)
+      keymap_patterns: "config/corne.keymap"
+      config_path: "keymap_drawer.config.yaml"
+      output_folder: "keymap-drawer"
+      # Nicely rotated Corne thumb keys
+      draw_args: "corne:'-k corne_rotated'"
+      # Fetch extra west modules (e.g. zmk-tri-state) before parsing
+      west_config_path: "config"
