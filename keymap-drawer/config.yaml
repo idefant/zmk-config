@@ -83,8 +83,8 @@ parse_config:
     '&kp RA(SEMICOLON)': 'ALT ;'
     '&kp RA(N7)': 'ALT &'
     '&kp RA(PIPE)': 'ALT |'
-    '&kp RA(N4)': 'ALT $₽'
-    '&kp RA(N3)': 'ALT #№'
+    '&kp RA(N4)': {t: 'ALT $', s: '(S) ₽'}
+    '&kp RA(N3)': {t: 'ALT #', s: '(S) №'}
     '&kp RA(N2)': 'ALT @'
     '&kp RA(TILDE)': 'ALT ~'
     '&kp RA(N6)': 'ALT ^'
@@ -92,7 +92,8 @@ parse_config:
     '&kp RA(SLASH)': 'ALT /'
     '&kp RA(BACKSLASH)': 'ALT \'
 
-    '&alt_dash': 'ALT --'
+    '&alt_dash': {t: '-', s: (S) NB}
+    '&alt_space': {t: '␣', s: (CA) NB}
 
     '&kp LC(Z)': Undo
     '&kp LC(Y)': Redo
