@@ -17,7 +17,7 @@ jobs:
     with:
       # Only draw the main keymap (avoid duplicating the same diagram for dongle keymaps)
       keymap_patterns: "config/corne.keymap"
-      config_path: "keymap_drawer.config.yaml"
+      config_path: "keymap-drawer/config.yaml"
       output_folder: "keymap-drawer"
       # Nicely rotated Corne thumb keys
       draw_args: "corne:'-k corne_rotated'"

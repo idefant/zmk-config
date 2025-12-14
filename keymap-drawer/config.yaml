@@ -1,0 +1,217 @@
+# Optional configuration for keymap-drawer.
+# You can leave this file as-is; it mainly exists so the workflow can be customized later.
+# Docs: https://github.com/caksoylar/keymap-drawer/blob/main/CONFIGURATION.md
+
+# parse_config:
+#   # ZMK keymaps are preprocessed; this just keeps the defaults explicit.
+#   zmk_preamble: "#define KEYMAP_DRAWER"
+
+draw_config:
+  # Keep defaults. Add styling / glyphs later if you want.
+  # style_layer_activators: false
+  shrink_wide_legends: 11
+
+# configuration for https://github.com/caksoylar/keymap-drawer
+parse_config:
+  zmk_preamble: "#define KEYMAP_DRAWER"
+  raw_binding_map:
+    '&sys_reset': Reset
+    '&bootloader': Boot
+    '&swapper': Win Next
+    '&tabber': Tab Next
+    '&caps_word': Caps Word
+    '&inv_qm': ¿
+    '&hash_num': '# №'
+    '&slash_backslash': '/ \'
+    '&kp LA(LSHFT)': Lang Next
+    '&kp LG(TAB)': Task View
+
+    '&kp LC(LG(LEFT))': Desk Left
+    '&kp LC(LG(RIGHT))': Desk Right
+    '&kp LC(TAB)': Tab Right
+    '&kp LC(LS(TAB))': Tab Left
+    '&kp LA(F4)': Win Close
+    '&kp LC(F4)': Tab Close
+    '&kp LS(TAB)': Win Prev
+    '&kp LS(INS)': Paste
+    '&kp LG(L)': Lock
+    '&kp LG(LS(S))': Snipping Tool
+    '&kp LG(V)': Clipboard
+    '&kp LG(D)': Win's Min
+
+    '&out OUT_USB': Out USB
+    '&out OUT_BLE': Out BLE
+
+    '&bt BT_SEL 0': BT 1
+    '&bt BT_SEL 1': BT 2
+    '&bt BT_SEL 2': BT 3
+    '&bt BT_SEL 3': BT 4
+    '&bt BT_SEL 4': BT 5
+    '&bt BT_CLR': BT Clear
+
+    '&mmv MOVE_UP': Mouse ↑
+    '&mmv MOVE_DOWN': Mouse ↓
+    '&mmv MOVE_LEFT': Mouse ←
+    '&mmv MOVE_RIGHT': Mouse →
+
+    '&msc SCRL_UP': Scroll ↑
+    '&msc SCRL_DOWN': Scroll ↓
+    '&msc SCRL_LEFT': Scroll ←
+    '&msc SCRL_RIGHT': Scroll →
+
+    '&mkp LCLK': Left Click
+    '&mkp RCLK': Right Click
+    '&mkp MCLK': Middle Click
+    '&mkp MB4': Back Click
+    '&mkp MB5': Forward Click
+
+    # Alt codes
+    '&alt_sqt': "ALT '"
+    '&alt_dqt': 'ALT "'
+    '&alt_grave': 'ALT `'
+    '&alt_lbkt': 'ALT ['
+    '&alt_rbkt': 'ALT ]'
+    '&alt_lbrc': 'ALT {'
+    '&alt_rbrc': 'ALT }'
+    '&alt_lt': 'ALT <'
+    '&alt_gt': 'ALT >'
+    '&alt_comma': 'ALT ,'
+    '&alt_dot': 'ALT .'
+    '&alt_colon': 'ALT :'
+    '&alt_semicolon': 'ALT ;'
+    '&alt_amps': 'ALT &'
+    '&alt_pipe': 'ALT |'
+    '&alt_dollar': 'ALT $'
+    '&alt_hash': 'ALT #'
+    '&alt_num': 'ALT №'
+    '&alt_at': 'ALT @'
+    '&alt_tilde': 'ALT ~'
+    '&alt_caret': 'ALT ^'
+    '&alt_question': 'ALT ?'
+    '&alt_backslash': 'ALT \'
+
+  zmk_combos:
+    combo_tab:    {align: top, o: 0.15}
+    combo_del:    {align: top, o: 0.15}
+    combo_f12:    {align: bottom}
+    combo_btclr:  {align: bottom}
+    combo_play:   {align: right}
+    combo_capswd: {draw_separate: true}
+
+  zmk_keycode_map:
+    # custom mappings
+    C_VOL_UP: Vol Up
+    C_VOL_DN: Vol Down
+    C_BRI_UP: Bright Up
+    C_BRI_DN: Bright Down
+    C_AL_CALC: Calc
+
+    LCTRL: Ctrl
+    RCTRL: Ctrl
+    LALT: Alt
+    RALT: Alt
+    LGUI: Gui
+    RGUI: Gui
+    LSHFT: Shift
+    RSHFT: Shift
+    ESC: Esc
+    SPACE: ␣
+    BSPC: ⌫
+    RET: ⏎
+    TAB: ↹
+    DEL: ⌦
+
+    PG_UP: Page Up
+    PG_DN: Page Down
+    INS: Insert
+    HOME: Home
+    END: End
+    CAPS: Caps Lock
+    PSCRN: Print Screen
+    PAUSE_BREAK: Pause Break
+
+    UP: ↑
+    DOWN: ↓
+    LEFT: ←
+    RIGHT: →
+
+    C_PP: ⏯
+    C_NEXT: ⏭️
+    C_PREV: ⏮️
+
+    # defaults
+    AMPERSAND: '&'
+    AMPS: '&'
+    APOS: "'"
+    APOSTROPHE: "'"
+    ASTERISK: '*'
+    ASTRK: '*'
+    AT: '@'
+    AT_SIGN: '@'
+    BACKSLASH: \
+    BSLH: \
+    CARET: ^
+    COLON: ':'
+    COMMA: ','
+    DLLR: $
+    DOLLAR: $
+    DOT: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    EQUAL: '='
+    EXCL: '!'
+    EXCLAMATION: '!'
+    FSLH: /
+    GRAVE: '`'
+    GREATER_THAN: '>'
+    GT: '>'
+    HASH: '#'
+    LBKT: '['
+    LBRC: '{'
+    LEFT_BRACE: '{'
+    LEFT_BRACKET: '['
+    LEFT_PARENTHESIS: (
+    LESS_THAN: <
+    LPAR: (
+    LT: <
+    MINUS: '-'
+    NON_US_BACKSLASH: \
+    NON_US_BSLH: '|'
+    NON_US_HASH: '#'
+    NUHS: '#'
+    PERCENT: '%'
+    PERIOD: .
+    PIPE: '|'
+    PIPE2: '|'
+    PLUS: +
+    POUND: '#'
+    PRCNT: '%'
+    QMARK: '?'
+    QUESTION: '?'
+    RBKT: ']'
+    RBRC: '}'
+    RIGHT_BRACE: '}'
+    RIGHT_BRACKET: ']'
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    SEMI: ;
+    SEMICOLON: ;
+    SINGLE_QUOTE: ''''
+    SLASH: /
+    SQT: ''''
+    STAR: '*'
+    TILDE: '~'
+    TILDE2: '~'
+    UNDER: _
+    UNDERSCORE: _
+
+    KP_MULTIPLY: 'KP *'
+    KP_SLASH: 'KP /'
+    KP_DIVIDE: 'KP /'
+    KP_PLUS: 'KP +'
+    KP_MINUS: 'KP -'
+    KP_DOT: 'KP .'
+
+# draw_config:
+#   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
+#   dark_mode: auto
