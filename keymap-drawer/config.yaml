@@ -30,8 +30,12 @@ parse_config:
     '&kp LC(LG(LEFT))': Desk Left
     '&kp LC(LG(RIGHT))': Desk Right
     '&kp LA(F4)': Win Close
-
     '&kp LC(F4)': Tab Close
+    '&kp LC(HOME)': First Line
+    '&kp LC(END)': Last Line
+    '&kp LC(PG_UP)': Prev Tab
+    '&kp LC(PG_DN)': Next Tab
+    '&kp K_APP': Menu
     
     '&kp LG(LS(S))': Snipping Tool
     '&kp LG(V)': Clip board
@@ -79,19 +83,26 @@ parse_config:
     '&kp RA(SEMICOLON)': 'ALT ;'
     '&kp RA(N7)': 'ALT &'
     '&kp RA(PIPE)': 'ALT |'
-    '&kp RA(N4)': { t: 'ALT $', s: ₽ }
-    '&kp RA(N3)': { t: 'ALT #', s: № }
+    '&kp RA(N4)': 'ALT $₽'
+    '&kp RA(N3)': 'ALT #№'
     '&kp RA(N2)': 'ALT @'
     '&kp RA(TILDE)': 'ALT ~'
     '&kp RA(N6)': 'ALT ^'
     '&kp RA(QUESTION)': 'ALT ?'
+    '&kp RA(SLASH)': 'ALT /'
     '&kp RA(BACKSLASH)': 'ALT \'
+
+    '&alt_dash': 'ALT --'
 
     '&kp LC(Z)': Undo
     '&kp LC(Y)': Redo
     '&kp LC(X)': Cut
     '&kp LC(C)': Copy
     '&kp LC(V)': Paste
+
+    '&kp LC(EQUAL)': Zoom In
+    '&kp LC(MINUS)': Zoom Out
+    '&kp LC(N0)': Zoom Default
 
   zmk_combos:
     combo_tab:    {align: top, o: 0.15}
