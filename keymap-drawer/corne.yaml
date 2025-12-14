@@ -55,7 +55,7 @@ layers:
   - ↑
   - End
   - Page Up
-  - Ctl+Home
+  - First Line
   - Tabber
   - Gui
   - Alt
@@ -67,7 +67,7 @@ layers:
   - ↓
   - →
   - Page Down
-  - Ctl+End
+  - Last Line
   - Redo
   - Undo
   - Cut
@@ -77,9 +77,9 @@ layers:
   - Show Desk
   - ⌫
   - ⌦
-  - Ctl+Page Up
-  - Ctl+Page Down
-  - APP
+  - Prev Tab
+  - Next Tab
+  - Menu
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -88,11 +88,11 @@ layers:
   - {t: ▽, type: trans}
   NUM:
   - ALT \
-  - AltGr+/
+  - ALT /
   - '*'
   - '-'
   - +
-  - {t: 'ALT #', s: №}
+  - 'ALT #№'
   - ''
   - '7'
   - '8'
@@ -131,11 +131,11 @@ layers:
   - {t: ▽, type: trans}
   SYM:
   - ALT \
-  - AltGr+/
+  - ALT /
   - '*'
-  - {t: '-', s: AltGr+-}
+  - ALT --
   - +
-  - {t: 'ALT #', s: №}
+  - 'ALT #№'
   - ALT "
   - 'ALT :'
   - ALT ;
@@ -147,7 +147,7 @@ layers:
   - ALT {
   - ALT [
   - (
-  - {t: ALT $, s: ₽}
+  - ALT $₽
   - ALT '
   - Shift
   - Ctrl
@@ -178,7 +178,7 @@ layers:
   - F2
   - F3
   - F4
-  - Ctl+=
+  - Zoom In
   - Bright Up
   - ''
   - ''
@@ -190,7 +190,7 @@ layers:
   - F6
   - F7
   - F8
-  - Ctl+-
+  - Zoom Out
   - Bright Down
   - Shift
   - Ctrl
@@ -202,7 +202,7 @@ layers:
   - F10
   - F11
   - F12
-  - Ctl+0
+  - Zoom Default
   - MUTE
   - Vol Down
   - Vol Up
