@@ -66,30 +66,32 @@ parse_config:
     # Alt codes
     '&kp RA(SINGLE_QUOTE)': "ALT '"
     '&kp RA(DOUBLE_QUOTES)': 'ALT "'
-    '&alt_grave': 'ALT `'
-    '&alt_lbkt': 'ALT ['
-    '&alt_rbkt': 'ALT ]'
-    '&alt_lbrc': 'ALT {'
-    '&alt_rbrc': 'ALT }'
-    '&alt_lt': 'ALT <'
-    '&alt_gt': 'ALT >'
-    '&alt_comma': 'ALT ,'
-    '&alt_dot': 'ALT .'
-    '&alt_colon': 'ALT :'
-    '&alt_semicolon': 'ALT ;'
-    '&alt_amps': 'ALT &'
-    '&alt_pipe': 'ALT |'
-    '&alt_dollar': 'ALT $'
-    '&alt_hash': 'ALT #'
-    '&alt_num': 'ALT №'
-    '&alt_at': 'ALT @'
-    '&alt_tilde': 'ALT ~'
-    '&alt_caret': 'ALT ^'
-    '&alt_question': 'ALT ?'
-    '&alt_backslash': 'ALT \'
+    '&kp RA(GRAVE)': 'ALT `'
+    '&kp RA(LEFT_BRACKET)': 'ALT ['
+    '&kp RA(RIGHT_BRACKET)': 'ALT ]'
+    '&kp RA(LEFT_BRACE)': 'ALT {'
+    '&kp RA(RIGHT_BRACE)': 'ALT }'
+    '&kp RA(LESS_THAN)': 'ALT <'
+    '&kp RA(GREATER_THAN)': 'ALT >'
+    '&kp RA(COMMA)': 'ALT ,'
+    '&kp RA(DOT)': 'ALT .'
+    '&kp RA(COLON)': 'ALT :'
+    '&kp RA(SEMICOLON)': 'ALT ;'
+    '&kp RA(N7)': 'ALT &'
+    '&kp RA(PIPE)': 'ALT |'
+    '&kp RA(N4)': { t: 'ALT $', s: ₽ }
+    '&kp RA(N3)': { t: 'ALT #', s: № }
+    '&kp RA(N2)': 'ALT @'
+    '&kp RA(TILDE)': 'ALT ~'
+    '&kp RA(N6)': 'ALT ^'
+    '&kp RA(QUESTION)': 'ALT ?'
+    '&kp RA(BACKSLASH)': 'ALT \'
 
     '&kp LC(Z)': Undo
     '&kp LC(Y)': Redo
+    '&kp LC(X)': Cut
+    '&kp LC(C)': Copy
+    '&kp LC(V)': Paste
 
   zmk_combos:
     combo_tab:    {align: top, o: 0.15}
