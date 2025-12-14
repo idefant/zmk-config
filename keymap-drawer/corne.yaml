@@ -68,8 +68,8 @@ layers:
   - →
   - Page Down
   - Ctl+End
-  - Ctl+Y
-  - Ctl+Z
+  - Redo
+  - Undo
   - Ctl+X
   - Ctl+C
   - Ctl+V
