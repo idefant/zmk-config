@@ -3,7 +3,14 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = &dongle_layout;
+        zmk,matrix_transform = &default_transform; /* можно оставить */
+    };
+
+    dongle_layout: dongle_layout_0 {
+        compatible = "zmk,physical-layout";
+        kscan = <&mock_kscan>;
+        transform = <&default_transform>;
     };
 
     mock_kscan: mock_kscan_0 {
