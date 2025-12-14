@@ -2,20 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # - name: ergonautkb
-    #   url-base: https://github.com/ergonautkb
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3
       import: app/west.yml
-    # - name: ergonautkb-zmk-module
-    #   remote: ergonautkb
-    #   revision: main
     - name: zmk-tri-state
       remote: dhruvinsh
-      revision: main
+      revision: ebbc1f0ccdb51669650bb0ac3e34920d09e62400 # Mar 17, 2025
   self:
     path: config

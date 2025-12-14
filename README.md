@@ -1,29 +1,16 @@
-# ZMK Firmware for Ergonaut One keyboard
+# ZMK Firmware for Corne
 
-This is a repository for a ZMK Firmware for Ergonaut One keyboard.
+This is a repository for a ZMK Firmware for Corne keyboard.
 
-## Default keymap
+## Keymap
 
-Visual representation of the default keymap in keyboard-layout-editor: [KLE](http://www.keyboard-layout-editor.com/#/gists/13d0f7ae7a8b5835efcd23d61f50336a)
-
-Below representation was generated with [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) – check out the automatically generated layouts using the [automated Github workflow](https://github.com/caksoylar/keymap-drawer/tree/main#setting-up-an-automated-drawing-workflow) for each keyboard in the [`keymap-drawer` folder](keymap-drawer/), which is always up to date with the config.
-
-![Keymap Representation](./keymap-drawer/keymap.svg?raw=true "Keymap Representation")
-
-This layout is heavily inspired from [Watchman 42-key layout](https://github.com/aroum/Watchman-layouts)
+![Keymap Representation](./keymap-drawer/corne.svg?raw=true "Keymap Representation")
 
 ## FAQ
 
-- [FAQ](#faq)
-  - [How to change the keymap?](#how-to-change-the-keymap)
-  - [How to flash the keyboard?](#how-to-flash-the-keyboard)
-  - [How to pair halves?](#how-to-pair-halves)
-  - [Problems](#problems)
-    - [I'm getting File Transfer Error after copying firmware to the keyboard](#im-getting-file-transfer-error-after-copying-firmware-to-the-keyboard)
-
 ### How to change the keymap?
 
-1. Fork or use this repository as a template https://github.com/ergonautkb/one-zmk-config.
+1. Fork this repository.
 2. Enable Github Actions for your repository.
 
 You have two options on how to configure your desired keymap:
@@ -37,15 +24,29 @@ You have two options on how to configure your desired keymap:
 
 #### Option 2. Manual
 
-1. Make changes to the [ergonaut_one.keymap](config/ergonaut_one.keymap) file using your favorite text editor.
+1. Make changes to the [corne.keymap](config/corne.keymap) file using your favorite text editor.
 2. Commit changes to your repository.
 3. Go to `Actions` tab in your Github repository, locate the latest build and wait for it to complete.
 4. Grab the `firmware.zip` archive
 
+### About firmware
+
+#### If you use dongle
+
+If you use nice!nano controller for dongle, load `corne_central_dongle-nice_nano-zmk.uf2`.
+
+If you use xiao for dongle, load `corne_central_dongle-xiao_ble-zmk.uf2`.
+
+Also, if you use dongle load "peripheral" uf2 for left and right parts.
+
+#### If you don't use dongle
+
+Load `corne_central_left-nice_nano-zmk.uf2` on the left part and `corne_peripheral_right-nice_nano-zmk.uf2` for the right part.
+
 ### How to flash the keyboard?
 
 1. Obtain `firmware.zip`
-2. Unzip `firmware.zip` - you should have `ergonaut_one_left-seeeduino_xiao_ble-zmk.uf2` and `ergonaut_one_right-seeeduino_xiao_ble-zmk.uf2` files
+2. Unzip `firmware.zip`
 3. Turn off the power for selected halve (move slider to position `OFF`)
 4. Connect selected halve to the PC via USB-C cable
 5. Press `RESET` button **twice** to enter DFU mode - you should see new USB device in your file manager
