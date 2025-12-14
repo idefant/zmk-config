@@ -1,0 +1,308 @@
+layout: {zmk_keyboard: corne}
+layers:
+  BASE:
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - {t: TAB, h: MOUSE}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - {t: '&caps_word', s: CAPS}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ']'
+  - NUM
+  - NAV
+  - {t: SPACE, s: AltGr+SPACE}
+  - LSHFT
+  - SYM
+  - FUNC
+  NAV:
+  - ''
+  - Ctl+Sft+2
+  - Ctl+Sft+1
+  - Ctl+Gui+LEFT
+  - Ctl+Gui+RIGHT
+  - '&swapper'
+  - Gui+TAB
+  - HOME
+  - UP
+  - END
+  - PG UP
+  - Ctl+HOME
+  - '&tabber'
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - RET
+  - RET
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PG DN
+  - Ctl+END
+  - Ctl+Y
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Gui+V
+  - Gui+D
+  - BSPC
+  - DEL
+  - Ctl+PG UP
+  - Ctl+PG DN
+  - APP
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NUM:
+  - AltGr+\
+  - AltGr+/
+  - '*'
+  - '-'
+  - +
+  - AltGr+3
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - ''
+  - '%'
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - F
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - KP DOT
+  - ''
+  - AltGr+6
+  - A
+  - B
+  - C
+  - D
+  - E
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYM:
+  - AltGr+\
+  - AltGr+/
+  - '*'
+  - {t: '-', s: AltGr+-}
+  - +
+  - AltGr+3
+  - AltGr+"
+  - 'AltGr+:'
+  - AltGr+;
+  - _
+  - AltGr+?
+  - AltGr+~
+  - '%'
+  - AltGr+<
+  - AltGr+{
+  - AltGr+[
+  - (
+  - AltGr+4
+  - AltGr+'
+  - LSHFT
+  - LCTRL
+  - LALT
+  - LGUI
+  - AltGr+7
+  - AltGr+6
+  - AltGr+>
+  - AltGr+}
+  - AltGr+]
+  - )
+  - AltGr+2
+  - AltGr+`
+  - AltGr+.
+  - AltGr+,
+  - '='
+  - '!'
+  - AltGr+|
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  FUNC:
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - Ctl+=
+  - BRI UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - Alt+F4
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - Ctl+-
+  - BRI DN
+  - LSHFT
+  - LCTRL
+  - LALT
+  - LGUI
+  - ''
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - Ctl+0
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - Gui+Sft+S
+  - PSCRN
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  MOUSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&msc SCRL_LEFT'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_RIGHT'
+  - '&msc SCRL_UP'
+  - ''
+  - {type: held}
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - ''
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_DOWN'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  BT:
+  - '&bootloader'
+  - ''
+  - ''
+  - OUT USB
+  - OUT BLE
+  - ''
+  - ''
+  - OUT BLE
+  - OUT USB
+  - ''
+  - ''
+  - '&bootloader'
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: BT, h: '4'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '0'}
+  - BT CLR
+  - '&sys_reset'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
+  - {type: held}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [36, 37, 38]
+  k: BT
+- p: [39, 40, 41]
+  k: BT
