@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   BASE:
-  - ESC
+  - Esc
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - {t: TAB, h: MOUSE}
+  - {t: ↹, h: MOUSE}
   - A
   - S
   - D
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: '&caps_word', s: CAPS}
+  - {t: Caps Word, s: Caps Lock}
   - Z
   - X
   - C
@@ -39,46 +39,46 @@ layers:
   - ']'
   - NUM
   - NAV
-  - {t: SPACE, s: AltGr+SPACE}
-  - LSHFT
+  - {t: ␣, s: AltGr+␣}
+  - Shift
   - SYM
   - FUNC
   NAV:
   - ''
   - Ctl+Sft+2
   - Ctl+Sft+1
-  - Ctl+Gui+LEFT
-  - Ctl+Gui+RIGHT
-  - '&swapper'
-  - Gui+TAB
-  - HOME
-  - UP
-  - END
-  - PG UP
-  - Ctl+HOME
-  - '&tabber'
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
-  - RET
-  - RET
-  - LEFT
-  - DOWN
-  - RIGHT
-  - PG DN
-  - Ctl+END
+  - Desk Left
+  - Desk Right
+  - Win Next
+  - Task View
+  - Home
+  - ↑
+  - End
+  - Page Up
+  - Ctl+Home
+  - Tab Next
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - ⏎
+  - ⏎
+  - ←
+  - ↓
+  - →
+  - Page Down
+  - Ctl+End
   - Ctl+Y
   - Ctl+Z
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - Gui+V
-  - Gui+D
-  - BSPC
-  - DEL
-  - Ctl+PG UP
-  - Ctl+PG DN
+  - Clipboard
+  - Win's Min
+  - ⌫
+  - ⌦
+  - Ctl+Page Up
+  - Ctl+Page Down
   - APP
   - {t: ▽, type: trans}
   - {type: held}
@@ -100,16 +100,16 @@ layers:
   - ''
   - ''
   - '%'
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
   - F
   - ''
   - '4'
   - '5'
   - '6'
-  - KP DOT
+  - KP .
   - ''
   - AltGr+6
   - A
@@ -149,10 +149,10 @@ layers:
   - (
   - AltGr+4
   - AltGr+'
-  - LSHFT
-  - LCTRL
-  - LALT
-  - LGUI
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
   - AltGr+7
   - AltGr+6
   - AltGr+>
@@ -179,23 +179,23 @@ layers:
   - F3
   - F4
   - Ctl+=
-  - BRI UP
+  - Bright Up
   - ''
   - ''
   - ''
   - ''
-  - Alt+F4
+  - Win Close
   - ''
   - F5
   - F6
   - F7
   - F8
   - Ctl+-
-  - BRI DN
-  - LSHFT
-  - LCTRL
-  - LALT
-  - LGUI
+  - Bright Down
+  - Shift
+  - Ctrl
+  - Alt
+  - Gui
   - ''
   - ''
   - F9
@@ -204,10 +204,10 @@ layers:
   - F12
   - Ctl+0
   - MUTE
-  - VOL DN
-  - VOL UP
-  - Gui+Sft+S
-  - PSCRN
+  - Vol Down
+  - Vol Up
+  - Snipping Tool
+  - Print Screen
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -223,22 +223,22 @@ layers:
   - ''
   - ''
   - ''
-  - '&msc SCRL_LEFT'
-  - '&mmv MOVE_UP'
-  - '&msc SCRL_RIGHT'
-  - '&msc SCRL_UP'
+  - Scroll ←
+  - Mouse ↑
+  - Scroll →
+  - Scroll ↑
   - ''
   - {type: held}
-  - LGUI
-  - LALT
-  - LCTRL
-  - LSHFT
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
   - ''
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&msc SCRL_DOWN'
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - Scroll ↓
   - ''
   - ''
   - ''
@@ -255,38 +255,35 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp MCLK'
+  - Left Click
+  - Right Click
+  - Middle Click
   BT:
-  - '&bootloader'
+  - Boot
   - ''
   - ''
-  - OUT USB
-  - OUT BLE
+  - Out USB
+  - Out BLE
   - ''
   - ''
-  - OUT BLE
-  - OUT USB
+  - Out BLE
+  - Out USB
   - ''
   - ''
-  - '&bootloader'
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: BT, h: '4'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '0'}
-  - BT CLR
-  - '&sys_reset'
-  - ''
-  - ''
-  - ''
+  - Boot
+  - BT Clear
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - BT 5
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT Clear
+  - Reset
   - ''
   - ''
   - ''
@@ -294,7 +291,10 @@ layers:
   - ''
   - ''
   - ''
-  - '&sys_reset'
+  - ''
+  - ''
+  - ''
+  - Reset
   - {type: held}
   - {type: held}
   - {type: held}
