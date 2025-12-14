@@ -300,7 +300,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">␣</text>
-<text x="0" y="-38" class="key shifted">AltGr+␣</text>
+<text x="0" y="-38" class="key shifted">(CA) NB</text>
 </g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -577,8 +577,9 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(308, 42)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">ALT</tspan><tspan x="0" dy="1.2em">#№</tspan>
+<tspan x="0" dy="-0.0em">ALT</tspan><tspan x="0" dy="1.2em">#</tspan>
 </text>
+<text x="0" y="-24" class="key shifted">(S) №</text>
 </g>
 <g transform="translate(532, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -759,9 +760,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(196, 28)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">ALT</tspan><tspan x="0" dy="1.2em">--</tspan>
-</text>
+<text x="0" y="0" class="key tap">-</text>
+<text x="0" y="-24" class="key shifted">(S) NB</text>
 </g>
 <g transform="translate(252, 35)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -770,8 +770,9 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(308, 42)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">ALT</tspan><tspan x="0" dy="1.2em">#№</tspan>
+<tspan x="0" dy="-0.0em">ALT</tspan><tspan x="0" dy="1.2em">#</tspan>
 </text>
+<text x="0" y="-24" class="key shifted">(S) №</text>
 </g>
 <g transform="translate(532, 42)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -836,8 +837,9 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(308, 98)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">ALT</tspan><tspan x="0" dy="1.2em">$₽</tspan>
+<tspan x="0" dy="-0.0em">ALT</tspan><tspan x="0" dy="1.2em">$</tspan>
 </text>
+<text x="0" y="-24" class="key shifted">(S) ₽</text>
 </g>
 <g transform="translate(532, 98)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

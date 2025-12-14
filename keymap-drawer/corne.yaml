@@ -39,7 +39,7 @@ layers:
   - ']'
   - NUM
   - NAV
-  - {t: ␣, s: AltGr+␣}
+  - {t: ␣, s: (CA) NB}
   - Shift
   - SYM
   - FUNC
@@ -92,7 +92,7 @@ layers:
   - '*'
   - '-'
   - +
-  - 'ALT #№'
+  - {t: 'ALT #', s: (S) №}
   - ''
   - '7'
   - '8'
@@ -133,9 +133,9 @@ layers:
   - ALT \
   - ALT /
   - '*'
-  - ALT --
+  - {t: '-', s: (S) NB}
   - +
-  - 'ALT #№'
+  - {t: 'ALT #', s: (S) №}
   - ALT "
   - 'ALT :'
   - ALT ;
@@ -147,7 +147,7 @@ layers:
   - ALT {
   - ALT [
   - (
-  - ALT $₽
+  - {t: ALT $, s: (S) ₽}
   - ALT '
   - Shift
   - Ctrl
