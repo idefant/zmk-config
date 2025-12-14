@@ -18,27 +18,24 @@ parse_config:
   raw_binding_map:
     '&sys_reset': Reset
     '&bootloader': Boot
-    '&swapper': Win Next
-    '&tabber': Tab Next
+    '&swapper': Swapper
+    '&tabber': Tabber
     '&caps_word': Caps Word
-    '&inv_qm': ¿
-    '&hash_num': '# №'
-    '&slash_backslash': '/ \'
     '&kp LA(LSHFT)': Lang Next
     '&kp LG(TAB)': Task View
+    
+    '&kp LC(LS(N2))': RU JCUKEN
+    '&kp LC(LS(N1))': EN QWERTY
 
     '&kp LC(LG(LEFT))': Desk Left
     '&kp LC(LG(RIGHT))': Desk Right
-    '&kp LC(TAB)': Tab Right
-    '&kp LC(LS(TAB))': Tab Left
     '&kp LA(F4)': Win Close
+
     '&kp LC(F4)': Tab Close
-    '&kp LS(TAB)': Win Prev
-    '&kp LS(INS)': Paste
-    '&kp LG(L)': Lock
+    
     '&kp LG(LS(S))': Snipping Tool
-    '&kp LG(V)': Clipboard
-    '&kp LG(D)': Win's Min
+    '&kp LG(V)': Clip board
+    '&kp LG(D)': Show Desk
 
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
@@ -67,8 +64,8 @@ parse_config:
     '&mkp MB5': Forward Click
 
     # Alt codes
-    '&alt_sqt': "ALT '"
-    '&alt_dqt': 'ALT "'
+    '&kp RA(SINGLE_QUOTE)': "ALT '"
+    '&kp RA(DOUBLE_QUOTES)': 'ALT "'
     '&alt_grave': 'ALT `'
     '&alt_lbkt': 'ALT ['
     '&alt_rbkt': 'ALT ]'
