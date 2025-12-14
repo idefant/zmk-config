@@ -91,6 +91,9 @@ parse_config:
     '&alt_question': 'ALT ?'
     '&alt_backslash': 'ALT \'
 
+    'LC(Z)': Undo
+    'LC(Y)': Redo
+
   zmk_combos:
     combo_tab:    {align: top, o: 0.15}
     combo_del:    {align: top, o: 0.15}
