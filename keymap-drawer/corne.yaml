@@ -45,18 +45,18 @@ layers:
   - FUNC
   NAV:
   - ''
-  - Ctl+Sft+2
-  - Ctl+Sft+1
+  - RU JCUKEN
+  - EN QWERTY
   - Desk Left
   - Desk Right
-  - Win Next
+  - Swapper
   - Task View
   - Home
   - ↑
   - End
   - Page Up
   - Ctl+Home
-  - Tab Next
+  - Tabber
   - Gui
   - Alt
   - Ctrl
@@ -73,8 +73,8 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - Clipboard
-  - Win's Min
+  - Clip board
+  - Show Desk
   - ⌫
   - ⌦
   - Ctl+Page Up
@@ -136,7 +136,7 @@ layers:
   - {t: '-', s: AltGr+-}
   - +
   - AltGr+3
-  - AltGr+"
+  - ALT "
   - 'AltGr+:'
   - AltGr+;
   - _
@@ -148,7 +148,7 @@ layers:
   - AltGr+[
   - (
   - AltGr+4
-  - AltGr+'
+  - ALT '
   - Shift
   - Ctrl
   - Alt
