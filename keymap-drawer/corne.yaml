@@ -70,9 +70,9 @@ layers:
   - Ctl+End
   - Redo
   - Undo
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
+  - Cut
+  - Copy
+  - Paste
   - Clip board
   - Show Desk
   - ⌫
@@ -87,12 +87,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM:
-  - AltGr+\
+  - ALT \
   - AltGr+/
   - '*'
   - '-'
   - +
-  - AltGr+3
+  - {t: 'ALT #', s: №}
   - ''
   - '7'
   - '8'
@@ -111,7 +111,7 @@ layers:
   - '6'
   - KP .
   - ''
-  - AltGr+6
+  - ALT ^
   - A
   - B
   - C
@@ -130,42 +130,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
-  - AltGr+\
+  - ALT \
   - AltGr+/
   - '*'
   - {t: '-', s: AltGr+-}
   - +
-  - AltGr+3
+  - {t: 'ALT #', s: №}
   - ALT "
-  - 'AltGr+:'
-  - AltGr+;
+  - 'ALT :'
+  - ALT ;
   - _
-  - AltGr+?
-  - AltGr+~
+  - ALT ?
+  - ALT ~
   - '%'
-  - AltGr+<
-  - AltGr+{
-  - AltGr+[
+  - ALT <
+  - ALT {
+  - ALT [
   - (
-  - AltGr+4
+  - {t: ALT $, s: ₽}
   - ALT '
   - Shift
   - Ctrl
   - Alt
   - Gui
-  - AltGr+7
-  - AltGr+6
-  - AltGr+>
-  - AltGr+}
-  - AltGr+]
+  - ALT &
+  - ALT ^
+  - ALT >
+  - ALT }
+  - ALT ]
   - )
-  - AltGr+2
-  - AltGr+`
-  - AltGr+.
-  - AltGr+,
+  - ALT @
+  - ALT `
+  - ALT .
+  - ALT ,
   - '='
   - '!'
-  - AltGr+|
+  - ALT |
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
