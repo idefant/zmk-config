@@ -10,6 +10,7 @@ draw_config:
   # Keep defaults. Add styling / glyphs later if you want.
   # style_layer_activators: false
   shrink_wide_legends: 11
+  dark_mode: auto
 
 # configuration for https://github.com/caksoylar/keymap-drawer
 parse_config:
