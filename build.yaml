@@ -12,7 +12,7 @@ include:
   # ----------------------------
   # Dongle central (Seeed XIAO nRF52840)
   # ----------------------------
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: corne_dongle
     artifact-name: dongle-corne-xiao
 
@@ -32,6 +32,6 @@ include:
   - board: nice_nano
     shield: settings_reset
     artifact-name: settings-reset-nice-nano
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: settings_reset
     artifact-name: settings-reset-xiao
