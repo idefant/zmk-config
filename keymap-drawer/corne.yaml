@@ -304,5 +304,7 @@ layers:
 combos:
 - p: [36, 37, 38]
   k: BT
+  a: bottom
 - p: [39, 40, 41]
   k: BT
+  a: bottom
