@@ -7,7 +7,8 @@
 #include "corne.dtsi"
 
 &kscan0 {
-        compatible = "zmk,kscan-gpio-matrix";
+    compatible = "zmk,kscan-gpio-matrix";
+    wakeup-source;
 
     col-gpios
         = <&pro_micro 21 GPIO_ACTIVE_HIGH>
