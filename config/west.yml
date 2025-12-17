@@ -7,10 +7,10 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: main
       import: app/west.yml
     - name: zmk-tri-state
       remote: dhruvinsh
-      revision: ebbc1f0ccdb51669650bb0ac3e34920d09e62400 # Mar 17, 2025
+      revision: main
   self:
     path: config
