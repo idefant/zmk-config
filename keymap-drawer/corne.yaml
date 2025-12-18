@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  '0':
+  BASE:
   - Esc
   - Q
   - W
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - {t: ↹, h: '5'}
+  - {t: ↹, h: MOUSE}
   - A
   - S
   - D
@@ -37,13 +37,13 @@ layers:
   - .
   - /
   - ']'
-  - '2'
-  - '1'
+  - NUM
+  - NAV
   - {t: ␣, s: (CA) NB}
   - Shift
-  - '3'
-  - '4'
-  '1':
+  - SYM
+  - FUNC
+  NAV:
   - '&mouse_layer'
   - RU JCUKEN
   - EN QWERTY
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '2':
+  NUM:
   - ALT \
   - ALT /
   - '*'
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '3':
+  SYM:
   - ALT \
   - ALT /
   - '*'
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  '4':
+  FUNC:
   - ''
   - F1
   - F2
@@ -215,7 +215,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  '5':
+  MOUSE:
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -258,7 +258,7 @@ layers:
   - Left Click
   - Right Click
   - Middle Click
-  '6':
+  BT:
   - Boot
   - ''
   - ''
@@ -303,8 +303,8 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [36, 37, 38]
-  k: '6'
+  k: BT
   a: bottom
 - p: [39, 40, 41]
-  k: '6'
+  k: BT
   a: bottom
