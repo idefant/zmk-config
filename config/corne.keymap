@@ -151,8 +151,9 @@
             compatible = "zmk,behavior-tri-state";
             label = "MOUSE_LAYER";
             #binding-cells = <0>;
-            bindings = <&kt_off F13 &kt_off F14 &kt_off F15 &kt_off F16 &lt_on MOUSE>, <&none>, <&kt_off F13 &kt_off F14 &kt_off F15 &kt_off F16 &lt_off MOUSE>;
+            bindings = <&kt_off F13 &kt_off F14 &kt_off F15 &kt_off F16 &tog_on MOUSE>, <&none>, <&kt_off F13 &kt_off F14 &kt_off F15 &kt_off F16 &tog_off MOUSE>;
 
+            ignored-layers = <MOUSE>;
             ignored-key-positions = <3 4 7 8 9 10 13 14 15 16 19 20 21 22 27 28 39 40 41>;
         };
 
@@ -195,13 +196,13 @@
             toggle-mode = "off";
         };
 
-        lt_on: layer_toggle_on_only {
+        tog_on: layer_toggle_on_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             toggle-mode = "on";
         };
 
-        lt_off: layer_toggle_off_only {
+        tog_off: layer_toggle_off_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             toggle-mode = "off";
