@@ -113,14 +113,13 @@
                 = <&macro_tap &kt_off F13 &kt_off F14 &kt_on F16>;
         };
 
-        mouse_layer_on: mouse_layer_on {
+        mouse_mode_reset: mouse_mode_reset {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms  = <0>;
             bindings = <&macro_tap
                 &kt_off F13 &kt_off F14 &kt_off F15 &kt_off F16
-                &tog_on MOUSE
             >;
         };
 
@@ -129,10 +128,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms  = <0>;
-            bindings = <&macro_tap
-                &kt_off F13 &kt_off F14 &kt_off F15 &kt_off F16
-                &tog_off MOUSE
-            >;
+            bindings = <&macro_tap &mouse_mode_reset &tog_off MOUSE>;
         };
     };
 
@@ -173,7 +169,7 @@
             compatible = "zmk,behavior-tri-state";
             label = "MOUSE_LAYER";
             #binding-cells = <0>;
-            bindings = <&mouse_layer_on>, <&none>, <&mouse_layer_off>;
+            bindings = <&tog_on MOUSE>, <&mouse_mode_reset>, <&mouse_layer_off>;
 
             ignored-layers = <MOUSE>;
             ignored-key-positions = <3 4 7 8 9 10 13 14 15 16 19 20 21 22 27 28 39 40 41>;
