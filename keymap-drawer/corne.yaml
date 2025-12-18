@@ -44,7 +44,7 @@ layers:
   - '3'
   - '4'
   '1':
-  - '&mouse_hold_clean'
+  - '&mouse_layer'
   - RU JCUKEN
   - EN QWERTY
   - Desk Left
