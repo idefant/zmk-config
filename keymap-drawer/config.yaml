@@ -104,6 +104,12 @@ parse_config:
     '&kp LC(EQUAL)': Zoom In
     '&kp LC(MINUS)': Zoom Out
     '&kp LC(N0)': Zoom Default
+    
+    '&mouse_layer': MOUSE
+    '&slow_mouse_mode': Slow Mouse Mode
+    '&fast_mouse_mode': Fast Mouse Mode
+    '&hscroll_mouse_mode': H.Scroll Mouse Mode
+    '&vscroll_mouse_mode': V.Scroll Mouse Mode
 
   zmk_combos:
     # combo_tab:    {align: top, o: 0.15}
