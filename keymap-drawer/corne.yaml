@@ -216,7 +216,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   '5':
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - '&hscroll_mouse_mode'
