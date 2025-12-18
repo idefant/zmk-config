@@ -183,6 +183,18 @@
             mods = <(MOD_LSFT)>;
         };
 
+        kt_on: key_toggle_on_only {
+            compatible = "zmk,behavior-key-toggle";
+            #binding-cells = <1>;
+            toggle-mode = "on";
+        };
+
+        kt_off: key_toggle_off_only {
+            compatible = "zmk,behavior-key-toggle";
+            #binding-cells = <1>;
+            toggle-mode = "off";
+        };
+
         lt_on: layer_toggle_on_only {
             compatible = "zmk,behavior-layer-toggle";
             #binding-cells = <1>;
