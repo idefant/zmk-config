@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  BASE:
+  '0':
   - Esc
   - Q
   - W
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - {t: ↹, h: MOUSE}
+  - {t: ↹, h: '5'}
   - A
   - S
   - D
@@ -37,14 +37,14 @@ layers:
   - .
   - /
   - ']'
-  - NUM
-  - NAV
+  - '2'
+  - '1'
   - {t: ␣, s: (CA) NB}
   - Shift
-  - SYM
-  - FUNC
-  NAV:
-  - ''
+  - '3'
+  - '4'
+  '1':
+  - '&mouse_hold_clean'
   - RU JCUKEN
   - EN QWERTY
   - Desk Left
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  NUM:
+  '2':
   - ALT \
   - ALT /
   - '*'
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SYM:
+  '3':
   - ALT \
   - ALT /
   - '*'
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  FUNC:
+  '4':
   - ''
   - F1
   - F2
@@ -215,12 +215,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  MOUSE:
+  '5':
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - '&hscroll_mouse_mode'
+  - '&vscroll_mouse_mode'
   - ''
   - ''
   - Scroll ←
@@ -243,8 +243,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - '&slow_mouse_mode'
+  - '&fast_mouse_mode'
   - ''
   - ''
   - ''
@@ -258,7 +258,7 @@ layers:
   - Left Click
   - Right Click
   - Middle Click
-  BT:
+  '6':
   - Boot
   - ''
   - ''
@@ -303,8 +303,8 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [36, 37, 38]
-  k: BT
+  k: '6'
   a: bottom
 - p: [39, 40, 41]
-  k: BT
+  k: '6'
   a: bottom
