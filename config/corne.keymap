@@ -196,13 +196,13 @@
         };
 
         lt_on: layer_toggle_on_only {
-            compatible = "zmk,behavior-layer-toggle";
+            compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             toggle-mode = "on";
         };
 
         lt_off: layer_toggle_off_only {
-            compatible = "zmk,behavior-layer-toggle";
+            compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             toggle-mode = "off";
         };
