@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - {t: ↹, h: MOUSE}
+  - ↹
   - A
   - S
   - D
@@ -44,7 +44,7 @@ layers:
   - SYM
   - FUNC
   NAV:
-  - '&mouse_layer'
+  - MOUSE
   - RU JCUKEN
   - EN QWERTY
   - Desk Left
@@ -219,8 +219,8 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  - '&hscroll_mouse_mode'
-  - '&vscroll_mouse_mode'
+  - H.Scroll Mouse Mode
+  - V.Scroll Mouse Mode
   - ''
   - ''
   - Scroll ←
@@ -228,7 +228,7 @@ layers:
   - Scroll →
   - Scroll ↑
   - ''
-  - {type: held}
+  - ''
   - Gui
   - Alt
   - Ctrl
@@ -243,8 +243,8 @@ layers:
   - ''
   - ''
   - ''
-  - '&slow_mouse_mode'
-  - '&fast_mouse_mode'
+  - Slow Mouse Mode
+  - Fast Mouse Mode
   - ''
   - ''
   - ''
