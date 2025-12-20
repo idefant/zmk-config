@@ -43,8 +43,8 @@ layers:
   - Shift
   - SYM
   - FUNC
-  CAPS: ['', Sft+Q, Sft+W, Sft+E, Sft+R, Sft+T, Sft+Y, Sft+U, Sft+I, Sft+O, Sft+P, 'Sft+[', '', Sft+A, Sft+S, Sft+D, Sft+F, Sft+G, Sft+H, Sft+J, Sft+K, Sft+L, Sft+;,
-    Sft+', '', Sft+Z, Sft+X, Sft+C, Sft+V, Sft+B, Sft+N, Sft+M, 'Sft+,', Sft+., Sft+/, 'Sft+]', '', '', '', '', '', '']
+  CAPS_RU: ['', Sft+Q, Sft+W, Sft+E, Sft+R, Sft+T, Sft+Y, Sft+U, Sft+I, Sft+O, Sft+P, 'Sft+[', '', Sft+A, Sft+S, Sft+D, Sft+F, Sft+G, Sft+H, Sft+J, Sft+K, Sft+L,
+    Sft+;, Sft+', '', Sft+Z, Sft+X, Sft+C, Sft+V, Sft+B, Sft+N, Sft+M, 'Sft+,', Sft+., Sft+/, 'Sft+]', '', '', '', '', '', '']
   NAV:
   - MOUSE
   - RU JCUKEN
