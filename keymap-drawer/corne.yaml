@@ -43,8 +43,49 @@ layers:
   - Shift
   - SYM
   - FUNC
-  CAPS_RU: ['', Sft+Q, Sft+W, Sft+E, Sft+R, Sft+T, Sft+Y, Sft+U, Sft+I, Sft+O, Sft+P, 'Sft+[', '', Sft+A, Sft+S, Sft+D, Sft+F, Sft+G, Sft+H, Sft+J, Sft+K, Sft+L,
-    Sft+;, Sft+', '', Sft+Z, Sft+X, Sft+C, Sft+V, Sft+B, Sft+N, Sft+M, 'Sft+,', Sft+., Sft+/, 'Sft+]', '', '', '', '', '', '']
+  CAPS_RU:
+  - Esc
+  - Sft+Q
+  - Sft+W
+  - Sft+E
+  - Sft+R
+  - Sft+T
+  - Sft+Y
+  - Sft+U
+  - Sft+I
+  - Sft+O
+  - Sft+P
+  - Sft+[
+  - ↹
+  - Sft+A
+  - Sft+S
+  - Sft+D
+  - Sft+F
+  - Sft+G
+  - Sft+H
+  - Sft+J
+  - Sft+K
+  - Sft+L
+  - Sft+;
+  - Sft+'
+  - {t: '&caps_ru_word 1', s: Caps Lock}
+  - Sft+Z
+  - Sft+X
+  - Sft+C
+  - Sft+V
+  - Sft+B
+  - Sft+N
+  - Sft+M
+  - Sft+,
+  - Sft+.
+  - Sft+/
+  - Sft+]
+  - NUM
+  - NAV
+  - {t: ␣, s: (CA) NB}
+  - Shift
+  - SYM
+  - FUNC
   NAV:
   - MOUSE
   - RU JCUKEN
