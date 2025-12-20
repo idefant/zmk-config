@@ -111,6 +111,23 @@
             tap-ms  = <0>;
             bindings = <&macro_tap &mouse_mode_reset &tog_off L_MOUSE>;
         };
+
+        
+        caps_on: caps_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms  = <0>;
+            bindings = <&macro_tap &tog_on L_CAPS>;
+        };
+
+        caps_off: caps_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms  = <0>;
+            bindings = <&macro_tap &tog_off L_CAPS>;
+        };
     };
 
     combos {
@@ -177,7 +194,7 @@
         caps: caps {
             compatible = "zmk,behavior-mod-morph";
             label = "CAPS";
-            bindings = <&caps_ru_word L_CAPS>, <&kp CAPS>;
+            bindings = <&caps_on>, <&kp CAPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -206,17 +223,6 @@
             #binding-cells = <1>;
             toggle-mode = "off";
         };
-
-        caps_ru_word: caps_ru_word  {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-            continue-list = <
-                LSHIFT RSHIFT
-                DOT COMMA LBKT RBKT SEMI SQT
-                BSPC DEL UNDERSCORE MINUS
-            >;
-            ignore-alphas;
-        };
     };
 
     keymap {
@@ -231,12 +237,12 @@
             >;
         };
 
-        CAPS_RU {
+        CAPS {
             bindings = <
-&none  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)     &kp LS(LBKT)
-&none  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)    &kp LS(SEMI)  &kp LS(SQT)
-&none  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &kp LS(RBKT)
-                  &none      &none      &none      &none      &none      &none
+&caps_off  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)     &kp LS(LBKT)
+&caps_off  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)    &kp LS(SEMI)  &kp LS(SQT)
+&caps_off  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &kp LS(RBKT)
+                                 &caps_off  &caps_off  &caps_off  &caps_off  &caps_off  &caps_off
             >;
         };
 
