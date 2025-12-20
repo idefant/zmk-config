@@ -7,8 +7,10 @@ include:
     shield: corne_central_left
   - board: nice_nano
     shield: corne_peripheral_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano
     shield: corne_peripheral_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano
     shield: settings_reset
   - board: xiao_ble
