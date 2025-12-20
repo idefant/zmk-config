@@ -10,12 +10,13 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define L_BASE  0
-#define L_NAV   1
-#define L_NUM   2
-#define L_SYM   3
-#define L_FUNC  4
-#define L_MOUSE 5
-#define L_BT    6
+#define L_CAPS  1
+#define L_NAV   2
+#define L_NUM   3
+#define L_SYM   4
+#define L_FUNC  5
+#define L_MOUSE 6
+#define L_BT    7
 
 &lt { quick-tap-ms = <200>; };
 
@@ -33,12 +34,6 @@
     time-to-max-speed-ms = <0>;   // 0
     delay-ms = <0>;
     trigger-period-ms = <8>;      // 16
-};
-
-&caps_word {
-    /delete-property/ ignore-modifiers;
-
-    continue-list = <UNDERSCORE BACKSPACE DELETE LSHFT RSHFT>;
 };
 
 / {
@@ -122,12 +117,12 @@
         compatible = "zmk,combos";
 
         bt_left_combo {
-            bindings = <&mo 6>;
+            bindings = <&mo L_BT>;
             key-positions = <36 37 38>;
         };
 
         bt_right_combo {
-            bindings = <&mo 6>;
+            bindings = <&mo L_BT>;
             key-positions = <39 40 41>;
         };
     };
@@ -182,7 +177,7 @@
         caps: caps {
             compatible = "zmk,behavior-mod-morph";
             label = "CAPS";
-            bindings = <&caps_word>, <&kp CAPS>;
+            bindings = <&caps_ru_word L_CAPS>, <&kp CAPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -211,6 +206,17 @@
             #binding-cells = <1>;
             toggle-mode = "off";
         };
+
+        caps_ru_word: caps_ru_word  {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <
+                LSHIFT RSHIFT
+                DOT COMMA LBKT RBKT SEMI SQT
+                BSPC DEL UNDERSCORE MINUS
+            >;
+            ignore-alphas;
+        };
     };
 
     keymap {
@@ -218,10 +224,19 @@
 
         BASE {
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp E  &kp R  &kp T       &kp Y      &kp U  &kp I      &kp O    &kp P     &kp LBKT
-&kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G       &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&caps    &kp Z  &kp X  &kp C  &kp V  &kp B       &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                       &mo 2  &mo 1  &alt_space  &kp LSHFT  &mo 3  &mo 4
+&kp ESC  &kp Q  &kp W  &kp E      &kp R      &kp T       &kp Y      &kp U      &kp I       &kp O    &kp P     &kp LBKT
+&kp TAB  &kp A  &kp S  &kp D      &kp F      &kp G       &kp H      &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
+&caps    &kp Z  &kp X  &kp C      &kp V      &kp B       &kp N      &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp RBKT
+                       &mo L_NUM  &mo L_NAV  &alt_space  &kp LSHFT  &mo L_SYM  &mo L_FUNC
+            >;
+        };
+
+        CAPS {
+            bindings = <
+&none  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)      &kp LS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)     &kp LS(LBKT)
+&none  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)      &kp LS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)    &kp LS(SEMI)  &kp LS(SQT)
+&none  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)      &kp LS(B)  &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &kp LS(RBKT)
+                  &none      &none      &none          &none      &none      &none
             >;
         };
 
