@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: '&caps_ru_word 1', s: Caps Lock}
+  - {t: '&caps_on', s: Caps Lock}
   - Z
   - X
   - C
@@ -43,8 +43,9 @@ layers:
   - Shift
   - SYM
   - FUNC
-  CAPS_RU: ['', Sft+Q, Sft+W, Sft+E, Sft+R, Sft+T, Sft+Y, Sft+U, Sft+I, Sft+O, Sft+P, 'Sft+[', '', Sft+A, Sft+S, Sft+D, Sft+F, Sft+G, Sft+H, Sft+J, Sft+K, Sft+L,
-    Sft+;, Sft+', '', Sft+Z, Sft+X, Sft+C, Sft+V, Sft+B, Sft+N, Sft+M, 'Sft+,', Sft+., Sft+/, 'Sft+]', '', '', '', '', '', '']
+  CAPS: ['&caps_off', Sft+Q, Sft+W, Sft+E, Sft+R, Sft+T, Sft+Y, Sft+U, Sft+I, Sft+O, Sft+P, 'Sft+[', '&caps_off', Sft+A, Sft+S, Sft+D, Sft+F, Sft+G, Sft+H, Sft+J,
+    Sft+K, Sft+L, Sft+;, Sft+', '&caps_off', Sft+Z, Sft+X, Sft+C, Sft+V, Sft+B, Sft+N, Sft+M, 'Sft+,', Sft+., Sft+/, 'Sft+]', '&caps_off', '&caps_off', '&caps_off',
+    '&caps_off', '&caps_off', '&caps_off']
   NAV:
   - MOUSE
   - RU JCUKEN
