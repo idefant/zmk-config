@@ -177,7 +177,7 @@
         caps: caps {
             compatible = "zmk,behavior-mod-morph";
             label = "CAPS";
-            bindings = <&caps_ru_word L_CAPS>, <&kp CAPS>;
+            bindings = <&caps_ru_word>, <&kp CAPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -207,15 +207,28 @@
             toggle-mode = "off";
         };
 
-        caps_ru_word: caps_ru_word  {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-            continue-list = <
-                LSHIFT RSHIFT
-                DOT COMMA LBKT RBKT SEMI SQT
-                BSPC DEL UNDERSCORE MINUS
+        // caps_ru_word: caps_ru_word  {
+        //     compatible = "zmk,behavior-auto-layer";
+        //     #binding-cells = <1>;
+        //     continue-list = <
+        //         LSHIFT RSHIFT
+        //         DOT COMMA LBKT RBKT SEMI SQT
+        //         BSPC DEL UNDERSCORE MINUS
+        //     >;
+        //     ignore-alphas;
+        // };
+
+        caps_ru_word: caps_ru_word {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&tog_on L_CAPS>, <&none>, <&tog_off L_CAPS>;
+
+            ignored-layers = <L_CAPS>;
+            ignored-key-positions = <
+                 1  2  3  4  5     6  7  8  9 10 11
+                13 14 15 16 17    18 19 20 21 22 23
+                25 26 27 28 29    30 31 32 33 34 35
             >;
-            ignore-alphas;
         };
     };
 
@@ -233,10 +246,10 @@
 
         CAPS_RU {
             bindings = <
-&kp ESC  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)   &kp LS(T)   &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)     &kp LS(LBKT)
-&kp TAB  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)   &kp LS(G)   &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)    &kp LS(SEMI)  &kp LS(SQT)
-&caps    &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)   &kp LS(B)   &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &kp LS(RBKT)
-                               &mo L_NUM  &mo L_NAV   &alt_space  &kp LSHFT  &mo L_SYM  &mo L_FUNC
+&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)     &kp LS(LBKT)
+&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)    &kp LS(SEMI)  &kp LS(SQT)
+&none   &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &kp LS(RBKT)
+                              &trans     &trans     &trans     &trans     &trans     &trans
             >;
         };
 
