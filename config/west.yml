@@ -16,6 +16,6 @@ manifest:
       revision: ebbc1f0ccdb51669650bb0ac3e34920d09e62400 # Mar 17, 2025, 12:01 AM GMT+5
     - name: zmk-auto-layer
       remote: urob
-      revision: v0.3.0
+      revision: cf52cce16cf798b116b380fc13dfd36b3a998de6 # Dec 10, 2025, 7:17 AM GMT+5
   self:
     path: config
