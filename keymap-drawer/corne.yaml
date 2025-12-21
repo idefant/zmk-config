@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: '&caps_word_ru', s: Caps Lock}
+  - {t: Caps Word, s: Caps Lock}
   - Z
   - X
   - C
