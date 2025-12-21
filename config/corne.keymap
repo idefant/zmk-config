@@ -8,15 +8,16 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <behaviors/caps_word_ru.dtsi>
 
 #define L_BASE  0
-#define L_CAPS  1
-#define L_NAV   2
-#define L_NUM   3
-#define L_SYM   4
-#define L_FUNC  5
-#define L_MOUSE 6
-#define L_BT    7
+// #define L_CAPS  1
+#define L_NAV   1
+#define L_NUM   2
+#define L_SYM   3
+#define L_FUNC  4
+#define L_MOUSE 5
+#define L_BT    6
 
 &lt { quick-tap-ms = <200>; };
 
@@ -177,7 +178,8 @@
         caps: caps {
             compatible = "zmk,behavior-mod-morph";
             label = "CAPS";
-            bindings = <&caps_ru_word L_CAPS>, <&kp CAPS>;
+            bindings = <&caps_word_ru>, <&kp CAPS>;
+            // bindings = <&caps_ru_word L_CAPS>, <&kp CAPS>;
             // bindings = <&caps_ru_word>, <&kp CAPS>;
 
             #binding-cells = <0>;
@@ -208,16 +210,16 @@
             toggle-mode = "off";
         };
 
-        caps_ru_word: caps_ru_word  {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-            continue-list = <
-                LSHIFT RSHIFT
-                DOT COMMA LBKT RBKT SEMI SQT
-                BSPC DEL UNDERSCORE MINUS
-            >;
-            ignore-alphas;
-        };
+        // caps_ru_word: caps_ru_word  {
+        //     compatible = "zmk,behavior-auto-layer";
+        //     #binding-cells = <1>;
+        //     continue-list = <
+        //         LSHIFT RSHIFT
+        //         DOT COMMA LBKT RBKT SEMI SQT
+        //         BSPC DEL UNDERSCORE MINUS
+        //     >;
+        //     ignore-alphas;
+        // };
 
         // caps_ru_word: caps_ru_word {
         //     compatible = "zmk,behavior-tri-state";
@@ -245,14 +247,14 @@
             >;
         };
 
-        CAPS_RU {
-            bindings = <
-&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)     &kp LS(LBKT)
-&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)    &kp LS(SEMI)  &kp LS(SQT)
-&none   &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &kp LS(RBKT)
-                              &trans     &trans     &trans     &trans     &trans     &trans
-            >;
-        };
+//         CAPS_RU {
+//             bindings = <
+// &trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)     &kp LS(LBKT)
+// &trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)    &kp LS(SEMI)  &kp LS(SQT)
+// &none   &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &kp LS(RBKT)
+//                               &trans     &trans     &trans     &trans     &trans     &trans
+//             >;
+//         };
 
         NAV {
             bindings = <

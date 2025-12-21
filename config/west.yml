@@ -17,5 +17,9 @@ manifest:
     - name: zmk-auto-layer
       remote: idefant
       revision: v0.3.2
+    - name: zmk-caps-word-ru
+      remote: idefant
+      revision: main
+
   self:
     path: config
