@@ -11,7 +11,6 @@
 #include <behaviors/caps_word_ru.dtsi>
 
 #define L_BASE  0
-// #define L_CAPS  1
 #define L_NAV   1
 #define L_NUM   2
 #define L_SYM   3
@@ -55,7 +54,7 @@
             label = "TO_ENGLISH";
         };
 
-        /* 1: OFF F14,F15,F16 ; ON F13 */
+        // F13
         slow_mouse_mode: slow_mouse_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -65,7 +64,7 @@
                 = <&macro_tap &kt_off F14 &kt_off F15 &kt_off F16 &kt_on F13>;
         };
 
-        /* 2: OFF F13,F15,F16 ; ON F14 */
+        // F14
         fast_mouse_mode: fast_mouse_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -75,7 +74,7 @@
                 = <&macro_tap &kt_off F13 &kt_off F15 &kt_off F16 &kt_on F14>;
         };
 
-        /* 3: OFF F13,F14 ; ON F15   (F16 не трогаем -> можно 3+4) */
+        // F15
         hscroll_mouse_mode: hscroll_mouse_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -85,7 +84,7 @@
                 = <&macro_tap &kt_off F13 &kt_off F14 &kt_on F15>;
         };
 
-        /* 4: OFF F13,F14 ; ON F16   (F15 не трогаем -> можно 3+4) */
+        // F16
         vscroll_mouse_mode: vscroll_mouse_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -179,8 +178,6 @@
             compatible = "zmk,behavior-mod-morph";
             label = "CAPS";
             bindings = <&caps_word_ru>, <&kp CAPS>;
-            // bindings = <&caps_ru_word L_CAPS>, <&kp CAPS>;
-            // bindings = <&caps_ru_word>, <&kp CAPS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -209,30 +206,6 @@
             #binding-cells = <1>;
             toggle-mode = "off";
         };
-
-        // caps_ru_word: caps_ru_word  {
-        //     compatible = "zmk,behavior-auto-layer";
-        //     #binding-cells = <1>;
-        //     continue-list = <
-        //         LSHIFT RSHIFT
-        //         DOT COMMA LBKT RBKT SEMI SQT
-        //         BSPC DEL UNDERSCORE MINUS
-        //     >;
-        //     ignore-alphas;
-        // };
-
-        // caps_ru_word: caps_ru_word {
-        //     compatible = "zmk,behavior-tri-state";
-        //     #binding-cells = <0>;
-        //     bindings = <&tog_on L_CAPS>, <&none>, <&tog_off L_CAPS>;
-
-        //     ignored-layers = <L_CAPS>;
-        //     ignored-key-positions = <
-        //          1  2  3  4  5     6  7  8  9 10 11
-        //         13 14 15 16 17    18 19 20 21 22 23
-        //         25 26 27 28 29    30 31 32 33 34 35
-        //     >;
-        // };
     };
 
     keymap {
@@ -246,15 +219,6 @@
                        &mo L_NUM  &mo L_NAV  &alt_space  &kp LSHFT  &mo L_SYM  &mo L_FUNC
             >;
         };
-
-//         CAPS_RU {
-//             bindings = <
-// &trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)    &kp LS(P)     &kp LS(LBKT)
-// &trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)    &kp LS(SEMI)  &kp LS(SQT)
-// &none   &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(DOT)  &kp LS(FSLH)  &kp LS(RBKT)
-//                               &trans     &trans     &trans     &trans     &trans     &trans
-//             >;
-//         };
 
         NAV {
             bindings = <
