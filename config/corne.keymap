@@ -343,10 +343,10 @@
             keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
         };
 
-        colemak_sqt: colemak_sqt {
+        colemak_semi: colemak_semi {
             compatible = "zmk,behavior-mod-morph";
-            label = "COLEMAK_SQT";
-            bindings = <&kp SQT>, <&kp P>;
+            label = "COLEMAK_SEMI";
+            bindings = <&kp SEMI>, <&kp P>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>;
