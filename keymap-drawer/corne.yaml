@@ -54,7 +54,7 @@ layers:
   - {t: L, s: U}
   - {t: U, s: I}
   - {t: Y, s: O}
-  - {t: '''', s: P}
+  - '&colemak_sqt'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
