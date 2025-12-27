@@ -43,10 +43,53 @@ layers:
   - Shift
   - SYM
   - FUNC
+  COLEMAK:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: F, s: E}
+  - {t: P, s: R}
+  - {t: B, s: T}
+  - {t: J, s: Y}
+  - {t: L, s: U}
+  - {t: U, s: I}
+  - {t: Y, s: O}
+  - {t: '''', s: P}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: R, s: S}
+  - {t: S, s: D}
+  - {t: T, s: F}
+  - {t: ▽, type: trans}
+  - {t: M, s: H}
+  - {t: N, s: J}
+  - {t: E, s: K}
+  - {t: I, s: L}
+  - {t: O, s: ;}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: D, s: V}
+  - {t: V, s: B}
+  - {t: K, s: N}
+  - {t: H, s: M}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   NAV:
   - MOUSE
-  - RU JCUKEN
-  - EN QWERTY
+  - '&to_rus'
+  - {t: '&to_qwerty', s: '&to_colemak'}
   - Desk Left
   - Desk Right
   - Swapper
