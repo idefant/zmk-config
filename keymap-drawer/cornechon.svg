@@ -565,16 +565,16 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(196, 28)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em">Desk</tspan><tspan x="0" dy="1.2em">Left</tspan>
+<tspan x="0" dy="-0.0em">Prev</tspan><tspan x="0" dy="1.2em">Desk</tspan>
 </text>
-<text x="0" y="-24" class="key shifted">Prev Tab</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 92%">(G) Prev Tab</tspan></text>
 </g>
 <g transform="translate(252, 42)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.0em">Desk</tspan><tspan x="0" dy="1.2em">Right</tspan>
+<tspan x="0" dy="-0.0em">Next</tspan><tspan x="0" dy="1.2em">Desk</tspan>
 </text>
-<text x="0" y="-24" class="key shifted">Next Tab</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 92%">(G) Next Tab</tspan></text>
 </g>
 <g transform="translate(308, 49)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -704,11 +704,15 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(756, 154)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+[</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Tab</tspan><tspan x="0" dy="1.2em">Line</tspan>
+</text>
 </g>
 <g transform="translate(812, 175)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+]</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">UnTab</tspan><tspan x="0" dy="1.2em">Line</tspan>
+</text>
 </g>
 <g transform="translate(868, 182)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
