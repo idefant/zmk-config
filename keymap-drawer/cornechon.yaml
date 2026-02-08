@@ -89,7 +89,7 @@ layers:
   NAV:
   - MOUSE
   - RU JCUKEN
-  - {t: EN QWERTY, s: EN COLEMAK}
+  - {t: EN COLEMAK, s: EN QWERTY}
   - Desk Left
   - Desk Right
   - Swapper
