@@ -261,6 +261,22 @@
             #binding-cells = <0>;
             mods = <MOD_LSFT>;
         };
+
+        prev_desk: prev_desk {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(LEFT))>, <&kp LC(PG_UP)>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        next_desk: next_desk {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(RIGHT))>, <&kp LC(PG_DN)>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -286,10 +302,10 @@
 
         NAV {
             bindings = <
-&mouse_layer  &to_rus    &to_eng    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &swapper   &kp LG(TAB)  &kp HOME  &kp UP    &kp END        &kp PG_UP      &kp LC(HOME)
-&tabber       &kp LGUI   &kp LALT   &kp LCTRL         &kp LSHFT          &kp RET    &kp RET      &kp LEFT  &kp DOWN  &kp RIGHT      &kp PG_DN      &kp LC(END)
-&kp LC(Y)     &kp LC(Z)  &kp LC(X)  &kp LC(C)         &kp LC(V)          &kp LG(V)  &kp LG(D)    &kp BSPC  &kp DEL   &kp LC(PG_UP)  &kp LC(PG_DN)  &kp K_APP
-                                    &trans            &trans             &trans     &trans       &trans    &trans
+&mouse_layer  &to_rus    &to_eng    &prev_desk  &next_desk  &swapper   &kp LG(TAB)  &kp HOME  &kp UP    &kp END       &kp PG_UP     &kp LC(HOME)
+&tabber       &kp LGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &kp RET    &kp RET      &kp LEFT  &kp DOWN  &kp RIGHT     &kp PG_DN     &kp LC(END)
+&kp LC(Y)     &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp LG(V)  &kp LG(D)    &kp BSPC  &kp DEL   &kp LC(LBKT)  &kp LC(RBKT)  &kp K_APP
+                                    &trans      &trans      &trans     &trans       &trans    &trans
             >;
         };
 
