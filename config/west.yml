@@ -17,6 +17,9 @@ manifest:
     - name: zmk-caps-word-ru
       remote: idefant
       revision: main
+    - name: zmk-colemak-mod-dh
+      remote: idefant
+      revision: experimental
     - name: cornechon-zmk-module
       remote: idefant
       revision: v0.3.0
