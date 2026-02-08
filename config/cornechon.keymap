@@ -9,15 +9,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <behaviors/caps_word_ru.dtsi>
-
-#define COLEMAK_MM(name, X, Y) \
-name: name { \
-  compatible = "zmk,behavior-mod-morph"; \
-  #binding-cells = <0>; \
-  bindings = <&kp X>, <&kp Y>; \
-  mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>; \
-  keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI)>; \
-};
+#include "layouts/colemak_mod_dh.dtsi"
 
 #define L_BASE    0
 #define L_COLEMAK 1
@@ -269,27 +261,6 @@ name: name { \
             #binding-cells = <0>;
             mods = <MOD_LSFT>;
         };
-
-        COLEMAK_MM(colemak_f, F, E)
-        COLEMAK_MM(colemak_p, P, R)
-        COLEMAK_MM(colemak_b, B, T)
-        COLEMAK_MM(colemak_r, R, S)
-        COLEMAK_MM(colemak_s, S, D)
-        COLEMAK_MM(colemak_t, T, F)
-        COLEMAK_MM(colemak_d, D, V)
-        COLEMAK_MM(colemak_v, V, B)
-        COLEMAK_MM(colemak_j, J, Y)
-        COLEMAK_MM(colemak_l, L, U)
-        COLEMAK_MM(colemak_u, U, I)
-        COLEMAK_MM(colemak_y, Y, O)
-        COLEMAK_MM(colemak_semi, SEMI, P)
-        COLEMAK_MM(colemak_m, M, H)
-        COLEMAK_MM(colemak_n, N, J)
-        COLEMAK_MM(colemak_e, E, K)
-        COLEMAK_MM(colemak_i, I, L)
-        COLEMAK_MM(colemak_o, O, SEMI)
-        COLEMAK_MM(colemak_k, K, N)
-        COLEMAK_MM(colemak_h, H, M)
     };
 
     keymap {
