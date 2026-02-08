@@ -90,8 +90,8 @@ layers:
   - MOUSE
   - RU JCUKEN
   - {t: EN COLEMAK, s: EN QWERTY}
-  - Desk Left
-  - Desk Right
+  - {t: Desk Left, s: Prev Tab}
+  - {t: Desk Right, s: Next Tab}
   - Swapper
   - Task View
   - Home
@@ -120,8 +120,8 @@ layers:
   - Show Desk
   - ⌫
   - ⌦
-  - Prev Tab
-  - Next Tab
+  - Ctl+[
+  - Ctl+]
   - Menu
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
