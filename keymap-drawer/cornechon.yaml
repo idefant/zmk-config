@@ -47,35 +47,35 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: F, s: E}
-  - {t: P, s: R}
-  - {t: B, s: T}
-  - {t: J, s: Y}
-  - {t: L, s: U}
-  - {t: U, s: I}
-  - {t: Y, s: O}
-  - {t: ;, s: P}
+  - '&colemak_f'
+  - '&colemak_p'
+  - '&colemak_b'
+  - '&colemak_j'
+  - '&colemak_l'
+  - '&colemak_u'
+  - '&colemak_y'
+  - '&colemak_semi'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: R, s: S}
-  - {t: S, s: D}
-  - {t: T, s: F}
+  - '&colemak_r'
+  - '&colemak_s'
+  - '&colemak_t'
   - {t: ▽, type: trans}
-  - {t: M, s: H}
-  - {t: N, s: J}
-  - {t: E, s: K}
-  - {t: I, s: L}
-  - {t: O, s: ;}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&colemak_m'
+  - '&colemak_n'
+  - '&colemak_e'
+  - '&colemak_i'
+  - '&colemak_o'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: D, s: V}
-  - {t: V, s: B}
-  - {t: K, s: N}
-  - {t: H, s: M}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&colemak_d'
+  - '&colemak_v'
+  - '&colemak_k'
+  - '&colemak_h'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
