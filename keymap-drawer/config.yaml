@@ -28,14 +28,16 @@ parse_config:
     '&to_colemak': EN COLEMAK
     '&to_qwerty': EN QWERTY
 
-    '&kp LC(LG(LEFT))': Desk Left
-    '&kp LC(LG(RIGHT))': Desk Right
+    '&kp LC(LG(LEFT))': Prev Desk
+    '&kp LC(LG(RIGHT))': Next Desk
     '&kp LA(F4)': Win Close
     '&kp LC(F4)': Tab Close
     '&kp LC(HOME)': First Line
     '&kp LC(END)': Last Line
     '&kp LC(PG_UP)': Prev Tab
     '&kp LC(PG_DN)': Next Tab
+    '&kp LC(LBKT)': Tab Line
+    '&kp LC(RBKT)': UnTab Line
     '&kp K_APP': Menu
     
     '&kp LG(LS(S))': Snipping Tool
@@ -105,6 +107,9 @@ parse_config:
     '&kp LC(EQUAL)': Zoom In
     '&kp LC(MINUS)': Zoom Out
     '&kp LC(N0)': Zoom Default
+
+    '&prev_desk': {t: Prev Desk, s: (G) Prev Tab}
+    '&next_desk': {t: Next Desk, s: (G) Next Tab}
     
     '&mouse_layer': MOUSE
     '&slow_mouse_mode': Slow Mouse
