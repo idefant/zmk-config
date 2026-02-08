@@ -256,7 +256,7 @@
         // Colemak Mod-DH
         to_eng: to_eng {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&to_qwerty>, <&to_colemak>;
+            bindings = <&to_colemak>, <&to_qwerty>;
 
             #binding-cells = <0>;
             mods = <MOD_LSFT>;
