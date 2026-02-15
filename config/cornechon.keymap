@@ -344,7 +344,7 @@
 
         FUNC {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(EQUAL)  &kp C_BRI_UP  &none         &to_qwerty    &to_colemak    &none      &kp LA(F4)
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(EQUAL)  &kp C_BRI_UP  &to_qwerty    &to_colemak   &none          &none      &kp LA(F4)
 &none  &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(MINUS)  &kp C_BRI_DN  &kp LSHFT     &kp LCTRL     &kp LALT       &kp LGUI   &none
 &none  &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN  &none
                         &trans   &trans   &trans         &trans        &trans        &trans
