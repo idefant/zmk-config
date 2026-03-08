@@ -11,16 +11,19 @@
 #include <behaviors/caps_word_ru.dtsi>
 #include "layouts/colemak_mod_dh.dtsi"
 
-#define L_QWERTY      0
-#define L_JCUKEN      1
-#define L_COLEMAK     2
-#define L_NAV         3
-#define L_NAV_COLEMAK 4
-#define L_NUM         5
-#define L_SYM         6
-#define L_FUNC        7
-#define L_MOUSE       8
-#define L_BT          9
+#define L_QWERTY       0
+#define L_JCUKEN       1
+#define L_COLEMAK      2
+#define L_NAV          3
+#define L_NAV_COLEMAK  4
+#define L_NUM          5
+#define L_SYM          6
+#define L_FUNC         7
+#define L_MOUSE        8
+#define L_BT           9
+#define L_GAME         10
+#define L_TERRARIA     11
+#define L_TERRARIA_NUM 12
 
 &lt { quick-tap-ms = <200>; };
 
@@ -41,7 +44,14 @@
 };
 
 / {
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        GAME {
+            if-layers = <L_NUM L_FUNC>;
+            then-layer = <L_GAME>;
+        };
+    };
 
     macros {
         to_rus: to_rus {
@@ -179,7 +189,6 @@
                 /**/                                        /**/
                 /**/                         40             /**/
                 /*** ## ## ## ## ## ##    ## ## ## ## ## ## ***/
-
             >;
         };
 
@@ -281,10 +290,10 @@
 
         QWERTY {
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp E      &kp R       &kp T       &kp Y      &kp U      &kp I       &kp O    &kp P     &kp LBKT
-&kp TAB  &kp A  &kp S  &kp D      &kp F       &kp G       &kp H      &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
-&caps    &kp Z  &kp X  &kp C      &kp V       &kp B       &kp N      &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp RBKT
-                       &mo L_NUM  &alt_space  &mo L_NAV   &mo L_SYM  &kp LSHFT  &mo L_FUNC
+&kp ESC  &kp Q  &kp W  &kp E      &kp R       &kp T      &kp Y      &kp U      &kp I       &kp O    &kp P     &kp LBKT
+&kp TAB  &kp A  &kp S  &kp D      &kp F       &kp G      &kp H      &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
+&caps    &kp Z  &kp X  &kp C      &kp V       &kp B      &kp N      &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp RBKT
+                       &mo L_NUM  &alt_space  &mo L_NAV  &mo L_SYM  &kp LSHFT  &mo L_FUNC
             >;
         };
 
@@ -300,8 +309,8 @@
         COLEMAK {
             bindings = <
 &trans  &trans  &trans      &colemak_f  &colemak_p  &colemak_b  &colemak_j  &colemak_l  &colemak_u  &colemak_y  &colemak_semi  &trans
-&trans  &trans  &colemak_r  &colemak_s  &colemak_t  &trans      &colemak_m  &colemak_n  &colemak_e  &colemak_i  &colemak_o    &trans
-&trans  &trans  &trans      &trans      &colemak_d  &colemak_v  &colemak_k  &colemak_h  &trans      &trans      &trans        &trans
+&trans  &trans  &colemak_r  &colemak_s  &colemak_t  &trans      &colemak_m  &colemak_n  &colemak_e  &colemak_i  &colemak_o     &trans
+&trans  &trans  &trans      &trans      &colemak_d  &colemak_v  &colemak_k  &colemak_h  &trans      &trans      &trans         &trans
                             &trans      &trans      &trans      &trans      &trans      &trans
             >;
         };
@@ -353,10 +362,10 @@
 
         MOUSE {
             bindings = <
-&trans  &none     &none     &none      &y_scroll_mouse_mode  &xy_scroll_mouse_mode   &none      &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &none
-&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT             &x_scroll_mouse_mode    &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
-&none   &none     &none     &none      &slow_mouse_mode      &fast_mouse_mode        &none      &none           &none           &none            &none           &none
-                            &trans     &trans                &trans                  &mkp RCLK  &mkp LCLK       &mkp MCLK
+&trans  &none     &none     &none      &y_scroll_mouse_mode  &xy_scroll_mouse_mode  &none      &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP    &none
+&none   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT             &x_scroll_mouse_mode   &none      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
+&none   &none     &none     &none      &slow_mouse_mode      &fast_mouse_mode       &none      &none           &none           &none            &none           &none
+                            &trans     &trans                &trans                 &mkp RCLK  &mkp LCLK       &mkp MCLK
             >;
         };
 
@@ -366,6 +375,33 @@
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
                                          &trans        &trans        &trans        &trans        &trans        &trans
+            >;
+        };
+
+        GAME {
+            bindings = <
+&none  &none  &none  &none  &none  &none  &tog_on L_TERRARIA  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none               &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none               &none  &none  &none  &none  &none
+                     &none  &none  &none  &none               &none  &none
+            >;
+        };
+
+        TERRARIA {
+            bindings = <
+&none  &kp ESC    &none  &kp W  &kp E      &kp R               &none                &none  &none  &none  &none  &none
+&none  &kp LSHFT  &kp A  &kp S  &kp D      &kp M               &none                &none  &none  &none  &none  &none
+&none  &kp LCTRL  &none  &kp J  &kp H      &none               &none                &none  &none  &none  &none  &none
+                         &none  &kp SPACE  &mo L_TERRARIA_NUM  &tog_off L_TERRARIA  &none  &none
+            >;
+        };
+
+        TERRARIA_NUM {
+            bindings = <
+&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &none  &none  &none  &none  &none  &none
+&none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none  &none  &none  &none  &none  &none
+&none  &none   &none   &none   &kp T   &none   &none  &none  &none  &none  &none  &none
+                       &none   &none   &none   &none  &none  &none
             >;
         };
     };
