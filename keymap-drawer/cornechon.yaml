@@ -309,8 +309,8 @@ layers:
   - F4
   - Zoom In
   - Bright Up
-  - EN QWERTY
-  - EN COLEMAK
+  - Ctl+Alt+[
+  - Ctl+Alt+]
   - ''
   - ''
   - Win Close
@@ -325,7 +325,7 @@ layers:
   - Ctrl
   - Alt
   - Gui
-  - ''
+  - EN COLEMAK
   - ''
   - F9
   - F10
@@ -337,7 +337,7 @@ layers:
   - Vol Up
   - Snipping Tool
   - Print Screen
-  - ''
+  - EN QWERTY
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
