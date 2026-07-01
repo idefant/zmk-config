@@ -112,6 +112,9 @@ parse_config:
     '&x_scroll_mouse_mode': X Scroll Mouse
     '&y_scroll_mouse_mode': Y Scroll Mouse
     '&xy_scroll_mouse_mode': XY Scroll Mouse
+    '&kp LC(SPACE)': Start Voice Input
+    '&kp LC(F17)': Repeat last trnscrptn
+    '&kp F17': Paste last trnscrptn
 
   zmk_combos:
     bt_left_combo: { align: bottom }
