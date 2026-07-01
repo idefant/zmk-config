@@ -309,9 +309,9 @@ layers:
   - F4
   - Zoom In
   - Bright Up
-  - Ctl+␣
-  - Ctl+F17
-  - F17
+  - Start Voice Input
+  - Repeat last trnscrptn
+  - Paste last trnscrptn
   - ''
   - Win Close
   - ''
