@@ -309,9 +309,9 @@ layers:
   - F4
   - Zoom In
   - Bright Up
-  - Sft+␣
-  - Sft+␣
-  - ''
+  - Ctl+␣
+  - Ctl+F17
+  - F17
   - ''
   - Win Close
   - ''
