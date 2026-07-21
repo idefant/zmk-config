@@ -1608,17 +1608,21 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(700, 28)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">Repeat</tspan><tspan x="0" dy="1.2em">last</tspan><tspan x="0" dy="1.2em">trnscrptn</tspan>
+<tspan x="0" dy="-1.2em">Pause</tspan><tspan x="0" dy="1.2em">Voice</tspan><tspan x="0" dy="1.2em">Input</tspan>
 </text>
 </g>
 <g transform="translate(756, 42)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">Paste</tspan><tspan x="0" dy="1.2em">last</tspan><tspan x="0" dy="1.2em">trnscrptn</tspan>
+<tspan x="0" dy="-1.2em">Repeat</tspan><tspan x="0" dy="1.2em">last</tspan><tspan x="0" dy="1.2em">trnscrpt</tspan>
 </text>
 </g>
 <g transform="translate(812, 63)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Paste</tspan><tspan x="0" dy="1.2em">last</tspan><tspan x="0" dy="1.2em">trnscrpt</tspan>
+</text>
+<text x="0" y="-24" class="key shifted">(S) Copy</text>
 </g>
 <g transform="translate(868, 70)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
