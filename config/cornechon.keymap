@@ -353,9 +353,9 @@
 
         FUNC {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(EQUAL)  &kp C_BRI_UP  &kp LC(SPACE)  &kp LC(F17)   &kp F17        &none      &kp LA(F4)
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(MINUS)  &kp C_BRI_DN  &kp LSHFT      &kp LCTRL     &kp LALT       &kp LGUI   &to_colemak
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &kp C_MUTE    &kp C_VOL_DN   &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN  &to_qwerty
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(EQUAL)  &kp C_BRI_UP  &kp LC(SPACE)  &kp F17       &kp LC(F17)    &kp RC(F17)  &kp LA(F4)
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(MINUS)  &kp C_BRI_DN  &kp LSHFT      &kp LCTRL     &kp LALT       &kp LGUI     &to_colemak
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &kp C_MUTE    &kp C_VOL_DN   &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN    &to_qwerty
                         &trans   &trans   &trans         &trans        &trans         &trans
             >;
         };
