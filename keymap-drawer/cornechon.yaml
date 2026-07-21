@@ -311,7 +311,7 @@ layers:
   - Bright Up
   - Start Voice Input
   - Pause Voice Input
-  - Repeat last trnscrpt
+  - Sft+F17
   - {t: Paste last trnscrpt, s: (S) Copy}
   - Win Close
   - ''
