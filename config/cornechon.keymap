@@ -87,6 +87,12 @@
                 ;
         };
 
+        // В дальнейшем можно будет перевести все фичи на 1-2 F-клавиши.
+        // Комбинируются лишь фичи x_scroll и y_scroll
+        // F13, F13+RS, F13+RC, F13+RC+RS, F13+RC+LS
+        // Однако пока что останется без изменений.
+        // Вернусь к этой теме, когда F-клавиши начнут заканчиваться.
+
         slow_mouse_mode: slow_mouse_mode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -353,7 +359,7 @@
 
         FUNC {
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(EQUAL)  &kp C_BRI_UP  &kp LC(SPACE)  &kp F17       &kp LC(F17)    &kp RC(F17)  &kp LA(F4)
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(EQUAL)  &kp C_BRI_UP  &kp LC(SPACE)  &kp F17       &kp RS(F17)    &kp RC(F17)  &kp LA(F4)
 &none  &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(MINUS)  &kp C_BRI_DN  &kp LSHFT      &kp LCTRL     &kp LALT       &kp LGUI     &to_colemak
 &none  &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &kp C_MUTE    &kp C_VOL_DN   &kp C_VOL_UP  &kp LG(LS(S))  &kp PSCRN    &to_qwerty
                         &trans   &trans   &trans         &trans        &trans         &trans
