@@ -2186,14 +2186,17 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 </g>
 </g>
-<g transform="translate(30, 3565)" class="layer-GAME">
-<text x="0" y="28" class="label" id="GAME">GAME:</text>
+<g transform="translate(30, 3565)" class="layer-FUNC_2">
+<text x="0" y="28" class="label" id="FUNC_2">FUNC_2:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 70)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(84, 63)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;tog_on</tspan><tspan x="0" dy="1.2em">11</tspan>
+</text>
 </g>
 <g transform="translate(140, 42)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -2209,15 +2212,15 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(588, 49)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">&amp;tog_on</tspan><tspan x="0" dy="1.2em">11</tspan>
-</text>
+<text x="0" y="0" class="key tap">Ctl+F18</text>
 </g>
 <g transform="translate(644, 42)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F18</text>
 </g>
 <g transform="translate(700, 28)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Sft+F18</text>
 </g>
 <g transform="translate(756, 42)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

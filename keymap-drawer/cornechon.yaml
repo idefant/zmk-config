@@ -430,16 +430,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  GAME:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  FUNC_2:
   - ''
   - '&tog_on 11'
   - ''
   - ''
+  - ''
+  - ''
+  - Ctl+F18
+  - F18
+  - Sft+F18
   - ''
   - ''
   - ''
