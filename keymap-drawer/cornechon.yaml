@@ -309,10 +309,10 @@ layers:
   - F4
   - Zoom In
   - Bright Up
-  - EN QWERTY
-  - EN COLEMAK
-  - ''
-  - ''
+  - Start Voice Input
+  - Pause Voice Input
+  - Sft+F17
+  - {t: Paste last trnscrpt, s: (S) Copy}
   - Win Close
   - ''
   - F5
@@ -325,7 +325,7 @@ layers:
   - Ctrl
   - Alt
   - Gui
-  - ''
+  - EN COLEMAK
   - ''
   - F9
   - F10
@@ -337,7 +337,7 @@ layers:
   - Vol Up
   - Snipping Tool
   - Print Screen
-  - ''
+  - EN QWERTY
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -430,6 +430,94 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  FUNC_2:
+  - ''
+  - '&tog_on 11'
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctl+F18
+  - F18
+  - Sft+F18
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  TERRARIA: ['', Esc, '', W, E, R, '', '', '', '', '', '', '', Shift, A, S, D, M, '', '', '', '', '', '', '', Ctrl, '', J, H, '', '', '', '', '', '', '', '', ␣, TERRARIA_NUM,
+    '&tog_off 11', '', '']
+  TERRARIA_NUM:
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - T
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
 combos:
 - p: [36, 37, 38]
   k: BT
