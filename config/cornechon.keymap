@@ -249,6 +249,15 @@
             label = "ALT_DASH";
         };
 
+        alt_kp_dot: alt_kp_dot {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp KP_DOT>, <&kp RA(KP_DOT)>;
+
+            mods = <(MOD_LSFT)>;
+            label = "ALT_KP_DOT";
+        };
+
         caps: caps {
             compatible = "zmk,behavior-mod-morph";
             label = "CAPS";
@@ -342,7 +351,7 @@
         NUM {
             bindings = <
 &kp RA(BACKSLASH)  &kp RA(SLASH)  &kp ASTRK  &kp MINUS  &kp PLUS   &kp RA(N3)  &none   &kp N7  &kp N8  &kp N9  &none       &none
-&kp PERCENT        &kp LGUI       &kp LALT   &kp LCTRL  &kp LSHFT  &kp F       &none   &kp N4  &kp N5  &kp N6  &kp KP_DOT  &none
+&kp PERCENT        &kp LGUI       &kp LALT   &kp LCTRL  &kp LSHFT  &kp F       &none   &kp N4  &kp N5  &kp N6  &alt_kp_dot &none
 &kp RA(N6)         &kp A          &kp B      &kp C      &kp D      &kp E       &none   &kp N1  &kp N2  &kp N3  &kp N0      &none
                                              &trans     &trans     &trans      &trans  &trans  &trans
             >;

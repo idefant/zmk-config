@@ -94,6 +94,7 @@ parse_config:
     '&kp RA(BACKSLASH)': 'ALT \'
 
     '&alt_dash': {t: '-', s: (S) NB}
+    '&alt_kp_dot': {t: 'KP .', s: '(S) ALT ,'}
     '&alt_space': {t: '␣', s: (CA) NB}
 
     '&kp LC(Z)': Undo
