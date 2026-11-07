@@ -38,7 +38,7 @@ layers:
   - /
   - ']'
   - NUM
-  - {t: ␣, s: (CA) NB}
+  - {t: ␣, s: (C+A) NB}
   - NAV
   - SYM
   - Shift
