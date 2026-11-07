@@ -95,7 +95,7 @@ parse_config:
 
     '&alt_dash': {t: '-', s: (S) NB}
     '&alt_kp_dot': {t: 'KP .', s: '(S) ALT ,'}
-    '&alt_space': {t: '␣', s: (CA) NB}
+    '&alt_space': {t: '␣', s: (C+A) NB}
 
     '&kp LC(Z)': Undo
     '&kp LC(Y)': Redo

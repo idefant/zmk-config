@@ -6,6 +6,13 @@ This is a repository for a ZMK Firmware for Cornechon keyboard.
 
 ![Keymap Representation](./keymap-drawer/cornechon.svg?raw=true "Keymap Representation")
 
+### Space shortcuts
+
+Space preserves modifiers for shortcuts such as Alt+Space, Ctrl+Space and
+GUI+Alt+Space. Holding both **left Ctrl and left Alt** sends Right Alt+Space
+for non-breaking space in layouts that map it to that character. Either
+modifier alone does not activate this substitution.
+
 ## FAQ
 
 ### How to change the keymap?

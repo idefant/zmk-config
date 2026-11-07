@@ -231,12 +231,29 @@
             >;
         };
 
-        alt_space: alt_space {
+        // Require both left Alt and left Ctrl for non-breaking space.
+        // The checks keep modifiers intact; only the final morph masks them.
+        alt_space_nbsp: alt_space_nbsp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp RA(SPACE)>;
-
             mods = <(MOD_LALT|MOD_LCTL)>;
+        };
+
+        alt_space_ctrl: alt_space_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&alt_space_nbsp>;
+            mods = <MOD_LCTL>;
+            keep-mods = <MOD_LCTL>;
+        };
+
+        alt_space: alt_space {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&alt_space_ctrl>;
+            mods = <MOD_LALT>;
+            keep-mods = <MOD_LALT>;
             label = "ALT_SPACE";
         };
 
