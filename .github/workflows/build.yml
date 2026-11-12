@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "config/*.keymap"
+      - "config/*.conf"
       - "config/*.dtsi"
       - "config/boards/shields/*.conf"
       - "config/boards/shields/*.overlay"

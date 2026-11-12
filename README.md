@@ -42,6 +42,15 @@ You have two options on how to configure your desired keymap:
 3. Go to `Actions` tab in your Github repository, locate the latest build and wait for it to complete.
 4. Grab the `firmware.zip` archive
 
+### USB input before the operating system starts
+
+USB Boot Keyboard Protocol support is enabled for BIOS/UEFI and bootloader
+compatibility. Flash the updated firmware to the USB-connected central device
+(the central left half or dongle), then disconnect and reconnect USB so the host
+reads the updated interface descriptor. Select USB output on the BT layer if
+Bluetooth output was previously selected. A peripheral half's USB connection
+cannot provide keyboard input to the host.
+
 ### About firmware
 
 #### If you use dongle
