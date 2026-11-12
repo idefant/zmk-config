@@ -13,6 +13,12 @@ GUI+Alt+Space. Holding both **left Ctrl and left Alt** sends Right Alt+Space
 for non-breaking space in layouts that map it to that character. Either
 modifier alone does not activate this substitution.
 
+### Plus shortcuts
+
+On the NUM and SYM layers, the `+` key sends unshifted `=` while either GUI
+(Windows/Command) modifier is held. GUI and other held modifiers are preserved,
+including an explicitly held Shift. Without GUI, the key continues to send `+`.
+
 ## FAQ
 
 ### How to change the keymap?

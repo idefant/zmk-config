@@ -93,6 +93,7 @@ parse_config:
     '&kp RA(SLASH)': 'ALT /'
     '&kp RA(BACKSLASH)': 'ALT \'
 
+    '&gui_plus': {t: '+', s: '(GUI) ='}
     '&alt_dash': {t: '-', s: (S) NB}
     '&alt_kp_dot': {t: 'KP .', s: '(S) ALT ,'}
     '&alt_space': {t: '␣', s: (C+A) NB}

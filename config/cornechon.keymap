@@ -257,6 +257,16 @@
             label = "ALT_SPACE";
         };
 
+        // Use unshifted equals for GUI shortcuts; preserve explicit modifiers.
+        gui_plus: gui_plus {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PLUS>, <&kp EQUAL>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
+            label = "GUI_PLUS";
+        };
+
         alt_dash: alt_dash {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -367,7 +377,7 @@
 
         NUM {
             bindings = <
-&kp RA(BACKSLASH)  &kp RA(SLASH)  &kp ASTRK  &kp MINUS  &kp PLUS   &kp RA(N3)  &none   &kp N7  &kp N8  &kp N9  &none       &none
+&kp RA(BACKSLASH)  &kp RA(SLASH)  &kp ASTRK  &kp MINUS  &gui_plus   &kp RA(N3)  &none   &kp N7  &kp N8  &kp N9  &none       &none
 &kp PERCENT        &kp LGUI       &kp LALT   &kp LCTRL  &kp LSHFT  &kp F       &none   &kp N4  &kp N5  &kp N6  &alt_kp_dot &none
 &kp RA(N6)         &kp A          &kp B      &kp C      &kp D      &kp E       &none   &kp N1  &kp N2  &kp N3  &kp N0      &none
                                              &trans     &trans     &trans      &trans  &trans  &trans
@@ -376,7 +386,7 @@
 
         SYM {
             bindings = <
-&kp RA(BACKSLASH)  &kp RA(SLASH)         &kp ASTRK            &alt_dash              &kp PLUS  &kp RA(N3)  &kp RA(DOUBLE_QUOTES)  &kp RA(COLON)  &kp RA(SEMICOLON)  &kp UNDERSCORE  &kp RA(QUESTION)  &kp RA(TILDE)
+&kp RA(BACKSLASH)  &kp RA(SLASH)         &kp ASTRK            &alt_dash              &gui_plus  &kp RA(N3)  &kp RA(DOUBLE_QUOTES)  &kp RA(COLON)  &kp RA(SEMICOLON)  &kp UNDERSCORE  &kp RA(QUESTION)  &kp RA(TILDE)
 &kp PERCENT        &kp RA(LESS_THAN)     &kp RA(LEFT_BRACE)   &kp RA(LEFT_BRACKET)   &kp LPAR  &kp RA(N4)  &kp RA(SINGLE_QUOTE)   &kp LSHFT      &kp LCTRL          &kp LALT        &kp LGUI          &kp RA(N7)
 &kp RA(N6)         &kp RA(GREATER_THAN)  &kp RA(RIGHT_BRACE)  &kp RA(RIGHT_BRACKET)  &kp RPAR  &kp RA(N2)  &kp RA(GRAVE)          &kp RA(DOT)    &kp RA(COMMA)      &kp EQUAL       &kp EXCL          &kp RA(PIPE)
                                                               &trans                 &trans    &trans      &trans                 &trans         &trans
